@@ -3,42 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>職能治療團體活動資料庫 | OT Group Activity Wiki</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>職能治療團體活動資料庫</title>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
+  
+  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+          },
           colors: {
             star: {
               purple: '#9E86C8',
               'purple-dark': '#836BB0',
-              'purple-light': '#F4EEFB',
-              'purple-border': '#E4D7F5',
+              'purple-light': '#F3EDF9',
+              'purple-border': '#D8CCE8',
               gold: '#F6D06D',
-              'gold-hover': '#ECC355',
-              'gold-light': '#FFF9E8',
+              'gold-light': '#FFF9E6',
               bg: '#FAF8F5',
               card: '#FFFFFF',
+              line: '#EAE4D9',
               dark: '#342A45',
-              muted: '#6E6280',
-              line: '#EAE4D9'
+              muted: '#6E6280'
             }
-          },
-          fontFamily: {
-            sans: ['"Noto Sans TC"', '"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
     }
   </script>
+
   <style>
     body {
       background-color: #FAF8F5;
@@ -48,10 +52,9 @@
       box-shadow: 0 4px 20px -2px rgba(158, 134, 200, 0.18);
     }
     .starlight-glow-hover:hover {
-      box-shadow: 0 8px 30px -4px rgba(158, 134, 200, 0.28);
+      box-shadow: 0 8px 25px -4px rgba(158, 134, 200, 0.28);
       transform: translateY(-2px);
     }
-    /* 自訂捲軸 */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -70,26 +73,28 @@
 <body class="min-h-screen flex flex-col font-sans selection:bg-star-purple-light selection:text-star-purple-dark">
 
   <!-- 頂部導航列 -->
-  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-star-line transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-star-purple to-star-purple-dark text-white flex items-center justify-center shadow-md shadow-star-purple/20">
-          <i data-lucide="sparkles" class="w-5 h-5 text-star-gold"></i>
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-star-line transition-all shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <div class="flex items-center gap-3.5">
+        <!-- 職能治療 (OT) 專屬品牌 Logo：治療守護之手與賦能心芒 -->
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-star-purple to-star-purple-dark text-white flex items-center justify-center shadow-md shadow-star-purple/25 flex-shrink-0">
+          <svg class="w-6 h-6 text-star-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+            <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path>
+            <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+            <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+            <circle cx="12" cy="5" r="1" fill="#F6D06D"></circle>
+          </svg>
         </div>
         <div>
-          <h1 class="text-lg font-bold text-star-dark flex items-center gap-2">
+          <!-- 大字體專案標題 -->
+          <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-star-dark tracking-tight">
             職能治療團體活動資料庫
-            <span class="text-xs px-2 py-0.5 rounded-full bg-star-purple-light text-star-purple-dark border border-star-purple-border font-medium">LLM Wiki 模式</span>
           </h1>
-          <p class="text-xs text-star-muted hidden sm:block">四大學群活動分析 × 分級調適指南 × 暖光陪伴風格</p>
         </div>
       </div>
       <div class="flex items-center gap-2">
-        <a href="https://github.com" target="_blank" id="github-link" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-star-dark bg-star-bg border border-star-line hover:border-star-purple rounded-lg transition-all">
-          <i data-lucide="github" class="w-4 h-4"></i>
-          <span>GitHub Repo</span>
-        </a>
-        <button onclick="openSchemaModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white bg-star-purple hover:bg-star-purple-dark rounded-lg transition-all shadow-sm">
+        <button onclick="openSchemaModal()" class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-white bg-star-purple hover:bg-star-purple-dark rounded-xl transition-all shadow-sm">
           <i data-lucide="book-open" class="w-4 h-4 text-star-gold"></i>
           <span>AGENTS 規範</span>
         </button>
@@ -97,71 +102,60 @@
     </div>
   </header>
 
-  <!-- Hero 區域 -->
-  <section class="relative overflow-hidden pt-10 pb-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-star-purple-light/50 via-star-bg to-star-bg border-b border-star-line">
-    <div class="max-w-7xl mx-auto text-center relative z-10">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-star-purple-border text-xs text-star-purple-dark mb-4 shadow-sm">
-        <span class="w-2 h-2 rounded-full bg-star-gold animate-pulse"></span>
-        <span>依據 Karpathy 持久性知識庫概念建構</span>
-      </div>
-      <h2 class="text-2xl sm:text-4xl font-extrabold text-star-dark tracking-tight mb-3">
-        讓臨床活動設計 <span class="text-star-purple underline decoration-star-gold/60 decoration-wavy decoration-2">複利累積</span> 的專屬資料庫
-      </h2>
-      <p class="max-w-2xl mx-auto text-sm sm:text-base text-star-muted leading-relaxed">
-        收錄 <strong class="text-star-dark">兒童、精神科病房、社區精神復健、高齡長照</strong> 四大領域之職能治療團體教案。
-        每個活動均具備完整的團體動能引導、<span class="text-star-purple font-semibold">分級調適（Grading & Adaptation）</span>與嚴謹安全注意事項。
-      </p>
-
-      <!-- 統計數據看版 -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mt-6">
-        <div class="bg-white p-3 rounded-xl border border-star-line shadow-sm">
-          <div class="text-xs text-star-muted">收錄團體活動</div>
-          <div class="text-2xl font-bold text-star-purple mt-0.5" id="stat-activities">4</div>
-        </div>
-        <div class="bg-white p-3 rounded-xl border border-star-line shadow-sm">
-          <div class="text-xs text-star-muted">限定臨床領域</div>
-          <div class="text-2xl font-bold text-star-dark mt-0.5">4 大族群</div>
-        </div>
-        <div class="bg-white p-3 rounded-xl border border-star-line shadow-sm">
-          <div class="text-xs text-star-muted">治療介入核心能力</div>
-          <div class="text-2xl font-bold text-star-dark mt-0.5">4 大範疇</div>
-        </div>
-        <div class="bg-white p-3 rounded-xl border border-star-line shadow-sm">
-          <div class="text-xs text-star-muted">AI 持續擴充機制</div>
-          <div class="text-2xl font-bold text-emerald-600 mt-0.5">100% 遵守</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 主要互動內容區 -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
+  <!-- 主要互動內容區（直接進入資料庫核心） -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
     
-    <!-- 篩選與搜尋列 -->
-    <div class="bg-white p-4 sm:p-5 rounded-2xl border border-star-line shadow-sm mb-8 space-y-4">
-      <!-- 上排：族群標籤按鈕 -->
+    <!-- 雙層篩選與即時搜尋列 -->
+    <div class="bg-white p-4 sm:p-5 rounded-2xl border border-star-line shadow-sm mb-6 space-y-3.5">
+      
+      <!-- 篩選列第一排：族群標籤按鈕 -->
       <div class="flex flex-wrap items-center gap-2">
-        <span class="text-xs font-semibold text-star-muted mr-1 flex items-center gap-1">
-          <i data-lucide="filter" class="w-3.5 h-3.5"></i> 族群篩選：
+        <span class="text-xs font-bold text-star-muted mr-1 flex items-center gap-1">
+          <i data-lucide="users" class="w-3.5 h-3.5 text-star-purple"></i> 臨床族群：
         </span>
-        <button onclick="setFilter('all')" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-purple text-white shadow-sm" data-pop="all">
+        <button onclick="setPopFilter('all')" class="pop-filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all bg-star-purple text-white shadow-xs" data-pop="all">
           全部族群
         </button>
-        <button onclick="setFilter('pediatrics')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="pediatrics">
+        <button onclick="setPopFilter('pediatrics')" class="pop-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="pediatrics">
           🧸 兒童職能
         </button>
-        <button onclick="setFilter('psychiatric-inpatient')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="psychiatric-inpatient">
+        <button onclick="setPopFilter('psychiatric-inpatient')" class="pop-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="psychiatric-inpatient">
           🌿 精神科病房
         </button>
-        <button onclick="setFilter('community-psychiatry')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="community-psychiatry">
+        <button onclick="setPopFilter('community-psychiatry')" class="pop-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="community-psychiatry">
           🤝 社區精神復健
         </button>
-        <button onclick="setFilter('geriatric-care')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="geriatric-care">
+        <button onclick="setPopFilter('geriatric-care')" class="pop-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-pop="geriatric-care">
           👵 高齡長照
         </button>
       </div>
 
-      <!-- 下排：搜尋框與排序 -->
+      <!-- 篩選列第二排：團體類型按鈕 -->
+      <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-star-line/60">
+        <span class="text-xs font-bold text-star-muted mr-1 flex items-center gap-1">
+          <i data-lucide="shapes" class="w-3.5 h-3.5 text-star-purple"></i> 團體類型：
+        </span>
+        <button onclick="setTypeFilter('all')" class="type-filter-btn active px-3 py-1 rounded-lg text-xs font-semibold transition-all bg-star-dark text-white shadow-xs" data-type="all">
+          全部類型
+        </button>
+        <button onclick="setTypeFilter('art')" class="type-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-type="art">
+          🎨 藝術與手工藝
+        </button>
+        <button onclick="setTypeFilter('cognitive')" class="type-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-type="cognitive">
+          🧩 認知與益智
+        </button>
+        <button onclick="setTypeFilter('adl')" class="type-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-type="adl">
+          🏠 日常生活功能
+        </button>
+        <button onclick="setTypeFilter('social')" class="type-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-type="social">
+          💬 社交與溝通
+        </button>
+        <button onclick="setTypeFilter('motor')" class="type-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line" data-type="motor">
+          🏃 動作與體適能
+        </button>
+      </div>
+
+      <!-- 下排：搜尋框與筆數顯示 -->
       <div class="flex flex-col sm:flex-row gap-3 items-center justify-between pt-2 border-t border-star-line/60">
         <div class="relative w-full sm:w-96">
           <i data-lucide="search" class="w-4 h-4 text-star-muted absolute left-3 top-1/2 -translate-y-1/2"></i>
@@ -169,19 +163,19 @@
             type="text" 
             id="search-input" 
             oninput="handleSearch()"
-            placeholder="搜尋活動名稱、材料、介入能力或關鍵字..." 
+            placeholder="搜尋活動名稱、材料、介入能力、來源檔名..." 
             class="w-full pl-9 pr-4 py-2 text-xs bg-star-bg border border-star-line rounded-xl focus:outline-none focus:border-star-purple focus:ring-2 focus:ring-star-purple-light transition-all placeholder:text-star-muted/70"
           >
         </div>
         <div class="text-xs text-star-muted flex items-center gap-1.5 w-full sm:w-auto justify-end">
           <i data-lucide="sparkle" class="w-3.5 h-3.5 text-star-gold"></i>
-          <span>目前顯示 <span id="displayed-count" class="font-bold text-star-dark">4</span> 個團體活動</span>
+          <span>目前顯示 <span id="displayed-count" class="font-bold text-star-dark">32</span> 個獨立活動教案</span>
         </div>
       </div>
     </div>
 
-    <!-- 活動卡片列表 -->
-    <div id="activities-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <!-- 活動卡片網格 -->
+    <div id="activities-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
       <!-- 卡片由 JavaScript 動態渲染 -->
     </div>
 
@@ -191,7 +185,7 @@
         <i data-lucide="compass" class="w-6 h-6"></i>
       </div>
       <h3 class="text-sm font-semibold text-star-dark">找不到相符的團體活動</h3>
-      <p class="text-xs text-star-muted mt-1">請嘗試變更搜尋關鍵字，或切換族群篩選標籤。</p>
+      <p class="text-xs text-star-muted mt-1">請嘗試變更搜尋關鍵字，或切換族群/類型篩選標籤。</p>
     </div>
 
   </main>
@@ -203,9 +197,10 @@
       <!-- Modal Header -->
       <div class="p-5 sm:p-6 bg-gradient-to-r from-star-purple-light/70 via-white to-star-gold-light/40 border-b border-star-line flex items-start justify-between sticky top-0 z-10 bg-white">
         <div>
-          <div class="flex items-center gap-2 mb-2">
-            <span id="modal-population-badge" class="text-xs px-2.5 py-0.5 rounded-full font-semibold"></span>
-            <span class="text-xs text-star-muted flex items-center gap-1">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span id="modal-primary-badge" class="text-xs px-2.5 py-0.5 rounded-full font-bold"></span>
+            <span id="modal-applicable-badges" class="flex flex-wrap gap-1"></span>
+            <span class="text-xs text-star-muted flex items-center gap-1 ml-1">
               <i data-lucide="clock" class="w-3 h-3"></i> <span id="modal-duration"></span>
             </span>
             <span class="text-xs text-star-muted flex items-center gap-1">
@@ -213,8 +208,12 @@
             </span>
           </div>
           <h3 id="modal-title" class="text-lg sm:text-xl font-bold text-star-dark"></h3>
+          <div class="text-xs text-star-muted mt-1 flex items-center gap-1.5">
+            <i data-lucide="file-text" class="w-3.5 h-3.5 text-star-purple"></i>
+            <span>原始教案：<code id="modal-source-file" class="font-mono text-star-dark font-semibold"></code></span>
+          </div>
         </div>
-        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white hover:bg-star-purple-light text-star-muted hover:text-star-dark flex items-center justify-center border border-star-line transition-all">
+        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white hover:bg-star-purple-light text-star-muted hover:text-star-dark flex items-center justify-center border border-star-line transition-all flex-shrink-0">
           <i data-lucide="x" class="w-4 h-4"></i>
         </button>
       </div>
@@ -222,63 +221,82 @@
       <!-- Modal Body (可捲動) -->
       <div class="p-5 sm:p-6 overflow-y-auto space-y-6 text-sm text-star-dark leading-relaxed">
         
-        <!-- 設計理念與目標 -->
+        <!-- 1. 設計理念與目標 -->
         <section class="space-y-2">
           <h4 class="text-xs font-bold uppercase tracking-wider text-star-purple flex items-center gap-1.5">
             <i data-lucide="target" class="w-4 h-4 text-star-gold"></i>
             1. 團體設計理念與目標
           </h4>
-          <p id="modal-rationale" class="text-xs sm:text-sm text-star-muted bg-star-bg p-3.5 rounded-xl border border-star-line"></p>
+          <p id="modal-rationale" class="text-xs sm:text-sm text-star-dark/90 bg-star-bg p-3.5 rounded-xl border border-star-line leading-relaxed"></p>
           <div class="mt-2">
             <div class="text-xs font-semibold text-star-dark mb-1">具體治療目標：</div>
             <ul id="modal-goals" class="list-disc list-inside space-y-1 text-xs sm:text-sm text-star-dark/90 pl-1"></ul>
           </div>
         </section>
 
-        <!-- 道具與場地配置 -->
+        <!-- 2. 道具材料與場地配置 -->
         <section class="space-y-2">
           <h4 class="text-xs font-bold uppercase tracking-wider text-star-purple flex items-center gap-1.5">
             <i data-lucide="box" class="w-4 h-4 text-star-gold"></i>
             2. 道具材料與場地配置
           </h4>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="bg-star-bg p-3 rounded-xl border border-star-line">
+            <div class="bg-star-bg p-3.5 rounded-xl border border-star-line">
               <div class="text-xs font-semibold text-star-dark mb-1">所需材料/教具：</div>
-              <ul id="modal-materials" class="list-disc list-inside space-y-0.5 text-xs text-star-muted"></ul>
+              <p id="modal-materials" class="text-xs text-star-muted leading-relaxed"></p>
             </div>
-            <div class="bg-star-bg p-3 rounded-xl border border-star-line">
+            <div class="bg-star-bg p-3.5 rounded-xl border border-star-line">
               <div class="text-xs font-semibold text-star-dark mb-1">替代教具方案：</div>
-              <p id="modal-substitute" class="text-xs text-star-muted"></p>
+              <p id="modal-alternatives" class="text-xs text-star-muted leading-relaxed"></p>
             </div>
           </div>
-          <div class="bg-star-purple-light/40 p-3 rounded-xl border border-star-purple-border text-xs text-star-dark">
-            <span class="font-semibold text-star-purple-dark">場地與動線安排：</span>
-            <span id="modal-space-setup"></span>
+          <div class="bg-star-purple-light/40 p-3.5 rounded-xl border border-star-purple-border text-xs text-star-dark">
+            <span class="font-bold text-star-purple-dark">場地與動線安排：</span>
+            <span id="modal-environment" class="text-star-dark/90"></span>
           </div>
         </section>
 
-        <!-- 團體步驟流程 -->
+        <!-- 3. 團體流程步驟 -->
         <section class="space-y-2">
           <h4 class="text-xs font-bold uppercase tracking-wider text-star-purple flex items-center gap-1.5">
             <i data-lucide="list-ordered" class="w-4 h-4 text-star-gold"></i>
             3. 團體實施流程與步驟
           </h4>
-          <div id="modal-process" class="space-y-2.5"></div>
+          <div class="space-y-3">
+            <div class="bg-star-bg p-3.5 rounded-xl border border-star-line">
+              <div class="text-xs font-bold text-star-dark mb-1 text-star-purple flex items-center gap-1">
+                <i data-lucide="play-circle" class="w-3.5 h-3.5 text-star-gold"></i> 暖身準備階段
+              </div>
+              <p id="modal-warmup" class="text-xs text-star-dark/90 whitespace-pre-line leading-relaxed"></p>
+            </div>
+            <div class="bg-star-bg p-3.5 rounded-xl border border-star-line">
+              <div class="text-xs font-bold text-star-dark mb-1 text-star-purple flex items-center gap-1">
+                <i data-lucide="activity" class="w-3.5 h-3.5 text-star-gold"></i> 主要操作階段
+              </div>
+              <p id="modal-main-activity" class="text-xs text-star-dark/90 whitespace-pre-line leading-relaxed"></p>
+            </div>
+            <div class="bg-star-bg p-3.5 rounded-xl border border-star-line">
+              <div class="text-xs font-bold text-star-dark mb-1 text-star-purple flex items-center gap-1">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5 text-star-gold"></i> 分享與回饋階段
+              </div>
+              <p id="modal-reflection" class="text-xs text-star-dark/90 whitespace-pre-line leading-relaxed"></p>
+            </div>
+          </div>
         </section>
 
-        <!-- ⭐ 分級與調適 (OT核心) -->
+        <!-- 4. ⭐ 分級與調適 (OT 核心專業) -->
         <section class="space-y-2">
           <h4 class="text-xs font-bold uppercase tracking-wider text-star-purple flex items-center gap-1.5">
             <i data-lucide="sliders" class="w-4 h-4 text-star-gold"></i>
             4. 分級與調適（Grading & Adaptation）
           </h4>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="bg-blue-50/70 border border-blue-200/80 p-3.5 rounded-xl">
-              <div class="text-xs font-bold text-blue-900 flex items-center gap-1 mb-1">
-                <i data-lucide="arrow-down-circle" class="w-3.5 h-3.5 text-blue-600"></i>
+            <div class="bg-emerald-50/70 border border-emerald-200/80 p-3.5 rounded-xl">
+              <div class="text-xs font-bold text-emerald-900 flex items-center gap-1 mb-1">
+                <i data-lucide="arrow-down-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
                 Grading Down（簡化機制）
               </div>
-              <p id="modal-grading-down" class="text-xs text-blue-950/80 leading-relaxed"></p>
+              <p id="modal-grading-down" class="text-xs text-emerald-950/80 leading-relaxed"></p>
             </div>
             <div class="bg-purple-50/70 border border-purple-200/80 p-3.5 rounded-xl">
               <div class="text-xs font-bold text-purple-900 flex items-center gap-1 mb-1">
@@ -290,7 +308,7 @@
           </div>
         </section>
 
-        <!-- 安全注意事項 -->
+        <!-- 5. 安全注意事項與禁忌症 -->
         <section class="space-y-2">
           <h4 class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
             <i data-lucide="alert-triangle" class="w-4 h-4"></i>
@@ -304,11 +322,8 @@
 
       <!-- Modal Footer -->
       <div class="p-4 bg-star-bg border-t border-star-line flex items-center justify-between text-xs text-star-muted">
-        <span class="flex items-center gap-1">
-          <i data-lucide="file-code" class="w-3.5 h-3.5 text-star-purple"></i>
-          <span>來源檔案：<code id="modal-wiki-file" class="text-star-purple-dark font-mono"></code></span>
-        </span>
-        <button onclick="closeModal()" class="px-4 py-1.5 rounded-lg bg-white border border-star-line text-star-dark hover:bg-star-purple-light font-medium transition-all">
+        <span>活動 ID：<code id="modal-id" class="font-mono text-star-dark"></code></span>
+        <button onclick="closeModal()" class="px-4 py-1.5 rounded-lg bg-star-purple text-white font-medium hover:bg-star-purple-dark transition-all">
           關閉
         </button>
       </div>
@@ -316,42 +331,36 @@
     </div>
   </div>
 
-  <!-- AGENTS.md 說明 Modal -->
+  <!-- AGENTS 規範說明 Modal -->
   <div id="schema-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-star-dark/50 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 transition-all">
     <div class="relative bg-white w-full max-w-2xl rounded-2xl shadow-2xl border border-star-line overflow-hidden my-8 max-h-[85vh] flex flex-col">
-      <div class="p-5 border-b border-star-line flex items-center justify-between bg-gradient-to-r from-star-purple-light to-white">
+      <div class="p-5 bg-gradient-to-r from-star-purple-light to-white border-b border-star-line flex items-center justify-between">
         <h3 class="text-base font-bold text-star-dark flex items-center gap-2">
-          <i data-lucide="book-marked" class="w-5 h-5 text-star-purple"></i>
-          專案架構與 AGENTS.md 運作說明
+          <i data-lucide="shield-check" class="w-5 h-5 text-star-purple"></i>
+          AGENTS.md 知識庫核心架構規範
         </h3>
-        <button onclick="closeSchemaModal()" class="w-8 h-8 rounded-full bg-white hover:bg-star-purple-light text-star-muted hover:text-star-dark flex items-center justify-center border border-star-line">
-          <i data-lucide="x" class="w-4 h-4"></i>
+        <button onclick="closeSchemaModal()" class="w-7 h-7 rounded-full bg-white hover:bg-star-purple-light text-star-muted hover:text-star-dark flex items-center justify-center border border-star-line transition-all">
+          <i data-lucide="x" class="w-3.5 h-3.5"></i>
         </button>
       </div>
       <div class="p-6 overflow-y-auto space-y-4 text-xs sm:text-sm text-star-dark leading-relaxed">
         <div class="bg-star-purple-light/50 p-4 rounded-xl border border-star-purple-border">
-          <div class="font-bold text-star-purple-dark mb-1">🌟 為什麼這不是普通網頁，而是 LLM Wiki？</div>
+          <div class="font-bold text-star-purple-dark mb-1">🌟 職能治療團體活動資料庫（Karpathy LLM Wiki 實踐）</div>
           <p class="text-xs text-star-muted leading-relaxed">
-            傳統 Vibe Coding 是「把單一網頁做出來」；本專案則依據 Andrej Karpathy 提出的架構，在專案根目錄建立了嚴格的 <code class="bg-white px-1 py-0.5 rounded border text-star-purple">AGENTS.md</code>。
-            當未來有新教案時，AI 可自主執行 <strong>Ingest（收錄）</strong>、<strong>Cross-link（雙向連結）</strong>、<strong>Index 更新</strong> 與 <strong>Log 寫入</strong>，實現真正的知識複利。
+            不同於拋棄式對話，本資料庫在專案根目錄建立了嚴謹的 <code class="bg-white px-1 py-0.5 rounded border text-star-purple">AGENTS.md</code>。
+            當未來有新教案時，AI 可自主執行 <strong>Ingest（收錄）</strong>、<strong>拆分</strong>、<strong>Cross-link（雙向索引）</strong> 與 <strong>Log 寫入</strong>，達成活動教案的複利累積。
           </p>
         </div>
         <div>
           <h4 class="font-bold text-star-dark mb-1.5">目錄結構職責：</h4>
           <ul class="space-y-1.5 text-xs text-star-muted list-disc list-inside">
-            <li><code class="text-star-dark font-mono">sources/</code>：存放治療師的原始未加工筆記（只讀不可破壞）。</li>
-            <li><code class="text-star-dark font-mono">wiki/activities/</code>：依標準 Schema 存放各活動的 Markdown 檔案。</li>
-            <li><code class="text-star-dark font-mono">wiki/populations/</code>：四大族群的臨床特性與團體原則說明。</li>
-            <li><code class="text-star-dark font-mono">wiki/skills/</code>：各治療介入能力的概念頁。</li>
-            <li><code class="text-star-dark font-mono">wiki/index.md</code> & <code class="text-star-dark font-mono">log.md</code>：目錄索引與演進歷史。</li>
-            <li><code class="text-star-dark font-mono">data/activities.json</code>：與前端網頁無縫連動的活動數據源。</li>
+            <li><code class="text-star-dark font-mono">sources/</code>：存放治療師的原始 22 份 PDF 教案。</li>
+            <li><code class="text-star-dark font-mono">wiki/activities/</code>：收錄標準 5 模組 Markdown 活動檔案（共 32 篇）。</li>
+            <li><code class="text-star-dark font-mono">wiki/populations/</code>：四大臨床族群的專屬指引與關聯活動。</li>
+            <li><code class="text-star-dark font-mono">wiki/skills/</code>：治療介入能力索引。</li>
+            <li><code class="text-star-dark font-mono">wiki/index.md</code> & <code class="text-star-dark font-mono">log.md</code>：索引矩陣與演進紀錄。</li>
+            <li><code class="text-star-dark font-mono">data/activities.json</code>：靜態網頁的核心動態資料庫。</li>
           </ul>
-        </div>
-        <div>
-          <h4 class="font-bold text-star-dark mb-1.5">沈星回（Xavier）星光紫暖色調體系：</h4>
-          <p class="text-xs text-star-muted">
-            以《戀與深空》沈星回官方應援色「星河紫（#9E86C8）」為主軸，搭配星光暖金（#F6D06D）與象牙暖白，兼顧臨床治療的溫柔療癒與資訊層級的專業清晰。
-          </p>
         </div>
       </div>
       <div class="p-4 bg-star-bg border-t border-star-line text-right">
@@ -363,26 +372,25 @@
   </div>
 
   <!-- 頁尾 -->
-  <footer class="mt-auto bg-white border-t border-star-line py-8 px-4 sm:px-6 lg:px-8 text-center text-xs text-star-muted">
-    <div class="max-w-7xl mx-auto space-y-2">
+  <footer class="mt-auto bg-white border-t border-star-line py-6 px-4 text-center text-xs text-star-muted">
+    <div class="max-w-7xl mx-auto space-y-1">
       <div class="flex items-center justify-center gap-1.5 text-star-purple-dark font-medium">
-        <i data-lucide="sparkles" class="w-4 h-4 text-star-gold"></i>
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-star-gold"></i>
         <span>職能治療團體活動資料庫 · OT Group Activity Wiki</span>
       </div>
       <p class="text-star-muted/80">
-        專案架構依循 <code class="text-star-dark">AGENTS.md</code> 規範開發 · 部署於 GitHub Pages · 支援 AI 持續自主擴充
+        專案依據 <code class="text-star-dark">AGENTS.md</code> 規範維護 · 部署於 GitHub Pages · 收錄 32 篇真實臨床活動
       </p>
     </div>
   </footer>
 
   <!-- 應用程式邏輯腳本 -->
   <script>
-    // 活動資料庫容器
     let activitiesData = [];
-    let currentFilter = 'all';
+    let currentPop = 'all';
+    let currentType = 'all';
     let searchQuery = '';
 
-    // 族群樣式設定
     const populationStyles = {
       'pediatrics': {
         name: '🧸 兒童職能',
@@ -402,41 +410,65 @@
       }
     };
 
-    // 初始化載入
+    const groupTypeIcons = {
+      'art': '🎨 藝術與手工藝',
+      'cognitive': '🧩 認知與益智',
+      'adl': '🏠 日常生活功能',
+      'social': '💬 社交與溝通',
+      'motor': '🏃 動作與體適能'
+    };
+
     async function initApp() {
       try {
         const res = await fetch('./data/activities.json');
         if (res.ok) {
           activitiesData = await res.json();
         } else {
-          console.warn('無法讀取 activities.json，使用內嵌種子資料');
           activitiesData = getFallbackData();
         }
       } catch (err) {
-        console.warn('Fetch 發生問題，使用內嵌種子資料', err);
         activitiesData = getFallbackData();
       }
 
       renderActivities();
-      updateStats();
       lucide.createIcons();
     }
 
-    // 渲染活動卡片
     function renderActivities() {
       const grid = document.getElementById('activities-grid');
       const emptyState = document.getElementById('empty-state');
       
       const filtered = activitiesData.filter(item => {
-        const matchPop = currentFilter === 'all' || item.population === currentFilter;
+        // 族群篩選（支援多族群）
+        const popMatch = (currentPop === 'all') || 
+          (item.populations && item.populations.includes(currentPop)) || 
+          (item.population === currentPop);
+
+        // 團體類型篩選（支援多類型）
+        const typeMatch = (currentType === 'all') || 
+          (item.group_types && item.group_types.includes(currentType)) || 
+          (item.group_type === currentType);
+
+        if (!popMatch || !typeMatch) return false;
+
         const q = searchQuery.toLowerCase().trim();
-        const matchQuery = !q || 
-          item.title.toLowerCase().includes(q) ||
-          item.tags.some(t => t.toLowerCase().includes(q)) ||
-          item.skills.some(s => s.toLowerCase().includes(q)) ||
-          item.materials.some(m => m.toLowerCase().includes(q)) ||
-          item.rationale.toLowerCase().includes(q);
-        return matchPop && matchQuery;
+        if (!q) return true;
+
+        const searchable = [
+          item.title,
+          item.id,
+          item.source_file,
+          ...(item.population_names || []),
+          ...(item.group_type_names || []),
+          ...(item.skills || []),
+          ...(item.tags || []),
+          ...(item.materials || []),
+          item.sections?.rationale_and_goals?.rationale || '',
+          item.sections?.grading?.grading_down || '',
+          item.sections?.grading?.grading_up || ''
+        ].join(' ').toLowerCase();
+
+        return searchable.includes(q);
       });
 
       document.getElementById('displayed-count').textContent = filtered.length;
@@ -448,54 +480,84 @@
       }
 
       emptyState.classList.add('hidden');
+
       grid.innerHTML = filtered.map(item => {
-        const popConfig = populationStyles[item.population] || { name: item.population_name, badgeClass: 'bg-gray-100 text-gray-800 border-gray-200' };
+        const popStyle = populationStyles[item.population] || { name: item.population, badgeClass: 'bg-gray-100 text-gray-800 border-gray-200' };
         
-        const skillBadges = item.skills.map(s => `
-          <span class="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-md bg-star-purple-light text-star-purple-dark border border-star-purple-border">
-            <span>✧</span> ${s}
-          </span>
-        `).join('');
+        // 跨族群標籤
+        const crossPopBadges = (item.populations || [])
+          .filter(p => p !== item.population)
+          .map(p => {
+            const pInfo = populationStyles[p];
+            const pLabel = pInfo ? pInfo.name.replace(/^..\s*/, '') : p;
+            return `<span class="text-[10px] px-1.5 py-0.5 rounded bg-star-purple-light/80 text-star-purple-dark border border-star-purple-border/60">🔄 ${pLabel}適用</span>`;
+          }).join(' ');
+
+        // 類型標籤
+        const typeBadges = (item.group_types || [item.group_type]).map(gt => {
+          const typeName = groupTypeIcons[gt] || gt;
+          return `<span class="text-[10px] px-2 py-0.5 rounded-full bg-white text-star-dark border border-star-line font-medium">${typeName}</span>`;
+        }).join(' ');
+
+        const rationale = item.sections?.rationale_and_goals?.rationale || item.rationale || '';
+        const gradingDown = item.sections?.grading?.grading_down || item.grading_down || '';
 
         return `
-          <div class="bg-white rounded-2xl border border-star-line p-5 sm:p-6 starlight-glow starlight-glow-hover transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between gap-2 mb-3">
-                <span class="text-xs px-2.5 py-1 rounded-full font-semibold border ${popConfig.badgeClass}">
-                  ${popConfig.name}
-                </span>
-                <div class="flex items-center gap-2 text-xs text-star-muted">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="clock" class="w-3.5 h-3.5"></i> ${item.duration}
+          <div class="bg-white rounded-2xl p-5 border border-star-line starlight-glow-hover transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              
+              <!-- 族群與時間資訊 -->
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="text-xs px-2.5 py-0.5 rounded-full font-bold border ${popStyle.badgeClass}">
+                    ${popStyle.name}
                   </span>
-                  <span>·</span>
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="users" class="w-3.5 h-3.5"></i> ${item.group_size}
-                  </span>
+                  ${crossPopBadges}
                 </div>
+                <span class="text-xs text-star-muted flex items-center gap-1">
+                  <i data-lucide="clock" class="w-3.5 h-3.5 text-star-purple"></i> ${item.duration}
+                </span>
               </div>
 
-              <h3 class="text-base sm:text-lg font-bold text-star-dark group-hover:text-star-purple transition-colors line-clamp-1 mb-2">
+              <!-- 活動標題 -->
+              <h3 class="text-base font-bold text-star-dark hover:text-star-purple transition-colors cursor-pointer" onclick="openDetailModal('${item.id}')">
                 ${item.title}
               </h3>
 
-              <p class="text-xs text-star-muted line-clamp-2 leading-relaxed mb-4">
-                ${item.rationale}
+              <!-- 類型標籤列 -->
+              <div class="flex flex-wrap gap-1.5">
+                ${typeBadges}
+              </div>
+
+              <!-- 理念摘要 -->
+              <p class="text-xs text-star-muted line-clamp-2 leading-relaxed">
+                ${rationale}
               </p>
 
-              <div class="flex flex-wrap gap-1.5 mb-4">
-                ${skillBadges}
+              <!-- 核心技能 -->
+              <div class="flex flex-wrap gap-1 pt-1">
+                ${(item.skills || []).map(s => `
+                  <span class="text-[11px] px-2 py-0.5 rounded bg-star-bg text-star-dark/80 border border-star-line">
+                    ${s}
+                  </span>
+                `).join('')}
+              </div>
+
+              <!-- 分級調適速覽 -->
+              <div class="p-2.5 rounded-xl bg-emerald-50/50 border border-emerald-100 text-[11px] text-emerald-950 flex items-start gap-1.5">
+                <i data-lucide="sliders" class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+                <span class="line-clamp-1"><strong class="font-semibold text-emerald-800">簡化調適：</strong>${gradingDown}</span>
               </div>
             </div>
 
-            <div class="pt-4 border-t border-star-line/60 flex items-center justify-between">
-              <span class="text-[11px] text-star-muted/80">
-                <i data-lucide="shield-check" class="w-3.5 h-3.5 inline text-emerald-600 mr-0.5"></i>
-                含分級調適與安全守則
+            <!-- 卡片底部操作列 -->
+            <div class="pt-4 mt-4 border-t border-star-line flex items-center justify-between">
+              <span class="text-[11px] text-star-muted truncate max-w-[180px] sm:max-w-[220px]" title="${item.source_file}">
+                📄 ${item.source_file}
               </span>
-              <button onclick="openDetailModal('${item.id}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-star-purple hover:bg-star-purple-dark text-white text-xs font-medium transition-all shadow-sm">
-                <span>詳細分析</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <button onclick="openDetailModal('${item.id}')" class="inline-flex items-center gap-1 text-xs font-semibold text-star-purple hover:text-star-purple-dark transition-colors">
+                <span>詳細教案與調適</span>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
               </button>
             </div>
           </div>
@@ -505,14 +567,25 @@
       lucide.createIcons();
     }
 
-    // 篩選與搜尋操作
-    function setFilter(pop) {
-      currentFilter = pop;
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        if (btn.getAttribute('data-pop') === pop) {
-          btn.className = 'filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-purple text-white shadow-sm';
+    function setPopFilter(pop) {
+      currentPop = pop;
+      document.querySelectorAll('.pop-filter-btn').forEach(btn => {
+        if (btn.dataset.pop === pop) {
+          btn.className = 'pop-filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all bg-star-purple text-white shadow-xs';
         } else {
-          btn.className = 'filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line';
+          btn.className = 'pop-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line';
+        }
+      });
+      renderActivities();
+    }
+
+    function setTypeFilter(type) {
+      currentType = type;
+      document.querySelectorAll('.type-filter-btn').forEach(btn => {
+        if (btn.dataset.type === type) {
+          btn.className = 'type-filter-btn active px-3 py-1 rounded-lg text-xs font-semibold transition-all bg-star-dark text-white shadow-xs';
+        } else {
+          btn.className = 'type-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-star-bg text-star-dark hover:bg-star-purple-light border border-star-line';
         }
       });
       renderActivities();
@@ -523,1148 +596,2291 @@
       renderActivities();
     }
 
-    // Modal 詳情彈窗控制
     function openDetailModal(id) {
       const item = activitiesData.find(a => a.id === id);
       if (!item) return;
 
-      const popConfig = populationStyles[item.population] || { name: item.population_name, badgeClass: 'bg-gray-100 text-gray-800' };
-      const popBadge = document.getElementById('modal-population-badge');
-      popBadge.textContent = popConfig.name;
-      popBadge.className = `text-xs px-2.5 py-0.5 rounded-full font-semibold border ${popConfig.badgeClass}`;
+      const popStyle = populationStyles[item.population] || { name: item.population, badgeClass: 'bg-gray-100 text-gray-800' };
 
+      // Header 資訊
+      const primaryBadge = document.getElementById('modal-primary-badge');
+      primaryBadge.textContent = popStyle.name;
+      primaryBadge.className = `text-xs px-2.5 py-0.5 rounded-full font-bold border ${popStyle.badgeClass}`;
+
+      const applicableContainer = document.getElementById('modal-applicable-badges');
+      applicableContainer.innerHTML = (item.populations || [])
+        .filter(p => p !== item.population)
+        .map(p => {
+          const pInfo = populationStyles[p];
+          const pLabel = pInfo ? pInfo.name.replace(/^..\s*/, '') : p;
+          return `<span class="text-xs px-2 py-0.5 rounded-full bg-star-purple-light text-star-purple-dark border border-star-purple-border font-medium">🔄 ${pLabel}適用</span>`;
+        }).join(' ');
+
+      document.getElementById('modal-title').textContent = item.title;
+      document.getElementById('modal-id').textContent = item.id;
+      document.getElementById('modal-source-file').textContent = item.source_file;
       document.getElementById('modal-duration').textContent = item.duration;
       document.getElementById('modal-group-size').textContent = item.group_size;
-      document.getElementById('modal-title').textContent = item.title;
-      document.getElementById('modal-rationale').textContent = item.rationale;
 
-      // 具體目標
-      document.getElementById('modal-goals').innerHTML = item.goals.map(g => `<li>${g}</li>`).join('');
+      // 1. 理念與目標
+      document.getElementById('modal-rationale').textContent = item.sections?.rationale_and_goals?.rationale || item.rationale || '無';
+      const goalsList = document.getElementById('modal-goals');
+      const goals = item.sections?.rationale_and_goals?.goals || item.goals || [];
+      goalsList.innerHTML = goals.map(g => `<li>${g}</li>`).join('');
 
-      // 材料與替代
-      document.getElementById('modal-materials').innerHTML = item.materials.map(m => `<li>${m}</li>`).join('');
-      document.getElementById('modal-substitute').textContent = item.substitute_materials;
-      document.getElementById('modal-space-setup').textContent = item.space_setup;
+      // 2. 道具材料與場地
+      document.getElementById('modal-materials').textContent = item.sections?.materials_and_environment?.materials || (item.materials ? item.materials.join('、') : '依活動需求準備');
+      document.getElementById('modal-alternatives').textContent = item.sections?.materials_and_environment?.alternatives || item.substitute_materials || '可依臨床環境彈性替換。';
+      document.getElementById('modal-environment').textContent = item.sections?.materials_and_environment?.environment || item.space_setup || '活動室平坦動線。';
 
-      // 流程
-      document.getElementById('modal-process').innerHTML = item.process.map(p => `
-        <div class="bg-star-bg p-3 rounded-xl border border-star-line">
-          <div class="text-xs font-bold text-star-purple-dark mb-0.5">${p.stage}</div>
-          <p class="text-xs text-star-muted leading-relaxed">${p.description}</p>
-        </div>
-      `).join('');
+      // 3. 步驟流程
+      document.getElementById('modal-warmup').textContent = item.sections?.procedures?.warmup || '引導熱身與說明規範。';
+      document.getElementById('modal-main-activity').textContent = item.sections?.procedures?.main_activity || '主要操作與臨床指導。';
+      document.getElementById('modal-reflection').textContent = item.sections?.procedures?.reflection || '作品展示與正向回饋。';
 
-      // 分級調適
-      document.getElementById('modal-grading-down').textContent = item.grading_down;
-      document.getElementById('modal-grading-up').textContent = item.grading_up;
+      // 4. 分級與調適
+      document.getElementById('modal-grading-down').textContent = item.sections?.grading?.grading_down || item.grading_down || '提供輔助或降低難度。';
+      document.getElementById('modal-grading-up').textContent = item.sections?.grading?.grading_up || item.grading_up || '增加複雜度或動作挑戰。';
 
-      // 安全
-      document.getElementById('modal-safety').textContent = item.safety;
+      // 5. 安全注意事項
+      document.getElementById('modal-safety').textContent = item.sections?.safety_and_contraindications || item.safety || '注意工具管理與防跌。';
 
-      // 來源檔案
-      document.getElementById('modal-wiki-file').textContent = `wiki/activities/${item.id}.md`;
-
-      const modal = document.getElementById('activity-modal');
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+      document.getElementById('activity-modal').classList.remove('hidden');
       lucide.createIcons();
     }
 
     function closeModal() {
       document.getElementById('activity-modal').classList.add('hidden');
-      document.body.style.overflow = 'auto';
     }
 
     function openSchemaModal() {
       document.getElementById('schema-modal').classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-      lucide.createIcons();
     }
 
     function closeSchemaModal() {
       document.getElementById('schema-modal').classList.add('hidden');
-      document.body.style.overflow = 'auto';
     }
 
-    function updateStats() {
-      document.getElementById('stat-activities').textContent = activitiesData.length;
-    }
-
-    // 點擊背景關閉
-    window.addEventListener('click', (e) => {
+    window.onclick = function(event) {
       const actModal = document.getElementById('activity-modal');
       const schModal = document.getElementById('schema-modal');
-      if (e.target === actModal) closeModal();
-      if (e.target === schModal) closeSchemaModal();
-    });
+      if (event.target === actModal) closeModal();
+      if (event.target === schModal) closeSchemaModal();
+    }
 
-    // 鍵盤 ESC 關閉
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeModal();
-        closeSchemaModal();
-      }
-    });
+    function getFallbackData() {
+      return [
+    {
+        "id":  "ped-wk1-color-ball",
+        "title":  "彩球挑戰大冒險 — 動態平衡與顏色分類",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "motor",
+        "group_types":  [
+                            "motor",
+                            "social"
+                        ],
+        "duration":  "25分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "動作協調與平衡控制",
+                       "社交互動與團體合作"
+                   ],
+        "materials":  [
+                          "彩球一袋",
+                          "分類彩色紙箱",
+                          "萬象組平衡木",
+                          "巧拼與過河石",
+                          "獎勵貼紙與計分表"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "動態平衡",
+                     "顏色分類",
+                     "平衡木",
+                     "粗大動作"
+                 ],
+        "source_file":  "第一週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "透過兩人一組合作抽取彩球，走過河石與平衡木送入對應顏色紙箱，訓練動態平衡、顏色區辨與同儕合作。",
+                                                     "goals":  [
+                                                                   "提升走平衡木與跨越過河石之動態姿勢平衡控制",
+                                                                   "增進顏色視覺區辨與分類配對認知能力",
+                                                                   "練習兩人一組輪流前進與同儕互助協調"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩球一袋、分類彩色紙箱、萬象組平衡木、巧拼與過河石、獎勵貼紙與計分表",
+                                                           "alternatives":  "彩球可用報紙揉球貼彩色膠帶替代，過河石可用巧拼剪裁圓形替代。",
+                                                           "environment":  "前半部規劃過河石與平衡木之運送動線，終點處放置不同顏色之分類紙箱。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【準備與示範（約 5 分鐘）】：\n帶領者示範兩人一組抽取彩球，沿著過河石踩穩、走上平衡木，並投入正確顏色箱子。",
+                                            "main_activity":  "【闖關主活動（約 15 分鐘）】：\n學員分組輪流出發，合作將彩球運送至終點，若中途掉球需回到起點重新出發，完成者蓋集點章。",
+                                            "reflection":  "【分享與鼓勵（約 5 分鐘）】：\n清點各組收集的彩球數量，讚賞同儕間的牽手互助，給予正向回饋。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "平衡木高度降至貼地，或由協同帶領者牽單手協助走過河石。",
+                                         "grading_up":  "增加過河石間距，或要求運球過程中雙手平舉托球不可碰觸身體。"
+                                     },
+                         "safety_and_contraindications":  "平衡木兩側需有帶領者全程隨行守護防跌倒；過河石底部需確認防滑。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "動作與體適能",
+                                 "社交與溝通"
+                             ]
+    },
+    {
+        "id":  "ped-wk1-cup-flower",
+        "title":  "紙杯花藝創作 — 精細剪裁與反摺手作",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art"
+                        ],
+        "duration":  "30分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "精細動作與手部協調"
+                   ],
+        "materials":  [
+                          "免洗紙杯（每人2-3個）",
+                          "兒童安全剪刀",
+                          "彩色筆",
+                          "白膠",
+                          "圖畫紙"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "高齡長照",
+                     "精細動作",
+                     "剪刀操作",
+                     "紙杯手作"
+                 ],
+        "source_file":  "第一週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "利用紙杯杯壁畫出花瓣線條，練習沿線剪開並向外翻折，訓練雙手分離協調、手指握剪肌力與空間幾何知覺。",
+                                                     "goals":  [
+                                                                   "訓練兒童沿黑線連續剪裁之眼手協調與手指開合肌力",
+                                                                   "練習杯壁紙板對稱向外翻折之指尖壓痕力量",
+                                                                   "發揮個人美感進行花瓣彩繪與圖紙組裝創作"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "免洗紙杯（每人2-3個）、兒童安全剪刀、彩色筆、白膠、圖畫紙",
+                                                           "alternatives":  "若紙杯過硬可用蛋糕紙盤替代；彩筆可用蠟筆替代。",
+                                                           "environment":  "矮桌環繞配置，每桌配發安全剪刀與彩色筆盒，桌上鋪設防污墊。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【步驟示範與講解（約 5 分鐘）】：\n展示紙杯花成品範例，示範如何一手旋轉紙杯、一手持剪刀沿預畫黑線剪開。\n\n【剪裁翻摺彩繪（約 20 分鐘）】：\n學員沿線剪開杯壁、向外用力壓平成花瓣形狀，再以彩色筆裝飾花蕊與花瓣，最後黏貼於圖畫紙上。\n\n【展示與收拾（約 5 分鐘）】：\n每位小朋友展示自己的花朵作品，輪流說出花朵的名字，收拾剪刀與筆盒。",
+                                            "reflection":  "【分享與回饋（5-10分鐘）】：成果展示與同儕回饋，正向增強。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "杯壁黑線由老師預先剪開一半，學員僅需完成最後1公分與翻折動作。",
+                                         "grading_up":  "要求剪出不同形狀的花瓣（尖瓣、波浪瓣），並在圖畫紙上剪貼花莖與綠葉構圖。"
+                                     },
+                         "safety_and_contraindications":  "嚴格貫徹剪刀不對人、不揮舞規則；剪下來之碎屑統一集中於收納盒。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝"
+                             ]
+    },
+    {
+        "id":  "ped-wk2-sandbag",
+        "title":  "九宮格丟沙包 — 上肢力氣控制與目標投擲賽",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics",
+                            "geriatric-care",
+                            "community-psychiatry"
+                        ],
+        "group_type":  "motor",
+        "group_types":  [
+                            "motor",
+                            "cognitive"
+                        ],
+        "duration":  "25分鐘",
+        "group_size":  "6-10人",
+        "skills":  [
+                       "動作協調與平衡控制",
+                       "執行功能與認知規劃"
+                   ],
+        "materials":  [
+                          "地面九宮格地墊（90x90cm兩組）",
+                          "軟沙包12個",
+                          "計分表與白板",
+                          "有色地膠（投擲線）"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "高齡長照",
+                     "社區復健",
+                     "力氣控制",
+                     "目標投擲",
+                     "九宮格"
+                 ],
+        "source_file":  "第二週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "投擲沙包需要大腦精準評估距離與力量輸出。九宮格分值設計能訓練手眼協調、動作力量調控與數字累加認知。",
+                                                     "goals":  [
+                                                                   "提升肩肘手腕之運動調節與目標投擲精準度",
+                                                                   "鍛鍊投擲前做開合跳之體適能動態耐力",
+                                                                   "學習遵守投擲順序、計分常規與同儕競賽運動精神"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "地面九宮格地墊（90x90cm兩組）、軟沙包12個、計分表與白板、有色地膠（投擲線）",
+                                                           "alternatives":  "沙包可用豆袋或大厚襪子包裹生米自製；九宮格可用彩色膠帶在地板貼出。",
+                                                           "environment":  "地面鋪設兩組九宮格，前方50cm與70cm處標記投擲線，後方設等候座椅。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【規則說明與試投（約 5 分鐘）】：\n介紹九宮格各格子分值（中心最高分），示範站在投擲線做10下開合跳後投擲。\n\n【分組投擲競賽（約 15 分鐘）】：\n學員每人拿3個沙包，依序上前開合跳後進行瞄準投擲，由同儕與協同帶領者記錄得分。",
+                                            "reflection":  "【計分回饋與鼓勵（約 5 分鐘）】：\n統計各小組總得分，給予投中高分與姿勢穩健的學員熱烈掌聲肯定。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "投擲線拉近至30cm，免除開合跳動作，採穩固坐姿或站姿直接投擲。",
+                                         "grading_up":  "投擲線退後至1.2公尺，並限制必須以非慣用手投擲或指定特定分數目標。"
+                                     },
+                         "safety_and_contraindications":  "沙包嚴禁朝他人身體或面部投擲；投擲區保持淨空防止干擾滑倒。"
+                     },
+        "population_names":  [
+                                 "兒童職能",
+                                 "高齡長照",
+                                 "社區精神復健"
+                             ],
+        "group_type_names":  [
+                                 "動作與體適能",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "ped-wk2-torn-collage",
+        "title":  "彩紙手撕拼貼畫 — 指尖力量與色彩填色",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art"
+                        ],
+        "duration":  "30分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "精細動作與手部協調",
+                       "感覺處理與情緒調節"
+                   ],
+        "materials":  [
+                          "大輪廓構圖底稿紙（每人一張）",
+                          "彩色色紙（多色）",
+                          "口紅膠 / 白膠",
+                          "托盤收納盒"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "精神科病房",
+                     "撕貼畫",
+                     "指尖肌力",
+                     "精細動作"
+                 ],
+        "source_file":  "第二週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "手撕紙張能給予雙手指尖獨特的本體覺與觸覺阻抗反饋，訓練三指抓握捏撕與專注貼合，促進情緒沉著安定。",
+                                                     "goals":  [
+                                                                   "訓練雙手大拇指與食指相對用力撕出拇指大小紙片",
+                                                                   "促進手眼協調塗膠並精準貼合於線條輪廓內",
+                                                                   "透過重複撕貼動作抒發焦慮、沉澱情緒"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "大輪廓構圖底稿紙（每人一張）、彩色色紙（多色）、口紅膠 / 白膠、托盤收納盒",
+                                                           "alternatives":  "色紙可用舊雜誌大色塊紙張替代；底稿可由治療師手繪卡通輪廓。",
+                                                           "environment":  "長桌配置，每位學員分配一個托盤放置撕好的紙片，避免碎片飛散。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【手撕技巧示範（約 5 分鐘）】：\n示範大拇指緊靠、一前一後撕紙的動作，強調撕成『拇指指甲蓋大小』最漂亮。\n\n【拼貼創作實作（約 20 分鐘）】：\n學員自主挑選底稿，撕出不同色彩的紙片，塗抹口紅膠拼貼填滿圖案，可自由混色。",
+                                            "reflection":  "【成果分享（約 5 分鐘）】：\n展示色彩豐富的撕貼畫作品，交流配色想法，清理桌面紙屑歸位。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "色紙由老師預先撕成長條狀，孩童僅需橫向撕成方塊；底稿輪廓面積縮小。",
+                                         "grading_up":  "要求撕出微小碎片拼貼出明暗漸層效果，或在背景自主撕出雲朵與太陽裝飾。"
+                                     },
+                         "safety_and_contraindications":  "口紅膠不沾染衣物；避免學員因追求完美焦慮，多給予正向鼓勵。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝"
+                             ]
+    },
+    {
+        "id":  "ped-wk3-soccer",
+        "title":  "足球踢踢踢射門賽 — 下肢動態平衡與協調",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "motor",
+        "group_types":  [
+                            "motor"
+                        ],
+        "duration":  "25分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "動作協調與平衡控制"
+                   ],
+        "materials":  [
+                          "軟皮球2顆",
+                          "雪花片組裝之小型球門",
+                          "計分表",
+                          "起踢點標記貼紙"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "動態平衡",
+                     "下肢協調",
+                     "足球射門",
+                     "粗大動作"
+                 ],
+        "source_file":  "第三週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "踢球需要單腳站立支撐軀幹重量、另一腳擺動發力，是鍛鍊下肢動態平衡、核心穩定與眼腳動作計畫的關鍵活動。",
+                                                     "goals":  [
+                                                                   "強化單腳獨立支撐穩定度與擺動腳精準踢球力量",
+                                                                   "增進視覺空間目標距離判斷與球速預判",
+                                                                   "學習遵守排隊等待起踢之團體常規"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "軟皮球2顆、雪花片組裝之小型球門、計分表、起踢點標記貼紙",
+                                                           "alternatives":  "球門可用兩張小椅子或角錐代替；皮球可用大泡棉球代替。",
+                                                           "environment":  "教室空曠區域規劃兩條射門球道，前方設置雪花片造型球門，地面標示起跑線。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【熱身與示範（約 5 分鐘）】：\n帶領腳踝轉動與原地抬膝暖身，示範如何站定在指定標記處、眼看球門起腳推射。\n\n【射門積分挑戰（約 15 分鐘）】：\n學員排隊依序上前射門，球門距離隨次數逐漸拉遠增加挑戰，進球者獲贈積分貼紙。",
+                                            "reflection":  "【收操與回饋（約 5 分鐘）】：\n慢走深呼吸收操，肯定每位學員的平衡表現與運動風度。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "球門寬度加寬，起踢距離縮短至1公尺，球體使用大尺寸慢速發泡球。",
+                                         "grading_up":  "起踢點後退至3公尺，或在踢球前先單腳跳巧拼再進行踢球射門。"
+                                     },
+                         "safety_and_contraindications":  "球道周邊無障礙物防跌倒；嚴禁大力抽射砸人，嚴守排隊次序。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "ped-wk3-card-match",
+        "title":  "撲克牌配對快手 — 工作記憶與視覺搜尋",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics",
+                            "geriatric-care",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "cognitive",
+        "group_types":  [
+                            "cognitive"
+                        ],
+        "duration":  "20分鐘",
+        "group_size":  "4-8人",
+        "skills":  [
+                       "執行功能與認知規劃",
+                       "社交互動與團體合作"
+                   ],
+        "materials":  [
+                          "撲克牌2副（紅黑色區分）",
+                          "計時器",
+                          "桌面保護墊"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "高齡長照",
+                     "精神科病房",
+                     "工作記憶",
+                     "視覺配對",
+                     "益智遊戲"
+                 ],
+        "source_file":  "第三週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "翻牌記憶遊戲結合工作記憶、空間記憶與抑制控制，考驗學員記住卡牌位置與輪流等待翻牌的社交耐性。",
+                                                     "goals":  [
+                                                                   "訓練大腦短期工作記憶容量與空間位置記憶力",
+                                                                   "增進數字辨認與顏色花色快速區辨能力",
+                                                                   "培養輪流翻牌不搶翻之抑制控制與規則遵守"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "撲克牌2副（紅黑色區分）、計時器、桌面保護墊",
+                                                           "alternatives":  "若撲克牌數字抽象，可換用大圖案配對圖卡或水果記憶卡片。",
+                                                           "environment":  "地墊或長桌圍坐，撲克牌整齊背面朝上排列為陣列矩陣。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【規則講解（約 5 分鐘）】：\n先讓學員觀看卡牌5秒記憶位置後蓋牌，說明每人每次只能翻兩張牌，相同即可收回。\n\n【翻牌競賽（約 12 分鐘）】：\n猜拳決定順序，依序翻牌配對，未配對成功需原位蓋回，考驗全員的專注觀察。",
+                                            "reflection":  "【結算與回饋（約 3 分鐘）】：\n數數看各組配對成功的牌組數量，給予配對成功的學員掌聲肯定。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "牌數縮減為6~8張（3~4對），牌面朝上觀察10秒再蓋牌。",
+                                         "grading_up":  "增加牌數至20張以上，或增加條件（數字與花色必須完全相同方算得分）。"
+                                     },
+                         "safety_and_contraindications":  "同儕翻牌時其他成員雙手放膝蓋，不可用手遮擋干擾他人翻牌視線。"
+                     },
+        "population_names":  [
+                                 "兒童職能",
+                                 "高齡長照",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "ped-wk3-clay-animals",
+        "title":  "輕黏土動物捏塑 — 手部肌力與立體造型",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art"
+                        ],
+        "duration":  "30分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "精細動作與手部協調",
+                       "感覺處理與情緒調節"
+                   ],
+        "materials":  [
+                          "彩色無毒超輕黏土",
+                          "工作墊板每人一塊",
+                          "造型黏土塑刀或安全印章"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "高齡長照",
+                     "黏土捏塑",
+                     "手部肌力",
+                     "精細動作"
+                 ],
+        "source_file":  "第三週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "黏土能提供深層觸覺與本體覺輸入。透過雙手掌心揉球、指腹搓長條與指尖按壓吸盤，全面訓練手部內在肌力與立體造型概念。",
+                                                     "goals":  [
+                                                                   "訓練掌心揉圓球與雙手對稱搓揉長條狀技巧",
+                                                                   "運用食指指腹按壓出細微黏土吸盤與紋路之分離動作",
+                                                                   "促進創造力造型表現與觸覺感官調適"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩色無毒超輕黏土、工作墊板每人一塊、造型黏土塑刀或安全印章",
+                                                           "alternatives":  "超輕土可用彩色麵粉糰自製替代；塑刀可用冰棒棍替代。",
+                                                           "environment":  "桌面上鋪設防沾黏工作墊板，中央放置黏土材料盒供自由選色。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【分解動作示範（約 5 分鐘）】：\n分步驟示範如何搓出大小圓球組合章魚頭與觸手，以及如何搓條彎曲成毛毛蟲。\n\n【黏土捏塑創作（約 20 分鐘）】：\n學員跟隨指導語捏出動物身體、加上眼睛黑珠，並利用塑刀壓出紋理，完成立體作品。\n\n【動物展示與洗手（約 5 分鐘）】：\n展示可愛的毛毛蟲與章魚作品，互相欣賞命名，落實洗手收拾習慣。",
+                                            "reflection":  "【分享與回饋（5-10分鐘）】：成果展示與同儕回饋，正向增強。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供已切好等份之黏土球，學員僅需進行壓扁組合；減少肢體配件複雜度。",
+                                         "grading_up":  "要求自主混色（如黃加藍調出綠色），並做出蝸牛螺旋殼或章魚吸盤等微型細節。"
+                                     },
+                         "safety_and_contraindications":  "黏土嚴禁放入口中吞食；避免黏土沾染衣物與地毯。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝"
+                             ]
+    },
+    {
+        "id":  "ped-wk4-obstacle-soccer",
+        "title":  "角錐障礙足球射門 — 動作計畫與繞錐協調",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "motor",
+        "group_types":  [
+                            "motor"
+                        ],
+        "duration":  "25分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "動作協調與平衡控制",
+                       "執行功能與認知規劃"
+                   ],
+        "materials":  [
+                          "彩色障礙角錐4-6個",
+                          "皮球2顆",
+                          "雪花片組裝球門",
+                          "計分表"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "動作計畫",
+                     "粗大動作",
+                     "障礙運球",
+                     "足球射門"
+                 ],
+        "source_file":  "第四週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "S型繞錐運球需要大腦連續調整身體重心與腳力方向，結合終點起腳射門，能深度訓練動作計畫能力（Motor Planning）與身體協調。",
+                                                     "goals":  [
+                                                                   "訓練下肢S型連續繞錐控球之動態協調與煞停控制",
+                                                                   "增進空間方向知覺判斷與繞過障礙後之瞄準射門能力",
+                                                                   "提升遵守輪流與球道動線規則的自我控制力"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩色障礙角錐4-6個、皮球2顆、雪花片組裝球門、計分表",
+                                                           "alternatives":  "角錐可用裝滿水之寶特瓶或小紙箱替代；球門可用兩張椅子替代。",
+                                                           "environment":  "直線跑道上每隔1公尺擺設一個角錐形成S型路線，終點設置球門。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【動線示範與練習（約 5 分鐘）】：\n帶領者示範如何小步帶球、左右閃避角錐不碰到錐體，最後在射門線停球射門。\n\n【繞錐射門挑戰（約 15 分鐘）】：\n學員依序出發控球繞錐射門，碰倒角錐需扶正扣分，成功進球者獲得計分獎勵。",
+                                            "reflection":  "【回饋與歡呼（約 5 分鐘）】：\n肯定學員在控球穩定度上的進步，頒發射門小英雄貼紙。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "角錐數量減少為2個且間距拉寬；允許用雙腳夾球前進或徒手推球前進。",
+                                         "grading_up":  "限制必須左右腳交替碰球運球，且射門距離拉遠至2公尺以外。"
+                                     },
+                         "safety_and_contraindications":  "運球動線兩側保持寬敞淨空；嚴禁踢球用力過猛擊中路過同儕。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "ped-wk4-cup-pinwheel",
+        "title":  "旋轉紙杯風車手作 — 精細組裝與口腔吹氣動作",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "30分鐘",
+        "group_size":  "6-8人",
+        "skills":  [
+                       "精細動作與手部協調",
+                       "感覺處理與情緒調節"
+                   ],
+        "materials":  [
+                          "彩色紙杯（畫好6條加粗黑線）",
+                          "安全剪刀",
+                          "吸管",
+                          "棉花棒",
+                          "小毛球",
+                          "保麗龍膠",
+                          "彩色筆"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "口腔動作",
+                     "精細組裝",
+                     "風車手作",
+                     "工具操作"
+                 ],
+        "source_file":  "第四週計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "剪裁風車扇葉鍛鍊手指工具協調；組裝棉花棒軸心需要微細對準；對著風車用力吹氣則能提供強效口腔本體覺刺激與腹部肌力調控。",
+                                                     "goals":  [
+                                                                   "訓練沿黑線剪裁紙杯壁之雙手工具操作靈巧度",
+                                                                   "增進棉花棒穿孔與套入吸管之微小組裝眼手協調",
+                                                                   "促進嘴唇縮圓吹氣（Lip Rounding）之口腔動作控制與深呼氣調節"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩色紙杯（畫好6條加粗黑線）、安全剪刀、吸管、棉花棒、小毛球、保麗龍膠、彩色筆",
+                                                           "alternatives":  "風車軸心可用大頭針穿入鉛筆擦皮替代；保麗龍膠可用黏土暫時固定。",
+                                                           "environment":  "方桌配置，每桌配發安全剪刀、吸管與棉花棒材料盒。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【步驟分解示範（約 5 分鐘）】：\n示範沿著加粗黑線剪開杯壁、斜折扇葉、棉花棒穿過杯底小孔並固定小毛球。\n\n【風車組裝彩繪（約 20 分鐘）】：\n學員完成剪裁翻折，套入吸管手柄，彩繪杯身，並對準扇葉練習吹氣旋轉。\n\n【風車旋轉大賽與總結（約 5 分鐘）】：\n全體一起吹動風車比比誰轉得最久、回顧四週活動收穫、頒發結業禮物。",
+                                            "reflection":  "【分享與回饋（5-10分鐘）】：成果展示與同儕回饋，正向增強。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "杯壁預先由老師剪開，杯底孔洞已預先穿妥，學員專注於翻折扇葉與彩繪插管。",
+                                         "grading_up":  "需自行度量劃出等距扇葉線條，並設計雙重色彩旋轉視覺暫留效果。"
+                                     },
+                         "safety_and_contraindications":  "剪刀安全規範；提醒學員吹氣時節奏均勻，避免一口氣吹太急導致頭暈過度換氣。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "ped-rescue-food",
+        "title":  "拯救食物大作戰 — 兒童平衡動作與蔬果認知冒險",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "motor",
+        "group_types":  [
+                            "motor",
+                            "cognitive"
+                        ],
+        "duration":  "60分鐘",
+        "group_size":  "4-6人",
+        "skills":  [
+                       "動作協調與平衡控制",
+                       "執行功能與認知規劃"
+                   ],
+        "materials":  [
+                          "彩色魔筆卡片2組",
+                          "弧面長瓢蟲平衡墊",
+                          "蔬果2片式拼圖認知卡1盒",
+                          "圓桌與方桌"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "心智科早療",
+                     "動態平衡",
+                     "視覺認知",
+                     "拼圖配對"
+                 ],
+        "source_file":  "0417活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "藉由『打敗貪心怪獸奪回食物』的故事動機，在走弧面平衡橋過程中整合前庭本體平衡、視覺顏色辨識與口語命名。",
+                                                     "goals":  [
+                                                                   "訓練走在弧面長瓢蟲墊之動態姿勢控制與下肢平衡協調",
+                                                                   "提升視覺搜尋、顏色辨認與蔬果拼圖之形狀空間配對",
+                                                                   "增進口語命名表達與聽從二步驟指令之執行功能"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩色魔筆卡片2組、弧面長瓢蟲平衡墊、蔬果2片式拼圖認知卡1盒、圓桌與方桌",
+                                                           "alternatives":  "瓢蟲墊可用枕頭排列或觸覺步道代替；拼圖卡可用自製對半剪開圖卡替代。",
+                                                           "environment":  "圓桌（怪獸取卡區）→ 長瓢蟲墊（平衡橋）→ 方桌（動物的家拼圖區），單向循環闖關動線。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【情境故事與規則（約 10 分鐘）】：\n講述怪獸偷走蔬果的故事，說明小朋友要拿到對應色卡當鑰匙、走過瓢蟲橋撿拼圖才能救回食物。\n\n【三關卡冒險闖關（約 40 分鐘）】：\n學員依序出發：第一關看怪獸要什麼色卡並拿取；第二關走瓢蟲橋撿拾左右兩側拼圖；第三關到方桌完成2片拼圖並大聲說出蔬果名稱（進行2-3輪）。\n\n【慶祝與獎勵（約 10 分鐘）】：\n統計救回多少蔬果食物，表揚勇敢走平衡橋的學員，蓋印章獎勵。",
+                                            "reflection":  "【分享與回饋（5-10分鐘）】：成果展示與同儕回饋，正向增強。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "長瓢蟲墊由老師牽手輔助走；拼圖卡片只放2種蔬果提供2選1降低難度。",
+                                         "grading_up":  "拼圖改為背面朝上需盲摸翻面確認；要求說出該蔬果的口味特徵（如酸甜脆、長在樹上還土裡）。"
+                                     },
+                         "safety_and_contraindications":  "長瓢蟲墊兩側全程安排帶領者守護防止踩空摔倒；拼圖邊緣防割手。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "動作與體適能",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "ped-catch-thief-balance",
+        "title":  "抓小偷與平衡木運幣 — 專注持握與動態平衡",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "motor",
+        "group_types":  [
+                            "motor",
+                            "cognitive"
+                        ],
+        "duration":  "30分鐘",
+        "group_size":  "4-6人",
+        "skills":  [
+                       "精細動作與手部協調",
+                       "動作協調與平衡控制"
+                   ],
+        "materials":  [
+                          "尋找搗蛋龍卡牌與特徵卡",
+                          "金屬硬幣與分類籃",
+                          "平底/凹槽湯匙",
+                          "萬象組平衡木",
+                          "巧拼地墊",
+                          "服務鈴"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "手眼協調",
+                     "平衡木",
+                     "湯匙持握",
+                     "動態平衡"
+                 ],
+        "source_file":  "0424活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "結合偵探抓小偷情境，學員需根據特徵找出嫌疑犯，並用湯匙平穩托運硬幣走過平衡木，深度考驗手部靜止耐力與行進間動態平衡。",
+                                                     "goals":  [
+                                                                   "訓練手持湯匙運送硬幣不掉落之手部靜止與動作調控力",
+                                                                   "增進走在平衡木上的動態身體重心轉移能力",
+                                                                   "根據多項特徵卡（顏色、角、斑點）進行視覺搜尋判斷"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "尋找搗蛋龍卡牌與特徵卡、金屬硬幣與分類籃、平底/凹槽湯匙、萬象組平衡木、巧拼地墊、服務鈴",
+                                                           "alternatives":  "硬幣可用扁平棋子替代；平衡木可用地貼直線替代。",
+                                                           "environment":  "圓桌（特徵線索區）→ 平衡木（走廊路線）→ 方桌警察局（報案按鈴區）→ 巧拼跳格（回程路線）。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【情境導入與示範（約 5 分鐘）】：\n介紹小偷偷走錢幣的背景，示範看特徵卡抓出搗蛋龍、用湯匙舀起硬幣走平衡木。\n\n【抓小偷闖關（約 20 分鐘）】：\n學員依序出發，找到指定特徵卡恐龍，托著硬幣走平衡木送到警察局按鈴報案，再沿巧拼單雙腳跳回座位（進行2-3輪）。\n\n【總結表揚（約 5 分鐘）】：\n清點抓到多少小偷與找回多少硬幣，給予勇敢與平穩運幣的學員掌聲肯定。",
+                                            "reflection":  "【分享與回饋（5-10分鐘）】：成果展示與同儕回饋，正向增強。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "換用大深凹槽湯匙或徒手抓握硬幣運送；平衡木改為走地面寬直線。",
+                                         "grading_up":  "改用平底小塑膠湯匙運送50元大硬幣；增加特徵線索卡至4張複合特徵。"
+                                     },
+                         "safety_and_contraindications":  "硬幣與小卡全程嚴密監管嚴防誤吞放入口鼻；平衡木旁鋪設防護地墊。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "動作與體適能",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "ped-save-money-match",
+        "title":  "存錢筒分類大作戰與陰影配對 — 面額認知與視覺完形",
+        "population":  "pediatrics",
+        "populations":  [
+                            "pediatrics"
+                        ],
+        "group_type":  "adl",
+        "group_types":  [
+                            "adl",
+                            "cognitive"
+                        ],
+        "duration":  "30分鐘",
+        "group_size":  "4-6人",
+        "skills":  [
+                       "執行功能與認知規劃",
+                       "精細動作與手部協調"
+                   ],
+        "materials":  [
+                          "《撿到一塊錢》繪本故事書",
+                          "真實或玩具硬幣（1元、5元、10元、50元）",
+                          "多孔分類存錢筒",
+                          "類別配對賓果卡與陰影卡"
+                      ],
+        "tags":  [
+                     "兒童職能",
+                     "金錢概念",
+                     "視覺完形",
+                     "投幣精細動作",
+                     "IADL自理"
+                 ],
+        "source_file":  "0424活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "藉由品德繪本與存錢遊戲，教導拾金不昧觀念，訓練硬幣面額大小形狀區辨、微細投幣精細動作與陰影視覺完形能力。",
+                                                     "goals":  [
+                                                                   "認識不同面額硬幣之尺寸、重量與數字辨識",
+                                                                   "訓練指尖對準窄縫投入硬幣之精準精細捏放動作",
+                                                                   "提升陰影輪廓與實物圖卡之視覺完形（Visual Closure）配對"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "《撿到一塊錢》繪本故事書、真實或玩具硬幣（1元、5元、10元、50元）、多孔分類存錢筒、類別配對賓果卡與陰影卡",
+                                                           "alternatives":  "存錢筒可用打洞紙盒依硬幣尺寸割孔替代；配對卡可用自製剪影圖卡替代。",
+                                                           "environment":  "圓桌散佈陰影面卡與類別卡，方桌放置分類存錢筒與投幣孔。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引導（5-10分鐘）】：說明活動規則，示範動作要領，引導學員建立團體規範。",
+                                            "main_activity":  "【繪本導讀破冰（約 8 分鐘）】：\n講述棒棒貓撿到一塊錢的故事，討論撿到錢該怎麼辦，建立正確金錢觀念。\n\n【分類存錢與陰影配對（約 17 分鐘）】：\n任務一依帶領者指定類別找出卡片破解密碼投幣；任務二依物品輪廓陰影卡在10秒內將實物卡放回家（進行3-6輪）。",
+                                            "reflection":  "【回饋與清點（約 5 分鐘）】：\n搖動存錢筒聽聽錢幣聲音，討論錢幣存起來的用途，收拾教具。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "投幣孔加寬，只辨識1元與50元兩種對比顯著之面額；陰影配對提供半透明提示輪廓。",
+                                         "grading_up":  "需依指定金額組合（如湊出16元）挑出正確硬幣投入，並挑戰微細特徵之陰影剪影辨識。"
+                                     },
+                         "safety_and_contraindications":  "零錢硬幣嚴密清點清收，嚴禁放入口鼻；投幣時注意孔緣防夾手。"
+                     },
+        "population_names":  [
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "日常生活功能",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "psych-social-qa",
+        "title":  "生活問答練功坊（社交常識與健康知識大比拼）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "geriatric-care"
+                        ],
+        "group_type":  "cognitive",
+        "group_types":  [
+                            "cognitive",
+                            "social"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "現實導向與認知檢索",
+                       "同儕合作與社交表達",
+                       "日常生活健康衛教認知"
+                   ],
+        "materials":  [
+                          "生活衛教問答題目卡",
+                          "計分小白板與白板筆",
+                          "搶答按鈴或手舉號碼牌",
+                          "獎勵貼紙或小點心"
+                      ],
+        "tags":  [
+                     "現實導向",
+                     "生活常識",
+                     "小組合作",
+                     "認知激盪",
+                     "精神科病房"
+                 ],
+        "source_file":  "0209益智團體活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "精神科急性或慢性住院病友常因長時間脫離社區作息，對外界時令、健康常識及日常自理知識感知鈍化。藉由輕鬆趣味的搶答競賽，重燃成員對日常現實的關注，並透過分組合作減少人際孤立。",
+                                                     "goals":  [
+                                                                   "增強成員的現實導向能力與日常健康照護認知（如飲食營養、規律服藥重要性）。",
+                                                                   "提升注意力集中度與語言表達參與度，達到至少主動發言或參與討論2次以上。",
+                                                                   "促進小組內的溝通互助與包容，體驗團隊合作達成目標的成就感。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "問答題目牌（分生活、健康、節慶三大類）、搶答手舉牌或按鈴4組、計分白板、白板筆、獎勵小卡。",
+                                                           "alternatives":  "若無專用搶答鈴，可使用不同顏色紙板或鼓掌舉手示意。",
+                                                           "environment":  "病房多功能活動室。學員分成2至3組圍坐，每組配置一張方桌；治療師站在前方面對全員，維持動線開闊，方便觀察個別情緒動態。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身破冰（10分鐘）】：治療師開場問候，引導學員自我介紹並報出今天的日期與星期（強化定向感）。簡要說明活動規則與尊重他人發言之團體契約。",
+                                            "main_activity":  "【主要競賽（30分鐘）】：\n1. 暖身回合（每組輪流作答，建立安全感與自信）。\n2. 搶答回合（題目涵蓋日常生活自理、慢性病預防、健康飲食與病房規範，隊員需共同討論後由代表按鈴作答）。\n3. 治療師於每次作答後給予即時回饋並補充實用的衛教常識，適時鼓勵較沉默成員發表意見。",
+                                            "reflection":  "【分享與結算（10分鐘）】：結算各組積分並頒發榮譽鼓勵；引導學員分享在團隊討論時的心得，強化成員的正向自我效能感。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "降低題目難度為二選一是非題或圖片辨識；延長討論時間；由治療師或協同人員提供口語提詞輔助。",
+                                         "grading_up":  "增加開放式情境問題（如：遇到室友情緒不穩時如何妥善應對？），要求成員提供理由並進行角色模擬。"
+                                     },
+                         "safety_and_contraindications":  "注意防範成員因競賽好勝心引發口角衝突或躁動；白板筆需專人保管並於活動結束時落實清點；對表現落後的隊伍持續給予正向肯定，避免挫折誘發退縮。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "認知與益智",
+                                 "社交與溝通"
+                             ]
+    },
+    {
+        "id":  "psych-lantern-origami",
+        "title":  "喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "geriatric-care",
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "6-10人",
+        "skills":  [
+                       "雙手對稱協調與精細動作",
+                       "步驟記憶與結構組裝",
+                       "節慶感官活化與美感表達"
+                   ],
+        "materials":  [
+                          "彩色西卡紙與軟質瓦楞紙",
+                          "安全塑膠剪刀",
+                          "雙面膠與安全口紅膠",
+                          "流蘇與手提提繩",
+                          "安全圓頭彩色筆"
+                      ],
+        "tags":  [
+                     "元宵節慶",
+                     "紙工藝",
+                     "精細操作",
+                     "成就感建立",
+                     "安全刀具管制"
+                 ],
+        "source_file":  "0223手工藝團體活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "結合元宵傳統節慶元素，喚起病友的美好生活經驗與節慶愉悅感；透過紙張對摺、等距剪切與環狀立體接合，活化手指小肌肉耐力及順序執行功能。",
+                                                     "goals":  [
+                                                                   "增進雙手對稱協調與工具使用能力，獨立完成燈籠剪裁與黏合。",
+                                                                   "強化步驟記憶與按部就班的執行耐性，延遲滿足與提升專注維持時間。",
+                                                                   "透過色彩自由搭配與圖樣裝飾，提供非口語的情緒舒緩與表達管道。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "各色色紙與美術厚卡紙、塑膠安全剪刀（嚴格編號管制）、口紅膠、彩色筆、彩色流蘇與提繩。",
+                                                           "alternatives":  "若缺乏現成流蘇，可用色紙手撕成細條狀替代；或使用預先剪切好的材料包簡化步驟。",
+                                                           "environment":  "病房日光室長桌，學員一字排開或U字型圍坐，以利治療師巡迴協助與監督剪刀安全使用。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身引言（10分鐘）】：治療師展示傳統元宵燈籠範例，引導成員回憶童年逛燈會或吃湯圓的經驗，建立團體暖意氛圍。",
+                                            "main_activity":  "【動手實作（30分鐘）】：\n1. 挑選喜愛的紙張顏色，對摺後沿邊緣等距畫線並依序剪開流蘇條紋（不剪斷邊緣）。\n2. 將紙張捲成圓筒狀，將上下邊緣重疊黏合，使中間條紋自然向外蓬起形成立體燈籠柱。\n3. 在燈籠底部黏貼流蘇，上方穿入提把。\n4. 在燈籠表面畫上祝賀字樣或可愛吉祥圖案。",
+                                            "reflection":  "【欣賞與反思（10分鐘）】：學員將作品懸掛或手持點亮（若有電子小茶蠟），互相讚賞彼此作品的巧思，由治療師總結並收回保管剪刀器具。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供已預先畫好輔助剪裁虛線之紙張，或由治療師協助固定紙張邊緣，成員僅需負責對摺與黏合。",
+                                         "grading_up":  "引導成員挑戰更複雜的雙層雙色鏤空雕花剪裁，或自行設計對稱花邊與立體裝飾配件。"
+                                     },
+                         "safety_and_contraindications":  "【精神科病房最高安全準則】：所有剪刀、尺規等工具必須編號並於活動開始與結束前「雙人清點」確認無誤後入鎖箱；預防個案情緒低落時自傷或藏匿刀具。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "高齡長照",
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "psych-riddle-quiz",
+        "title":  "迎春智慧王（生活常識與節慶猜燈謎）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "geriatric-care"
+                        ],
+        "group_type":  "cognitive",
+        "group_types":  [
+                            "cognitive",
+                            "social"
+                        ],
+        "duration":  "45分鐘",
+        "group_size":  "8-15人",
+        "skills":  [
+                       "語意聯想與推理理解",
+                       "聽覺專注力",
+                       "輪流等待與人際互動契約遵守"
+                   ],
+        "materials":  [
+                          "彩色列印燈謎題卡",
+                          "白板與計分筆",
+                          "搶答籤筒或搶答鈴",
+                          "象徵性獎勵品"
+                      ],
+        "tags":  [
+                     "猜燈謎",
+                     "語意理解",
+                     "思考靈活度",
+                     "節慶認知",
+                     "精神科病房"
+                 ],
+        "source_file":  "0302益智團體計劃書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "透過民俗猜燈謎的形式，結合日常生活字謎、物品猜測與諧音趣味，刺激精神科病友的大腦聯想力與抽象思考能力，打破思維僵化與社交冷漠。",
+                                                     "goals":  [
+                                                                   "改善語意理解與邏輯推理能力，增進文字概念聯想速度。",
+                                                                   "遵守團體發言規範（如：聽完題目後舉手/搶答），訓練衝動控制與人際輪流輪替。",
+                                                                   "享受猜中謎底時的成就感，提升自發性社交參與意願。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "精選猜燈謎卡片（依難度分為綠標日常題、黃標字謎題、紅標腦筋急轉彎）、白板、白板擦、記分板。",
+                                                           "alternatives":  "亦可將題目投影於電視螢幕或以大字報張貼在牆面。",
+                                                           "environment":  "安靜不受干擾的病房團體室，椅子排成半圓形面向謎題板，確保每位病友都能看清字跡並聽到題目朗讀。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【暖身說明（10分鐘）】：治療師朗讀示範一題簡單幽默的生活燈謎，讓學員掌握謎面與謎底的思考脈絡，並宣導答題輪流規則。",
+                                            "main_activity":  "【智慧解謎（25分鐘）】：\n1. 第一階段：日用品與水果謎語（具象圖像提示，人人皆可答）。\n2. 第二階段：文字拆解趣味謎（訓練字形分析與抽象空間概念）。\n3. 第三階段：生活常識情境搶答（鼓勵同桌夥伴小聲商討後共同回答）。\n4. 治療師對未能答對者給予提示引導，確保每位成員在團體中皆有發言與被肯定的機會。",
+                                            "reflection":  "【總結與頒獎（10分鐘）】：統計搶答榮譽分，頒發智慧王錦旗或榮譽小卡；邀請病友分享哪一題最有趣，並以生活祝福作結。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供多選一選項（如三選一提示卡）；提供字首或字尾口語提點；以實物或圖像輔助謎面。",
+                                         "grading_up":  "鼓勵學員自創題目讓其他成員猜測；限制不得提供選項，需自行推論文字結構。"
+                                     },
+                         "safety_and_contraindications":  "注意成員情緒波動，防止少數較強勢病友壟斷答題機會而引發其他人退縮或不滿；隨時調解爭端並維繫平和歡樂的團體氣氛。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "認知與益智",
+                                 "社交與溝通"
+                             ]
+    },
+    {
+        "id":  "psych-firefly-origami",
+        "title":  "暗夜微光螢火蟲與立體草叢創作（雙色螢火蟲摺紙與剪齒草叢情境組裝）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "pediatrics",
+                            "geriatric-care"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "6-10人",
+        "skills":  [
+                       "精準對齊與按壓摺線能力",
+                       "剪刀連續排剪技巧",
+                       "希望感建立與沉浸式放鬆"
+                   ],
+        "materials":  [
+                          "黃黑雙色色紙（螢火蟲身體）",
+                          "深綠與翠綠厚紙板（草叢）",
+                          "螢光黃點點貼紙或夜光顏料",
+                          "編號安全剪刀",
+                          "口紅膠"
+                      ],
+        "tags":  [
+                     "螢火蟲",
+                     "希望微光",
+                     "剪齒草叢",
+                     "精細動作",
+                     "精神科病房"
+                 ],
+        "source_file":  "0421手功能團體活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "螢火蟲象徵「在最黑的夜裡，也能發出屬於自己的光」。透過黑色甲殼與黃色發光腹部的摺紙折疊，結合連續排剪草叢齒狀結構，整合精細動作，並帶來強烈的溫暖心理支持。",
+                                                     "goals":  [
+                                                                   "改善手眼協調與連續剪切之穩定度（連續排剪草尖不剪斷底部）。",
+                                                                   "精進折紙手指細節塑形，完成多角度折合結構。",
+                                                                   "透過黑暗中微光的意象引導，減緩成員的憂鬱情緒與無望感。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "黑黃雙色色紙、綠色西卡紙、夜光黃貼紙、深藍色星空圖畫紙、安全管制剪刀、口紅膠。",
+                                                           "alternatives":  "若無雙色色紙，可用黑色色紙尾端貼上一截黃色色紙代替。",
+                                                           "environment":  "稍微調暗環境光線或營造夜色情境之活動室，營造沉穩舒適之放鬆空間。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【夜空微光故事（10分鐘）】：治療師分享夏夜螢火蟲的生命故事，點亮一盞微小黃光小夜燈，引發成員放鬆呼吸與好奇心。",
+                                            "main_activity":  "【螢火蟲與夜草創作（30分鐘）】：\n1. 【剪製立體草叢】：將綠色紙條對折，利用安全剪刀沿上緣連續斜剪出一排鋸齒狀草尖（保留下方1公分作為基底），手指輕輕往外撥開使草叢立體化。\n2. 【摺疊螢火蟲】：色紙對折成三角形，兩翼向後斜折露出尾部黃色腹部，上方折出三角小頭部，貼上圓眼睛。\n3. 【發光細節】：在腹部黏貼螢光貼紙或塗上夜光筆。\n4. 【情境拼貼】：將茂密立體草叢黏貼在深藍夜空底板下緣，螢火蟲穿插停留在草尖或飛舞於空中。",
+                                            "reflection":  "【點亮自我的光（10分鐘）】：全體圍坐，逐一展示作品。治療師請每人說出一件「雖然現在很辛苦，但依然支持自己的一件小好事（自己的微光）」，收回工具並暖心告別。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "治療師預先剪好草叢鋸齒，病友專注於將草撥開與黏貼；螢火蟲摺法簡化為兩步折疊。",
+                                         "grading_up":  "挑戰折出不同展翅飛翔角度之群螢；自行用白粉筆手繪夜空星雲與月光光暈。"
+                                     },
+                         "safety_and_contraindications":  "嚴格實施刀具清點原則（剪刀進出皆清點）；活動結束務必確認所有刀具歸位；引導成員正向聚焦，若有病友因情緒觸動流淚，由協同治療師在旁給予陪伴同理。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "兒童職能",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "psych-cherry-blossom",
+        "title":  "櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "geriatric-care"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "80分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "指尖精細動作協調",
+                       "空間幾何對折與剪裁",
+                       "感官美感表達與情緒安定"
+                   ],
+        "materials":  [
+                          "粉色雙面色紙",
+                          "美術厚卡紙底板",
+                          "編號管制安全剪刀",
+                          "口紅膠與白膠",
+                          "棕色水彩或色筆"
+                      ],
+        "tags":  [
+                     "櫻花手作",
+                     "立體摺紙",
+                     "剪紙藝術",
+                     "精細動作",
+                     "精神科病房"
+                 ],
+        "source_file":  "0312手工藝團體計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "藉由春暖花開的自然美景喚醒生命感知。結合單片立體花瓣摺紙組裝五瓣立體櫻花，以及紙張對摺剪裁對稱鏤空櫻花，在多步驟操作中活化雙手精細動作與步驟記憶，舒緩住院焦慮與封閉感。",
+                                                     "goals":  [
+                                                                   "提升指尖對指捏力與雙手間剪紙折紙協調穩定度",
+                                                                   "維持連續性注意力與步驟工作記憶達25分鐘以上",
+                                                                   "透過立體與平面花朵錯落構圖，體驗自我創作之成就感與美感療癒"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "粉色色紙、編號安全剪刀、口紅膠、棕色水彩或色筆、四開美術底紙",
+                                                           "alternatives":  "可用一般粉色彩紙或便條紙代替；若剪刀管制嚴格可由治療師提供預壓紙花",
+                                                           "environment":  "病房多功能職能治療室長桌配置，桌面光線充足，備有剪刀管制架"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【手指暖身與春日引言（10分鐘）】：帶領手指伸展操，治療師展示盛開立體櫻花範本，引導成員分享對春天的美好期盼。",
+                                            "main_activity":  "【立體摺疊與剪紙拓印（60分鐘）】：\n1. 示範立體五瓣花瓣折疊，指導成員依序折出5瓣並抹膠組合成盛開立體花。\n2. 將色紙連續對折剪出對稱平面櫻花。\n3. 繪製或拓印棕色樹枝幹，將立體花與剪紙落花錯落黏貼，完成滿樹繁花美景。",
+                                            "reflection":  "【花開相賞與工具清點（10分鐘）】：陳列全員作品相互讚賞，落實剪刀雙人清點歸位鎖存。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供已折出中心基準線之色紙；剪紙弧度預先畫好紅線，或由治療師協助組裝花瓣。",
+                                         "grading_up":  "挑戰雙色多層次立體櫻花，並手繪精細枝幹光影與微型花蕊細節。"
+                                     },
+                         "safety_and_contraindications":  "嚴格執行精神科病房利器管制規範：剪刀活動前後專人清點核對；使用黏膠時注意勿誤食沾染。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "psych-baseball-origami",
+        "title":  "澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "geriatric-care"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "80分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "折紙平整度控制與指力",
+                       "手腕握筆穩定與雙側整合",
+                       "生活經驗懷舊與休閒動機誘發"
+                   ],
+        "materials":  [
+                          "各色彩色摺紙（15x15cm）",
+                          "白色圓形厚紙板",
+                          "紅色細簽字筆",
+                          "綠色球場底紙",
+                          "號碼貼紙與口紅膠"
+                      ],
+        "tags":  [
+                     "棒球回憶",
+                     "制服摺紙",
+                     "手部肌力",
+                     "懷舊體育",
+                     "精神科病房"
+                 ],
+        "source_file":  "0319手工藝團體計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "結合高雄在地澄清湖棒球場生活地緣記憶，以國球運動為主題，透過精細折出棒球衣、球帽，以及在圓形球面上手繪對稱紅色V型縫線，全面鍛鍊手部精細操作與耐力，有效誘發病友之正向話題與運動熱情。",
+                                                     "goals":  [
+                                                                   "鍛鍊手指末梢捏壓折線與握筆畫線穩定度",
+                                                                   "喚醒棒球運動賽事記憶，提升自發性社交分享意願",
+                                                                   "在二維球場底紙上完成守備位置與球衣組合，增進空間配置能力"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "隊伍特色色彩紙、白色圓形棒球紙卡、紅色細筆、綠色扇形草地底卡、號碼貼紙、口紅膠",
+                                                           "alternatives":  "若無專色彩紙可用普通色紙並自行彩繪條紋；縫線亦可用紅毛線拼貼代替",
+                                                           "environment":  "病房交誼廳長桌，前方配有步驟分解圖示大卡板與棒球老照片"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【熱血球迷相見歡（10分鐘）】：治療師展示澄清湖棒球場照片與經典球星球衣，喚起運動回憶與活力。",
+                                            "main_activity":  "【球衣折疊與棒球彩繪（60分鐘）】：\n1. 【球衣球帽】：四角對折翻面折出立領、袖口與下擺，折成立體棒球帽並貼上專屬背號。\n2. 【縫製棒球】：在圓形卡片上描繪弧形雙線，細緻畫上密集V字紅色縫針。\n3. 【球場組裝】：在綠色鑽石球場上黏貼壘包與球員配備，完成個人化棒球海報。",
+                                            "reflection":  "【明星球員進場分享（10分鐘）】：成員扮演代表隊伍發表演說，分享背號的幸運意義，互相擊掌鼓勵。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供每一步驟已折好一半的輔助半成品；棒球縫線提供灰色淡點引導連線。",
+                                         "grading_up":  "自行設計隊伍Logo與主客場條紋；精確繪製投手丘與全壘打牆。"
+                                     },
+                         "safety_and_contraindications":  "注意筆具保管防破壞或吞食；維持友善賽事討論，避免因支持球隊不同引發激烈爭吵。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "psych-clover-handcraft",
+        "title":  "手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）",
+        "population":  "psychiatric-inpatient",
+        "populations":  [
+                            "psychiatric-inpatient",
+                            "community-psychiatry",
+                            "geriatric-care",
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "75分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "雙手對稱協調與指尖捏壓",
+                       "細長紙條旋轉捲曲操作",
+                       "正向心理希望象徵引導"
+                   ],
+        "materials":  [
+                          "淺綠與深綠粉彩紙",
+                          "編號管制安全剪刀",
+                          "捲莖圓棒或鉛筆",
+                          "多彩花紋蝴蝶色紙",
+                          "口紅膠與白膠"
+                      ],
+        "tags":  [
+                     "幸運草",
+                     "立體蝴蝶",
+                     "捲紙工藝",
+                     "正向賦能",
+                     "精神科病房"
+                 ],
+        "source_file":  "0407活動企劃書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "四葉幸運草寓意愛、希望與信念，彩蝶象徵破繭成蝶的復元奇蹟。結合對稱剪折四枚愛心葉片、旋轉捲曲立體紙莖，以及立體摺翅彩蝶，提供多重手部精細操作刺激，傳遞深層正向心理賦能。",
+                                                     "goals":  [
+                                                                   "訓練雙手對稱協調及手指旋轉操作細長紙條能力",
+                                                                   "改善安全剪刀沿弧線平整修剪技巧與空間對稱知覺",
+                                                                   "透過作品美好象徵意涵，減輕住院抑鬱情緒，提升自我接納"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "深淺綠色美術紙、花色蝶翼紙、安全編號剪刀、細圓棒、口紅膠、四開底紙",
+                                                           "alternatives":  "若無法捲紙可用綠色粗吸管或毛根代替莖部；蝴蝶可直接用貼紙替代",
+                                                           "environment":  "病房職能治療活動室，桌面配備剪刀收納架，環境明朗溫馨"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【幸運傳說與放鬆（10分鐘）】：分享幸運草四片葉子與蝴蝶蛻變的故事，請成員許下一個送給自己的溫暖祝福。",
+                                            "main_activity":  "【幸運草與彩蝶工藝（55分鐘）】：\n1. 【心型葉片】：對折剪裁四枚愛心葉片，中折立體拼合成四葉草冠。\n2. 【捲曲立體莖】：將長綠紙條斜捲於筆管上抽出，形成彈性立體花莖。\n3. 【翩翩彩蝶】：色紙對折剪出上下對稱翅膀並折出立體飛翔姿態，棲息於幸運草葉面上。",
+                                            "reflection":  "【祝福傳情與工具清點（10分鐘）】：手捧作品向同儕說一句祝福，雙人清點回收剪刀並鎖存。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供預先剪好之厚紙心型板描線；花莖以手繪或貼現成紙條代替；蝴蝶只做平面彩繪。",
+                                         "grading_up":  "製作雙層漸層色葉片；在蝴蝶翅膀上剪出精美鏤空蕾絲窗花。"
+                                     },
+                         "safety_and_contraindications":  "落實病房利器管制，剪刀全程專人列管防自傷；隨時關照成員挫折感與低落情緒。"
+                     },
+        "population_names":  [
+                                 "精神科病房",
+                                 "社區精神復健",
+                                 "高齡長照",
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "comm-nutrition-plate",
+        "title":  "「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "geriatric-care",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "adl",
+        "group_types":  [
+                            "adl",
+                            "cognitive"
+                        ],
+        "duration":  "80分鐘",
+        "group_size":  "10-15人",
+        "skills":  [
+                       "獨立生活健康飲食管理",
+                       "六大類食物比例幾何分配",
+                       "外食採買健康決策判斷"
+                   ],
+        "materials":  [
+                          "各類食物圖卡與超商DM",
+                          "紅黃綠分類地墊與餐盤紙",
+                          "剪刀與膠水",
+                          "我的餐盤口訣衛教大字報"
+                      ],
+        "tags":  [
+                     "我的餐盤",
+                     "食物紅綠燈",
+                     "IADL獨立生活",
+                     "健康外食",
+                     "社區精神復健"
+                 ],
+        "source_file":  "0326益智團體活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "精神復健學員常受抗精神病藥物代謝影響有肥胖與三高風險。結合紅黃綠食物燈號趣味分類與衛福部『我的餐盤』六大口訣，將營養知識轉化為具體可操作的餐盤拼貼與外食預算採買規劃，提升IADL自理技能。",
+                                                     "goals":  [
+                                                                   "正確辨識紅黃綠食物屬性達80%以上，建立健康外食警覺性",
+                                                                   "熟記六大類食物比例（飯菜肉果），於圓形餐盤中正確配置菜色",
+                                                                   "提升小組協商與預算控制能力，完成一週均衡採買規劃"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩色食材圖卡、紅黃綠燈墊、紙餐盤、超市特價DM、剪刀、口紅膠、白板",
+                                                           "alternatives":  "若無模型圖卡可直接剪貼實體宣傳單，亦可用黏土捏塑菜色",
+                                                           "environment":  "日間病房多功能教室，設置小組討論桌與大投影白板"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【外食大調查與口訣操（10分鐘）】：分享昨天吃了什麼外食，比劃『拳頭大、掌心厚』口訣操喚醒記憶。",
+                                            "main_activity":  "【紅綠燈搶答與餐盤主廚（60分鐘）】：\n1. 【食物燈號分類】：小組輪流將高油糖（紅）、適量（黃）、天然原型（綠）食物放置於正確燈區。\n2. 【我的餐盤手作】：在紙盤畫出比例分區，剪貼健康食材填滿餐盤，並估算採買預算。\n3. 扮演大主廚互相評分彼此的營養均衡度。",
+                                            "reflection":  "【每週減糖小約定（10分鐘）】：每位學員口頭承諾本週減少一次含糖飲料，收繳剪刀並互道加油。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "餐盤提供預印色塊引導框；食材圖卡背面直接標註所屬類別以利核對。",
+                                         "grading_up":  "加入糖尿病低升糖或高血壓低鈉菜單限制，挑戰有限預算採買全套綠燈套餐。"
+                                     },
+                         "safety_and_contraindications":  "剪刀清點管制；避免評判學員體重或經濟狀況引發自卑，著重正向鼓勵。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "高齡長照",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "日常生活功能",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "comm-situational-bingo",
+        "title":  "應變達人九是你（日常突發情境與解決方案九宮格連線）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "geriatric-care"
+                        ],
+        "group_type":  "cognitive",
+        "group_types":  [
+                            "cognitive",
+                            "social"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "生活問題解決與應變決策",
+                       "認知靈活度與同儕討論",
+                       "情緒調適與抗壓技巧"
+                   ],
+        "materials":  [
+                          "九宮格大題板",
+                          "情境題目卡20張（水電失修、迷路、錢包遺失、室友爭執等）",
+                          "解方連線棋子或白板筆",
+                          "榮譽獎狀"
+                      ],
+        "tags":  [
+                     "問題解決",
+                     "危機應變",
+                     "獨立生活",
+                     "九宮格遊戲",
+                     "社交技能"
+                 ],
+        "source_file":  "呈泰第一次活動.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "精神康復學員在社區獨立生活時，遇到突發狀況（如鑰匙反鎖、電表跳電、遭人誤解）容易陷入焦慮恐慌或採取逃避行為。透過九宮格賓果競賽，將真實生活危機情境遊戲化，幫助學員在安全環境中演練問題解決步驟，建立自我解決信心。",
+                                                     "goals":  [
+                                                                   "學習將突發問題定義清楚，並提出至少2種以上合理可行之求助或應變途徑。",
+                                                                   "增進小組成員間的腦力激盪與分工討論，提升團隊合作技巧。",
+                                                                   "降低面對生活意外事件的焦慮感，增進生活適應抗壓韌性。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "每組一張3x3九宮格賓果卡、日常危機情境抽題箱、解題策略卡、計分白板與白板筆。",
+                                                           "alternatives":  "亦可在地面用粉筆畫出大型九宮格，由學員身體實際站位進行人體賓果連線。",
+                                                           "environment":  "復健中心寬敞的多功能教室，分設紅藍兩隊長桌，前置大投影或白板。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【情境小劇場破冰（10分鐘）】：治療師搞笑演繹「出門發現沒帶錢包怎麼辦？」的情境，引導學員七嘴八舌獻策，打破嚴肅氣氛。",
+                                            "main_activity":  "【九宮格攻防連線（30分鐘）】：\n1. 每組九宮格格子填入不同生活情境（如：鄰居音樂太吵、瓦斯爐忘記關、公車搭錯方向等）。\n2. 輪流抽籤選題，該組必須在2分鐘內透過小組討論，提出「第一步做什麼？第二步找誰求助？」，經全場公認可行後即可佔領該格子。\n3. 先完成一條線（橫、豎、斜）的隊伍喊出「應變達人九是我！」，並分享其獲勝策略。\n4. 治療師於每題解答後梳理核心資源電話（如：110、119、1999、社區關懷訪視員電話）。",
+                                            "reflection":  "【回顧與小抄卡製作（10分鐘）】：引導成員將今天最受用的3個緊急求助電話或應變步驟寫在小隨身卡放入錢包，互相給予掌聲肯定。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供四選一選擇題策略卡，學員只需討論選出最佳卡片；由治療師擔任引導隊友提點線索。",
+                                         "grading_up":  "情境增加壓力干擾（如限時30秒作答，或情境中包含對方態度惡劣的情緒溝通要素），考驗情緒管理與應對冷靜度。"
+                                     },
+                         "safety_and_contraindications":  "情境設計應避免過於創傷性之事件（如重大火災、暴力攻擊）；若學員分享過往挫折經驗引起情緒低落，治療師應及時同理並引導聚焦於現有資源之保護。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "認知與益智",
+                                 "社交與溝通"
+                             ]
+    },
+    {
+        "id":  "comm-tear-art",
+        "title":  "撕在有藝思（手撕彩紙肌理拼貼與心境抒發）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "psychiatric-inpatient",
+                            "geriatric-care"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "motor"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "6-10人",
+        "skills":  [
+                       "手部近端肌力與雙手間反向撕裂協調",
+                       "非結構化藝術減壓與情緒宣洩",
+                       "視覺色彩感受力"
+                   ],
+        "materials":  [
+                          "多彩棉紙、報紙、廣告傳單、各色粉彩紙",
+                          "大張八開底圖紙板",
+                          "安全白膠與大水彩刷",
+                          "濕紙巾"
+                      ],
+        "tags":  [
+                     "手撕畫",
+                     "情緒宣洩",
+                     "肌理質感",
+                     "免工具安全",
+                     "社區精神復健"
+                 ],
+        "source_file":  "呈泰第三次活動.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "精神康復學員有時會受限於「我不會畫畫」的框架而抗拒藝術創作。手撕紙張帶有獨特的粗糙白邊纖維肌理與撕紙聲響，能提供極佳的聽覺與本體覺宣洩效果；無對錯的自由撕貼更能解除焦慮，重拾創作主控權。",
+                                                     "goals":  [
+                                                                   "透過雙手反向用力撕紙，訓練手部拇指食指側邊捏力（Lateral Pinch）與肩肘近端穩定度。",
+                                                                   "藉由撕裂紙張的物理動作與碎紙重組過程，安全宣洩內在壓抑情緒或焦躁不安。",
+                                                                   "不拘形式自由構圖，重塑美感經驗，提升自尊與自我效能感。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "各種不同厚度與質感的紙張（牛皮紙、亮面雜誌、日本棉紙、舊報紙、彩色色紙）、白膠水、小塑膠水彩刷、八開素色厚紙底板。",
+                                                           "alternatives":  "若無專用紙張，舊廣告紙與過期日曆紙是極佳且環保的材料。",
+                                                           "environment":  "中心美勞工作坊，桌面鋪滿舊報紙，允許學員盡情撕紙灑落，不受拘束。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【聽！撕紙的聲音（10分鐘）】：治療師示範大聲撕裂厚報紙的清脆聲響，請全體學員閉上眼睛傾聽，並發給每人一張廢紙，一起用力撕開「把煩惱撕碎」，引發全場歡笑與放鬆。",
+                                            "main_activity":  "【撕貼萬花筒創作（30分鐘）】：\n1. 【搜集碎片】：學員挑選不同顏色與紋理的紙張，撕出大塊背景底色、細長條紋、小碎屑與幾何塊面。\n2. 【色彩堆疊】：用水彩刷在底板塗上稀釋白膠，由大到小、由背景到前景自由拼貼。可以是抽象的心情色塊流動，也可以是具體的大樹、太陽、山海風景。\n3. 【肌理塑造】：刻意保留撕裂時產生的白色毛邊，營造如油畫般的豐富層次感。",
+                                            "reflection":  "【解讀我的心情畫（10分鐘）】：大家共同將作品貼上展示板。治療師引導每位學員為自己的作品取一個名字，並分享撕紙過程中心情的轉變，最後給予溫暖回饋。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "底板上預先用粗奇異筆畫好簡單輪廓（如花瓶、富士山），學員僅需撕出色塊將內部填滿；使用較易撕開之軟質棉紙。",
+                                         "grading_up":  "挑戰利用微型手撕紙屑進行精緻印象派點描拼貼；或使用單一色系（如深藍、淺藍、灰藍）挑戰層次光影明暗表現。"
+                                     },
+                         "safety_and_contraindications":  "全程無需使用任何剪刀與利器，極度安全；注意膠水防沾手，備妥濕紙巾；對於強迫症傾向（過度追求邊緣平整）成員，給予接納包容並引導體會不規則毛邊的自然美。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "精神科病房",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "comm-social-wk1-ocean",
+        "title":  "社牛第一步：深海尋友探險（破冰自我介紹、第一印象與破冰契約建立）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "social",
+        "group_types":  [
+                            "social"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "自我揭露與口語表達",
+                       "眼神接觸與肢體語言察覺",
+                       "團體安全契約共識建立"
+                   ],
+        "materials":  [
+                          "海洋生物造型名牌卡",
+                          "毛線團（尋友蜘蛛網）",
+                          "團體規範大帆布海報",
+                          "彩色白板筆"
+                      ],
+        "tags":  [
+                     "社交技巧SST",
+                     "第一週破冰",
+                     "自我介紹",
+                     "團體凝聚力",
+                     "社區精神復健"
+                 ],
+        "source_file":  "第 04 組 計畫書(2.0).pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "社交技巧訓練（SST）第一週。社區精神復健成員常有長年社交退縮與對新環境的防衛戒心。透過趣味的海洋生物隱喻與毛線傳遞遊戲，降低開口破冰焦慮，營造被接納的友善氛圍，共同訂立尊重與保密的團體公約。",
+                                                     "goals":  [
+                                                                   "在輔助架構下，能有眼神接觸並向團體成員介紹自己的姓名與一項獨特休閒喜好。",
+                                                                   "透過拋接毛線球遊戲，理解人際網絡互連概念，建立團體歸屬感。",
+                                                                   "共同訂立團體規範（如不嘲笑、輪流發言、保守隱私），達成100%舉手表決同意。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩色海洋生物貼紙名牌（小丑魚、海豚、海龜等）、粗毛線球一顆、大白板、團體公約簽署彩筆。",
+                                                           "alternatives":  "若無毛線，可用柔軟小皮球拋接代替。",
+                                                           "environment":  "座位排成溫馨無死角圓形圈，中央無桌子阻隔，促進成員全身體態與眼神之直接交流。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【我是哪隻海中生物（10分鐘）】：每人抽一張海洋生物名牌，寫上自己的名字與代號，並用一個詞形容自己（例如：安靜像海龜、熱情像海豚）。",
+                                            "main_activity":  "【織出友誼深海網（30分鐘）】：\n1. 【毛線傳情網】：治療師手握毛線一端，說出：「我是XX治療師，我喜歡散步，我要傳給眼神最友善的OO！」，將線球拋給該成員；接到者重複規則再拋給下一人，直到全體成員手中都牽著毛線，在中央織成一張密不可分的大網絡。\n2. 【牽一髮動全身】：請一位成員輕輕拉動毛線，讓大家感受手上的拉力，引導領會「團體中每個人都很重要，互相關聯」。\n3. 【建立安全港公約】：討論未來五週我們希望在這個團體裡得到什麼樣的對待？共同歸納出三大守則（認真聽別人講話、不批評、秘密留在這裡），全員上前在海報上簽名畫押。",
+                                            "reflection":  "【收穫回饋（10分鐘）】：每人說出今天認識的一位新朋友的名字，彼此鼓掌，感受第一步踏出的勇氣與安心感。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "允許極度害羞或口語障礙學員以點頭、展示名牌或由治療師協助朗讀方式完成介紹。",
+                                         "grading_up":  "在介紹時需增加一項「猜猜看哪一個關於我的事情是真的」二選一趣味提問，提升成員推理互動性。"
+                                     },
+                         "safety_and_contraindications":  "注意拋接毛線時避免纏繞頸部；若有社交焦慮過高而發抖拒答的成員，切勿當眾施壓，治療師可代為轉述並給予溫和微笑支持。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "社交與溝通"
+                             ]
+    },
+    {
+        "id":  "comm-social-wk2-collage",
+        "title":  "社牛第二步：拼社交愛拼才會贏（團隊撕貼接力、非口語合作與分工協調）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "social",
+        "group_types":  [
+                            "social",
+                            "art"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "非口語溝通與默契協作",
+                       "任務分工與妥協接納",
+                       "團隊合作成就感"
+                   ],
+        "materials":  [
+                          "全開海報紙2張",
+                          "多彩雜誌與色紙大批",
+                          "口紅膠與白膠",
+                          "碼表計時器"
+                      ],
+        "tags":  [
+                     "社交技巧SST",
+                     "第二週合作",
+                     "無聲拼貼",
+                     "分工合作",
+                     "社區精神復健"
+                 ],
+        "source_file":  "第 04 組 計畫書(2.0).pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "社交技巧訓練（SST）第二週。許多人際困境源於無法與人順暢分工或過度堅持個人己見。透過「無聲接力撕貼海報」的任務，強迫抽離口語爭執，提升對同伴非口語動作的觀察力，學習協商與接納團隊共同目標。",
+                                                     "goals":  [
+                                                                   "提升對同儕非口語動作（眼神、手勢引導）的察覺與回應敏銳度。",
+                                                                   "在團隊合作創作中，學習接納他人的創意構想，達成和諧共識。",
+                                                                   "體驗分工合作快速達成目標的團隊成就感。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "全開厚卡紙兩張、各類廢舊色彩豐富之雜誌、廣告紙、剪刀、口紅膠、輕柔計時鈴。",
+                                                           "alternatives":  "若無法拼貼，可用大積木或積木骨牌進行分組接力搭建。",
+                                                           "environment":  "兩張長桌分立兩側，每組成員圍桌而立或坐，營造充實的創作工作台氛圍。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【大眼瞪小眼默契傳話（10分鐘）】：治療師引導學員進行無聲猜拳與眼神示意遊戲，練習不用嘴巴說話，只靠眼神與點頭傳達訊息。",
+                                            "main_activity":  "【拼出夢想家園接力賽（30分鐘）】：\n1. 設定主題：「我們未來的理想夢幻社區」。\n2. 【第一階段（討論與分工5分鐘）】：各隊在限時內口頭商討主題色系與各自負責區域（有人撕草地、有人拼房子、有人找人物）。\n3. 【第二階段（無聲創作接力15分鐘）】：全程開啟「靜音模式」，組員輪流或同時在海報上撕貼佈局，不可用言語交談，只能靠眼神與手勢配合，協調圖案位置。\n4. 【第三階段（解密與潤飾10分鐘）】：恢復口語交流，檢視整體成果並作細部補強。",
+                                            "reflection":  "【拆解團隊密碼（10分鐘）】：討論「剛才不能說話時，你是如何知道隊友需要什麼？遇到意見不同時你怎麼調適自己？」，由治療師歸納非口語溝通的臨床智慧。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "取消無聲限制，允許全程自由講話；指派專人擔任材料提供者，簡化任務職責。",
+                                         "grading_up":  "中途突發更換拼貼主題或交換兩隊未完成海報，考驗突發變局下的適應力與包容心。"
+                                     },
+                         "safety_and_contraindications":  "競賽中若有學員過於強勢主導甚至責怪隊友，治療師應及時介入暫停，引導聚焦於「享受合作過程而非完美作品」。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "社交與溝通",
+                                 "藝術與手工藝"
+                             ]
+    },
+    {
+        "id":  "comm-social-wk3-empathy",
+        "title":  "社牛第三步：心靈解碼員：他在想什麼（面部表情微解讀、情境同理心與情緒辨識）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "social",
+        "group_types":  [
+                            "social",
+                            "cognitive"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "臉部情緒辨識與心智理論（Theory of Mind）",
+                       "主動傾聽與同理心回應",
+                       "人際敏感度修復"
+                   ],
+        "materials":  [
+                          "多種情緒臉譜高清圖卡（喜怒哀樂、焦慮、尷尬、無奈等）",
+                          "日常生活情境劇本卡",
+                          "情緒溫度計大轉盤"
+                      ],
+        "tags":  [
+                     "社交技巧SST",
+                     "第三週同理心",
+                     "心智理論",
+                     "情緒辨識",
+                     "社區精神復健"
+                 ],
+        "source_file":  "第 04 組 計畫書(2.0).pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "社交技巧訓練（SST）第三週。精神疾患常因心智理論（Theory of Mind）受損，難以精準判讀他人的面部表情與隱微語氣，容易產生「別人都在針對我」或忽視他人不悅的誤解。透過結構化表情辨識與情境換位思考，提升同理心與真實社交敏感度。",
+                                                     "goals":  [
+                                                                   "正確辨識至少5種常見面部表情微細特徵（眉毛、嘴角、眼神變化）。",
+                                                                   "學習「換位思考」公式：「如果我是他，在這種情況下我可能會覺得……」。",
+                                                                   "練習至少一次口語表達同理心句子（例如：「你看起來有點累，還好嗎？」）。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "真人實景情緒表情卡30張、情緒名詞大圖表、生活情境抽籤卡、表情對照小鏡子每人面面鏡。",
+                                                           "alternatives":  "亦可播放簡短電影或動畫短片片段進行停格表情分析。",
+                                                           "environment":  "座位圍成U字形，前方設有投影或展示板，桌面上備有鏡子供學員觀察自己面部肌肉。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【百變表情照鏡子（10分鐘）】：發給每人一面小鏡子，治療師發出情緒指令（「吃到檸檬」、「被稱讚」、「踩到水坑」），大家對鏡子做出表情，觀察自己五官變化。",
+                                            "main_activity":  "【情緒解碼特工隊（30分鐘）】：\n1. 【微表情大解密】：展示「生氣 vs 焦慮」、「假笑 vs 真笑」的對比照片，拆解眉毛緊鎖度與嘴角紋理特徵。\n2. 【情境大推理】：抽出一張情境卡（例如：「阿強今天走進工坊，低著頭重重摔背包在桌上」）。引導學員腦力激盪：「阿強可能怎麼了？他現在心情如何？我們這時候找他開玩笑好嗎？」\n3. 【換位角色扮演】：兩兩一組，一人扮演遇到挫折的朋友，另一人演練「給予同理支持三部曲」——①注視對方、②複述感受、③給予陪伴空間。",
+                                            "reflection":  "【情緒溫度計打卡（10分鐘）】：每位成員在黑板情緒轉盤上標示自己當前的心情指數，並向身邊同伴說一句溫暖的關心話，治療師總結肯定。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "聚焦於三大基礎情緒（高興、生氣、難過）；由治療師提供標準句型填空範本。",
+                                         "grading_up":  "探討複雜社交情境中的「口是心非」與諷刺語氣（如面帶微笑卻說「你真厲害喔」），解析肢體語氣與文字意義的落差。"
+                                     },
+                         "safety_and_contraindications":  "避免指責特定成員「平時表情僵硬或不懂看人臉色」；對於有被害妄想之成員，在分析憤怒表情時多強調「這通常是對方自己遇到困難，不代表討厭我們」。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "社交與溝通",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "comm-social-wk4-conflict",
+        "title":  "社牛第四步：人際拆彈客：一起當個和事佬（人際衝突情境演練、我訊息表達與協商策略）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "social",
+        "group_types":  [
+                            "social",
+                            "cognitive"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "衝突管理與冷靜冷卻技巧",
+                       "「我訊息（I-Message）」溝通技巧",
+                       "雙贏協商與妥協方法"
+                   ],
+        "materials":  [
+                          "衝突情境劇本卡（搶電視、借錢不還、排隊插隊、分工不公等）",
+                          "情緒冷靜暫停卡牌",
+                          "我訊息公式輔助大字報"
+                      ],
+        "tags":  [
+                     "社交技巧SST",
+                     "第四週溝通",
+                     "我訊息",
+                     "衝突化解",
+                     "社區精神復健"
+                 ],
+        "source_file":  "第 04 組 計畫書(2.0).pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "社交技巧訓練（SST）第四週。人際衝突常導致康復學員爆發攻擊行為或全面退縮放棄工作。本活動傳授實用的「我訊息（I-Message）」三段公式與衝突降溫停看聽原則，透過情境角色模擬，將被動攻擊或攻擊性應對轉化為建設性的主張表達（Assertiveness）。",
+                                                     "goals":  [
+                                                                   "熟練「我訊息」公式結構：當你……（具體事實），我覺得……（個人感受），我希望……（明確需求）。",
+                                                                   "學會在情緒即將失控時主動發出「暫停信號」以爭取冷靜時間。",
+                                                                   "透過實境模擬演練，降低面對日常人際爭執時的逃避或暴怒反應。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "情境劇本大卡片、我訊息公式提示板、裁判手牌（綠燈溝通通暢、紅燈人身攻擊）、舒壓捏捏球。",
+                                                           "alternatives":  "若學員抗拒角色扮演，可使用手偶或公仔布偶進行第三人稱代入式模擬。",
+                                                           "environment":  "模擬生活真實場景（如客廳電視機前、餐飲工坊櫃檯），前方設有表演舞台區與觀眾席。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【炸彈倒數冷靜操（10分鐘）】：治療師展示生氣憤怒時身體的生理反應（心跳加速、握拳、臉紅），教導「4-7-8呼吸法」與深呼吸雙手握拳再放鬆的技巧。",
+                                            "main_activity":  "【拆彈特工角色扮演（30分鐘）】：\n1. 【反面示範】：治療師示範指責型對話：「你每次都把電視轉那麼大聲，自私鬼！」，引導全場討論被這樣罵時的感覺（想吵架或逃跑）。\n2. 【拆解我訊息公式】：講解並展示：「當你電視開很大聲時（事實），我覺得耳鳴頭痛很困擾（感受），我希望你可以把音量調到15以下（需求）。」\n3. 【情境模擬過關】：兩人一組抽取日常摩擦題目（如：室友沒倒垃圾、借走的筆沒還、工坊工作被搶先），輪流演練「我訊息」表達，台下學員舉綠牌評分並給予掌聲鼓勵。",
+                                            "reflection":  "【拆彈錦囊打包（10分鐘）】：請每位成員複述一次我訊息的三個關鍵步驟，頒發「最佳和平大使」徽章，彼此正向打氣。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供現成的句子骨架，成員只需將名詞代入（如：填空「當你……我覺得……」）；治療師陪同並肩演出。",
+                                         "grading_up":  "加入對方態度不佳、反駁或找藉口的情境，演練「跳針唱片法（破唱片技巧）」溫和堅持個人界線。"
+                                     },
+                         "safety_and_contraindications":  "嚴防角色扮演過程中學員假戲真做激發真實過往創傷或衝突；若演練出現火藥味，治療師立即舉暫停牌，帶領全員做深呼吸冷卻並換題。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "社交與溝通",
+                                 "認知與益智"
+                             ]
+    },
+    {
+        "id":  "comm-social-wk5-gratitude",
+        "title":  "社牛第五步：暖心結業式：真心感謝小卡（人際回饋互贈、感恩心意傳遞與成長總結）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "social",
+        "group_types":  [
+                            "social",
+                            "art"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "正向人際回饋給予與接納",
+                       "回顧整合與自我效能確立",
+                       "團體結束與分離情緒因應"
+                   ],
+        "materials":  [
+                          "精美愛心造型卡片與信封",
+                          "彩色筆與裝飾印章貼紙",
+                          "結業小徽章或獎狀",
+                          "結業慶祝小餅乾"
+                      ],
+        "tags":  [
+                     "社交技巧SST",
+                     "第五週結業",
+                     "感恩反思",
+                     "同儕支持",
+                     "社區精神復健"
+                 ],
+        "source_file":  "第 04 組 計畫書(2.0).pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "社交技巧訓練（SST）第五週總結。健康人際關係不僅在於防範衝突，更在於能真誠欣賞他人並大方給予正向讚賞。透過親手製作感謝卡與全體互贈儀式，整合五週以來的社交自信，處理團體即將結束的分離焦慮，將團體正向經驗內化遷移至日常生活。",
+                                                     "goals":  [
+                                                                   "向團體中至少兩位同儕說出具體、真誠的特質讚賞（而非空泛客套）。",
+                                                                   "優雅接納他人的正向讚美與回饋，能看著對方眼睛說「謝謝你」。",
+                                                                   "總結回顧五週以來的自我突破與轉變，確立個人的社交成長目標。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "彩繪厚卡紙、愛心貼紙、彩色雙頭簽字筆、復古印泥印章、結業榮譽證書、輕快歡樂背景音樂。",
+                                                           "alternatives":  "亦可使用便利貼黏貼在每位成員背後的紙板上，進行「背後讚美便利貼」活動。",
+                                                           "environment":  "佈置溫馨如茶會的圓形座位，正前方展示五週活動花絮照片或海報回顧牆。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【時光縮時膠囊（10分鐘）】：治療師展示過去四週以來的活動花絮照片與海報成果，引導大家回憶當初第一週的生疏與現在的默契，全體為彼此鼓掌。",
+                                            "main_activity":  "【真心話愛心卡創作與傳遞（30分鐘）】：\n1. 每人拿到多張愛心小卡，在卡片上裝飾插畫並寫下要送給特定夥伴的具體讚美（例如：「小明，我發現你上週在做無聲拼貼時非常細心，還主動幫我拿膠水，我覺得你很體貼！」）。\n2. 【真心傳遞儀式】：全體依序起立，走到對方身前，雙手將卡片遞給對方，直視雙眼朗讀卡片上的心意。\n3. 收受者學習微笑回以：「謝謝你，我很開心聽到你這麼說！」。",
+                                            "reflection":  "【頒發結業勳章（10分鐘）】：治療師為每位成員佩戴「社牛之星」徽章，頒發結業證明，每人發表一句結業感言，在溫馨氣氛中圓滿落幕。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供「稱讚金句清單」（如：有禮貌、笑容溫暖、做事認真、善於傾聽），學員勾選並抄寫至卡片。",
+                                         "grading_up":  "要求學員寫出一封給「未來三個月後的自己」的一封信，預先寫下當再次遇到社交挫折時要如何安慰鼓勵自己。"
+                                     },
+                         "safety_and_contraindications":  "注意確保每位學員都能收到數量大致相當的卡片與讚美，治療師預先準備好每位成員的專屬優點卡，避免有成員落單或感受到受冷落。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "社交與溝通",
+                                 "藝術與手工藝"
+                             ]
+    },
+    {
+        "id":  "comm-recycled-art",
+        "title":  "化垃圾為藝術品（寶特瓶與環保廢材再造多肉盆栽筆筒）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "geriatric-care",
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "adl"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "6-10人",
+        "skills":  [
+                       "環保資源再利用意識",
+                       "雙手工具操作與邊緣防護處理",
+                       "植物照護責任感培養"
+                   ],
+        "materials":  [
+                          "洗淨回收透明寶特瓶",
+                          "壓克力顏料與水彩筆",
+                          "彩色絕緣電工膠帶（包邊用）",
+                          "培養土與多肉植物小苗",
+                          "安全剪刀"
+                      ],
+        "tags":  [
+                     "環保再造",
+                     "園藝盆栽",
+                     "廢物利用",
+                     "手作筆筒",
+                     "社區精神復健"
+                 ],
+        "source_file":  "第九組帶活動計畫書.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "透過將隨手可得的廢棄寶特瓶改造成兼具實用性的多肉植物盆栽或桌上筆筒，傳遞「天生我材必有用、廢材亦能重生」的心理隱喻，契合精神康復的復元（Recovery）哲學。同時藉由照料綠色植物，培育學員的責任心與生命連結。",
+                                                     "goals":  [
+                                                                   "提升手眼協調與手部力量操作工具能力（剪裁塑膠瓶與膠帶包邊）。",
+                                                                   "理解廢物再利用與環境永續概念，體會自我價值再造的成就感。",
+                                                                   "透過領養多肉植物，建立每日觀察與規律澆水的日常作息責任感。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "每人一個600ml乾淨塑膠寶特瓶、安全剪刀、彩色電工膠帶、壓克力顏料、小多肉植物幼苗、多肉專用顆粒土、小鏟子。",
+                                                           "alternatives":  "若無多肉植物，亦可單純將成品作為辦公文具筆筒或餐具收納筒。",
+                                                           "environment":  "戶外陽台或通風良好的手作教室，鋪設塑膠布以利土石顏料清理。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【醜小鴨變天鵝（10分鐘）】：治療師展示原本髒污變形的空寶特瓶與經過巧手改造後的精緻貓咪多肉花盆，讓學員看見無限可能，引發驚喜讚嘆。",
+                                            "main_activity":  "【盆栽大變身（30分鐘）】：\n1. 【剪裁外型】：在寶特瓶下半部約10公分處畫上貓耳或圓弧輪廓，使用剪刀剪下瓶底容器。\n2. 【安全包邊】：取彩色絕緣膠帶包覆剪切邊緣，防止塑料邊緣刮手。\n3. 【彩繪上色】：用白色與彩色壓克力顏料塗裝外層，畫上可愛表情或自然幾何線條。\n4. 【移栽多肉】：在盆底鋪入少許發泡煉石防積水，填入培養土，小心將多肉小苗移植入盆並壓實土壤。",
+                                            "reflection":  "【給我的植物取個名字（10分鐘）】：每位學員為自己的綠色新夥伴命名，並學習每兩週澆水一次的養護技巧；大家將盆栽排列於窗台，互道讚美。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "治療師預先將寶特瓶剪裁修飾完畢並包好安全膠帶，學員專注於彩繪上色與植物填土移栽。",
+                                         "grading_up":  "自行設計寶特瓶自動吸水裝置（上下對插綿繩引水系統），深入探討植物生理與自動化綠美化。"
+                                     },
+                         "safety_and_contraindications":  "修剪塑膠瓶時邊緣較銳利，必須確實監督貼附膠帶防割；壓克力顏料不可食用且乾掉後不易清洗，需穿著工作圍裙；落實工具登記保管。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "高齡長照",
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "日常生活功能"
+                             ]
+    },
+    {
+        "id":  "comm-xmas-celebration",
+        "title":  "聖誕「星」願滿天飛（立體星芒雪花與聖誕心願襪拼貼）",
+        "population":  "community-psychiatry",
+        "populations":  [
+                            "community-psychiatry",
+                            "geriatric-care"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "social"
+                        ],
+        "duration":  "75分鐘",
+        "group_size":  "10-15人",
+        "skills":  [
+                       "空間折疊與立體組裝能力",
+                       "手眼協調剪裁與不織布黏貼",
+                       "心願書寫與同儕情感交流"
+                   ],
+        "materials":  [
+                          "金銀亮面厚彩紙",
+                          "不織布預裁聖誕襪片",
+                          "安全剪刀與保麗龍膠",
+                          "彩色毛線與心願小卡",
+                          "節慶輕音樂播放機"
+                      ],
+        "tags":  [
+                     "立體星芒",
+                     "聖誕襪手作",
+                     "空間美化",
+                     "同儕支持",
+                     "社區精神復健"
+                 ],
+        "source_file":  "呈泰第二次活動.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "結合歲末溫馨節慶與舒緩音樂，透過多層幾何立體星芒剪紙與柔軟不織布聖誕襪縫貼，美化復健機構環境，並透過心願卡書寫與祝福互贈，建立深厚同儕支持系統與社區歸屬感。",
+                                                     "goals":  [
+                                                                   "提升手眼協調與兩手間合作穩定度，完成立體星錐黏合與襪身裝飾",
+                                                                   "透過音樂輔療維持30分鐘以上平靜專注創作",
+                                                                   "在心願卡上書寫具體自我期許或同儕讚賞，增強自尊與復元信念"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "金銀色厚紙、六角雪花剪紙範本、不織布襪片、薑餅人配件、心願卡、保麗龍膠",
+                                                           "alternatives":  "若無法剪多層紙可用輕薄色宣紙替代；若無法縫線可用雙面膠直接黏合",
+                                                           "environment":  "社區日間復健交誼大廳，長桌鋪設防膠墊，輕音樂營造溫暖節慶感"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【星光冥想與手指操（10分鐘）】：播放聖誕交響樂，深呼吸活動手指，引導回憶今年最感恩的事。",
+                                            "main_activity":  "【星芒雪花與心願襪創作（55分鐘）】：\n1. 【星芒雪花】：折出立體尖錐貼合為八芒星，剪裁晶瑩六角雪花。\n2. 【聖誕心願襪】：以平針縫或膠黏組裝不織布襪身，貼上薑餅人與雪人裝飾。\n3. 【書寫心願】：在卡片寫下新年目標或對同伴的感謝投入襪中。",
+                                            "reflection":  "【星光許願樹懸掛（10分鐘）】：全員合力將星芒與心願襪懸掛於中心聖誕樹與公佈欄，合影留念。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "由工作人員協助黏貼星錐；提供免針線之直接雙面膠黏貼襪子版本；由治療師代筆心願。",
+                                         "grading_up":  "挑戰高難度十二芒立體星；擔任小組長協助引導其他學員完成牆面整體佈置。"
+                                     },
+                         "safety_and_contraindications":  "張貼高處必須由工作人員使用安全梯，嚴禁學員踩踏旋轉椅；注意剪刀收繳保管。"
+                     },
+        "population_names":  [
+                                 "社區精神復健",
+                                 "高齡長照"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "社交與溝通"
+                             ]
+    },
+    {
+        "id":  "geriatric-bingo",
+        "title":  "腦力激盪九宮格賓果賽（長者益智記憶與身體動作連線競賽）",
+        "population":  "geriatric-care",
+        "populations":  [
+                            "geriatric-care",
+                            "community-psychiatry",
+                            "psychiatric-inpatient"
+                        ],
+        "group_type":  "cognitive",
+        "group_types":  [
+                            "cognitive",
+                            "motor"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "8-16人",
+        "skills":  [
+                       "短期工作記憶與語意提取",
+                       "上肢伸展與關節活動度",
+                       "同儕社交互動與勝負心理調適"
+                   ],
+        "materials":  [
+                          "超大字體九宮格賓果卡片",
+                          "彩色圓形大棋子或磁吸圓片",
+                          "題目籤筒（含懷舊生活與簡單算術）",
+                          "健康榮譽獎品"
+                      ],
+        "tags":  [
+                     "延緩失能失智",
+                     "賓果連線",
+                     "益智記憶",
+                     "大字體長者友善",
+                     "高齡長照"
+                 ],
+        "source_file":  "老人預防及延緩失能活動.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "依據衛生福利部預防及延緩失能失智方案設計。將傳統賓果遊戲轉化為結合記憶檢索、遠期懷舊與上肢動作指令的複合活動，刺激長者的大腦多腦區活化，在熱鬧歡樂的呼喊連線中提升生活熱情與心智活力。",
+                                                     "goals":  [
+                                                                   "刺激大腦前額葉工作記憶與語意檢索功能，正確回答題目並定位格子。",
+                                                                   "結合手指精細抓握大棋子與上肢向前伸展，促進關節活動與維持肌力。",
+                                                                   "促進日間照顧中心長者間的眼神交流、歡笑與同儕鼓勵，降低孤獨感。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "大字版（字體至少36pt）3x3九宮格紙卡每人一張、大直徑（直徑4公分）防滑彩色棋子每人10枚、抽籤問答箱、小白板。",
+                                                           "alternatives":  "若手部抓握困難，可用大印章直接在格子中蓋章標記。",
+                                                           "environment":  "日照中心無障礙活動大廳，使用有扶手之穩固輪椅或座椅，間距寬敞以利治療師與照服員隨時巡視防跌。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【動動手十指拍打操（10分鐘）】：治療師帶領長者進行「手掌拍手、手背拍手、指尖對碰」手指暖身操，促進末梢血液循環，喚醒大腦反應速度。",
+                                            "main_activity":  "【歡樂九宮格大連線（30分鐘）】：\n1. 長者手中的九宮格印有各類日常名詞（如：香蕉、收音機、腳踏車、高麗菜、電風扇等）。\n2. 治療師從籤筒抽籤朗讀題目（例如：「夏天吃什麼水果消暑？黃黃彎彎的？」）。\n3. 長者聽題、動腦思考答案為「香蕉」，並在自己的賓果卡中搜尋「香蕉」的格子，拿起一枚彩色棋子穩穩放上。\n4. 若抽中「動作題」（如：雙手向上摸天伸展3次），全場一同完成健康體操後即可蓋上一格。\n5. 任一橫線、直線或對角線連成一線者大喊「賓果！」，全場給予熱烈鼓掌。",
+                                            "reflection":  "【頒獎與喝水休息（10分鐘）】：全員皆能獲得「長壽健康之星」榮譽貼紙，治療師逐一詢問長者今天最開心的一題是什麼，引導補充水分並做緩和放鬆。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "提供彩色圖文並茂的大圖卡；由照服員一對一陪同指引格子；連線規則簡化為「集滿任意3格就算過關」。",
+                                         "grading_up":  "改為4x4十六格版本；題目增加二位數加減算術或成語接龍；要求長者連線後需分享一段與該物品有關的年輕回憶。"
+                                     },
+                         "safety_and_contraindications":  "注意防範棋子誤食（使用直徑大於4公分之安全棋子）；長者起身喊賓果時注意防跌，治療師與工作人員隨時護衛；適時提醒長者補充溫開水。"
+                     },
+        "population_names":  [
+                                 "高齡長照",
+                                 "社區精神復健",
+                                 "精神科病房"
+                             ],
+        "group_type_names":  [
+                                 "認知與益智",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "geriatric-body-mechanics",
+        "title":  "日常身體力學與下背痛防護（日常生活搬物防跌與座椅核心伸展）",
+        "population":  "geriatric-care",
+        "populations":  [
+                            "geriatric-care",
+                            "community-psychiatry"
+                        ],
+        "group_type":  "adl",
+        "group_types":  [
+                            "adl",
+                            "motor"
+                        ],
+        "duration":  "60分鐘",
+        "group_size":  "8-12人",
+        "skills":  [
+                       "人體工學身體力學認知",
+                       "核心穩定與重心轉移",
+                       "座椅式下背痛舒緩伸展"
+                   ],
+        "materials":  [
+                          "模擬生活提籃與不同重量紙箱",
+                          "穩固高背扶手椅",
+                          "直徑20cm小抗力球",
+                          "身體力學圖解海報",
+                          "放鬆音樂"
+                      ],
+        "tags":  [
+                     "生活型態再造",
+                     "身體力學",
+                     "下背痛舒緩",
+                     "防跌訓練",
+                     "高齡長照"
+                 ],
+        "source_file":  "衰弱老人生活型態再造介入方案模組.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "高齡長者常因彎腰搬物導致急性背拉傷與跌倒。依據生活型態再造（Lifestyle Redesign）原則，教育『屈膝不彎腰、物體貼近身體中心』等正確力學，並結合全座椅式溫和下背伸展與小球骨盆運動，舒緩慢性疼痛，提升生活自理安全性。",
+                                                     "goals":  [
+                                                                   "正確說出並示範『搬起地面物品時屈膝蹲下、背部打直』之正確力學姿勢",
+                                                                   "熟練從椅子上安全起立三部曲（臀前移、腳後收、鼻過趾）",
+                                                                   "學會至少3招座椅式下背伸展，放鬆緊繃豎脊肌，疼痛主觀評分降低2分以上"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "模擬菜籃、不同重量軟墊紙箱、穩固附扶手無輪椅、小抗力球每人一顆、大鏡子",
+                                                           "alternatives":  "家中練習可用小枕頭替代搬運物，用捲筒大浴巾替代抗力球",
+                                                           "environment":  "地面防滑無高低差之安全運動教室，座椅間隔1.5公尺確保伸展安全"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【腹式呼吸與骨盆鬆動（10分鐘）】：安坐椅子上深呼吸放鬆，進行骨盆時鐘操與雙肩擴胸操。",
+                                            "main_activity":  "【身體力學演練與座椅伸展（40分鐘）】：\n1. 【力學四口訣】：示範靠近它、蹲下去、抱緊它、用腿站起來，長者輪流搬物演練。\n2. 【安全起身】：演練鼻過腳趾起立法。\n3. 【下背舒活】：進行座椅抱膝揉腰式、小球後背滾動按摩與坐姿轉體望月伸展。",
+                                            "reflection":  "【姿勢自我檢測與打卡（10分鐘）】：發放每日伸展小卡，齊聲宣誓『護腰不彎腰，健康活到老』。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "搬運物品高度提升至矮凳上（不深蹲至地面）；伸展動作幅度縮小至無痛範圍。",
+                                         "grading_up":  "增加動態步態障礙繞錐搬運（負重2-3公斤）；增加坐姿抬腿核心等長收縮收腹挑戰。"
+                                     },
+                         "safety_and_contraindications":  "嚴重關節炎長者禁止過度深蹲，改以長柄取物夾代償；動作嚴禁快速彈震旋轉；隨時護衛防跌。"
+                     },
+        "population_names":  [
+                                 "高齡長照",
+                                 "社區精神復健"
+                             ],
+        "group_type_names":  [
+                                 "日常生活功能",
+                                 "動作與體適能"
+                             ]
+    },
+    {
+        "id":  "geriatric-horticulture",
+        "title":  "葉來葉好玩園藝治療（芳香五感草木拓印與生命故事懷舊）",
+        "population":  "geriatric-care",
+        "populations":  [
+                            "geriatric-care",
+                            "community-psychiatry",
+                            "pediatrics"
+                        ],
+        "group_type":  "art",
+        "group_types":  [
+                            "art",
+                            "cognitive"
+                        ],
+        "duration":  "50分鐘",
+        "group_size":  "6-10人",
+        "skills":  [
+                       "多重感官刺激（嗅覺、觸覺、視覺）",
+                       "生命故事回溯與懷舊表達",
+                       "雙手敲拓與構圖美感"
+                   ],
+        "materials":  [
+                          "芳香香草植物（薄荷、迷迭香、芳香萬壽菊、紫蘇）",
+                          "原色純棉胚布杯墊或手帕",
+                          "木質敲拓槌或扁平石頭",
+                          "吸水紙巾",
+                          "保護墊板"
+                      ],
+        "tags":  [
+                     "園藝治療",
+                     "五感刺激",
+                     "植物敲拓染",
+                     "懷舊記憶",
+                     "高齡長照"
+                 ],
+        "source_file":  "第八組 團體計畫書作業（格式）_111-2.pdf",
+        "created_at":  "2026-11-11",
+        "sections":  {
+                         "rationale_and_goals":  {
+                                                     "rationale":  "園藝治療在失智與衰弱高齡照護中成效顯著。植物具有天然的生命力、芳香精油分子與葉脈紋理。透過揉捻葉片的嗅覺活化、觸摸葉脈的觸覺體驗，以及將葉綠素自然敲拓於布料上的古樸工藝，重啟感官記憶，撫慰孤寂心靈，重拾生命共鳴。",
+                                                     "goals":  [
+                                                                   "藉由天然植物氣味與觸感，活化嗅覺大腦邊緣系統，喚醒遠期童年或農作美好回憶。",
+                                                                   "透過手持木槌敲擊葉片，鍛鍊上肢關節活動度、手部協調與力度控制。",
+                                                                   "完成具實用性的天然植物拓印胚布杯墊，增強自尊與生活美學享受。"
+                                                               ]
+                                                 },
+                         "materials_and_environment":  {
+                                                           "materials":  "新鮮採摘多樣化香草葉片（紋理清晰、含水量適中）、純棉白色棉布杯墊、木槌（包覆軟布減音）、防震砧板、透明膠帶、吸水面紙。",
+                                                           "alternatives":  "若敲擊噪音過大，可改用手掌指腹配合小滾輪加壓拓印，或直接沾水彩進行葉脈拓印。",
+                                                           "environment":  "採光良好的戶外庭院或綠意盎然的多功能手作室，播放蟲鳴鳥叫自然白噪音。"
+                                                       },
+                         "procedures":  {
+                                            "warmup":  "【聞香猜植物（10分鐘）】：治療師傳遞新鮮薄荷、迷迭香葉片，請長者在手心輕輕揉搓後嗅聞，猜猜看是什麼植物？聊聊以前家裡院子種過什麼花草，引導懷舊交談。",
+                                            "main_activity":  "【葉影敲拓染工藝（30分鐘）】：\n1. 【葉片構圖】：長者挑選喜愛的葉片形狀（萬壽菊鋸齒葉、紫蘇波浪葉），葉背脈絡朝下，優雅排列在棉布杯墊上。\n2. 【固定防移】：覆蓋上一層透明膠帶或吸水紙巾，將葉片固定在布面上。\n3. 【有節奏敲擊】：手握木槌，從葉心沿著葉脈輕輕敲打，將天然葉綠素與花青素汁液滲透壓印進棉布纖維中。\n4. 【揭開驚喜】：撕下膠帶，輕輕剝除殘留葉渣，原本平淡的白布上立即浮現出清晰逼真、翠綠芬芳的天然葉脈標本印記。",
+                                            "reflection":  "【品茗賞花葉（10分鐘）】：長者將自己做好的杯墊墊上溫熱花草茶杯，輕啜茶水，互相欣賞彼此杯墊的獨特構圖，抒發悠閒心境。"
+                                        },
+                         "grading":  {
+                                         "grading_down":  "由治療師預先將葉片排列固定完畢；長者只需使用海綿滾輪推壓；選擇葉脈粗厚易出汁之植物（如紫蘇）。",
+                                         "grading_up":  "設計多層次漸層疊色構圖（葉片與花瓣交錯疊拓）；在布面空白處以布用彩筆手寫草木詩詞或自己的名號落款。"
+                                     },
+                         "safety_and_contraindications":  "注意木槌敲擊安全，確保防震墊吸音，避免過大噪音驚嚇易焦躁長者；嚴禁敲擊手指；嚴格確認所用植物無毒、無農藥殘留，防範過敏。"
+                     },
+        "population_names":  [
+                                 "高齡長照",
+                                 "社區精神復健",
+                                 "兒童職能"
+                             ],
+        "group_type_names":  [
+                                 "藝術與手工藝",
+                                 "認知與益智"
+                             ]
+    }
+];
+    }
 
-    // 預設備份資料（保證在任何無伺服器環境或本地直接雙擊 HTML 均可完美執行）
-    function getFallbackData() { return [
-  {
-    "id": "sensory-clay-planet",
-    "title": "星際黏土探險 — 觸覺調適與手指尋寶團體",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "40分鐘",
-    "group_size": "4-6人",
-    "skills": ["精細動作與手部協調", "感覺處理與情緒調節"],
-    "materials": [
-      "安全無毒黏土（雙色或不同阻力）",
-      "彩色玻璃珠 / 造型星光小積木",
-      "工作墊每人一個",
-      "小鑷子或安全夾"
-    ],
-    "substitute_materials": "自製無毒麵糰；寶石可用乾燥通心麵或鈕扣替代。",
-    "rationale": "許多早療兒童對特定觸覺材質過度敏感或遲鈍，且手部內在肌力不足。透過「星際探險家在星球土壤中挖取星光寶石」的故事包裝，引導孩童在非威脅性的遊戲情境中主動觸摸黏土、施力捏擠，並運用指尖分離動作尋找寶石。",
-    "goals": [
-      "提升三指捏力（Tripod grasp）與手指深層本體覺回饋",
-      "促進雙手對稱協調（一手固定黏土、一手摳取目標物）",
-      "練習團體中輪流分享寶石、遵守「小探險家規則」"
-    ],
-    "space_setup": "矮桌環繞配置，治療師坐在中央正前方以利動作示範，孩童間隔適當距離避免推擠。",
-    "process": [
-      {
-        "stage": "暖身階段（約 8 分鐘）",
-        "description": "「太空船點名」：每位小朋友扮演一艘小太空船，拍手三下並喊出自己的太空代號。接著帶領手指操「小星星眨眨眼」與「太空漫步」。"
-      },
-      {
-        "stage": "主要操作階段（約 22 分鐘）",
-        "description": "第一關「揉捏星球」（掌心揉圓、手刀切壓）；第二關「星光寶石埋藏」（用力將寶石壓入黏土深處）；第三關「尋寶任務」（運用大拇指與食指將深埋的寶石逐一挖出並夾取收納）。"
-      },
-      {
-        "stage": "分享與回饋階段（約 10 分鐘）",
-        "description": "「展示星光戰利品」：數數看挖到了幾顆寶石，向同儕展示並給予讚賞，最後頒發「星際勇敢勳章貼紙」。"
-      }
-    ],
-    "grading_down": "手肌力極弱者換用超輕軟黏土，或將寶石只露出一半降低阻力；觸覺防禦嚴重者裝入密封夾鏈袋隔袋按壓。",
-    "grading_up": "改用高阻力深綠/藍色治療黏土（Firm Theraputty），要求閉眼盲摸靠立體觸覺辨識形狀，或限制使用鑷子夾取。",
-    "safety": "幼童口慾期強烈者需全程密切監看，嚴防將小珠子放入口鼻；若因刺激過高哭鬧，立刻移至冷靜區給予深壓覺毛毯安撫。",
-    "tags": ["兒童職能", "感覺統合", "手部肌力", "早期療育"]
-  },
-  {
-    "id": "ped-wk1-color-ball-flower",
-    "title": "彩球挑戰大冒險與紙杯花藝創作",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "55分鐘",
-    "group_size": "6-8人",
-    "skills": ["精細動作與手部協調", "社交互動與團體合作"],
-    "materials": [
-      "彩球一袋與分類紙箱",
-      "萬象組平衡木、巧拼與過河石",
-      "免洗紙杯（每人2-3個）",
-      "兒童安全剪刀、彩色筆、白膠、畫紙",
-      "點數海報與獎品貼紙"
-    ],
-    "substitute_materials": "巧拼可用地墊替代，彩球可用報紙揉球貼彩色膠帶替代，紙箱可直接以不同色紙標記。",
-    "rationale": "結合大動作動態平衡遊戲與精細紙杯花藝手作，提供多元動作刺激，藉由獎勵制度建立規則感與同儕互助精神。",
-    "goals": [
-      "增進顏色辨識、手眼協調與動態走平衡木穩定度",
-      "提升雙手操作工具剪裁與反摺紙杯之精細動作能力",
-      "學習遵守「小嘴巴閉起來」規則與輪流等待分享"
-    ],
-    "space_setup": "前半部為平衡木與過河石運送障礙動線，後半部為小組手作矮桌。",
-    "process": [
-      {
-        "stage": "暖身破冰（約 15 分鐘）",
-        "description": "自我介紹傳球（中文名、族名、喜歡吃的東西）、建立小嘴巴閉起來常規、展示點數海報激勵。"
-      },
-      {
-        "stage": "主要操作（約 30 分鐘）",
-        "description": "活動一「彩球挑戰大冒險」：兩人一組抽球，走過河石與平衡木送入對應色箱；活動二「紙杯花藝創作」：沿預畫黑線剪開紙杯杯壁翻摺成花朵，用白膠黏貼彩繪。"
-      },
-      {
-        "stage": "分享回饋（約 10 分鐘）",
-        "description": "展示紙杯花、提問今天最喜歡哪個活動、清點個人點數挑選小禮物。"
-      }
-    ],
-    "grading_down": "走平衡木時由協同老師牽單手走；紙杯杯壁由老師預先剪好一半，讓學員剪最後1公分。",
-    "grading_up": "增加過河石間距並要求單腳站立停格2秒；紙杯花瓣增加雙層重疊與葉片剪貼細節。",
-    "safety": "安全剪刀嚴格規範不對人；走平衡木兩側需有防護，防止推擠跌倒。",
-    "tags": ["兒童職能", "粗大動作", "精細動作", "動態平衡", "紙杯手作"]
-  },
-  {
-    "id": "ped-wk2-sandbag-collage",
-    "title": "九宮格丟沙包與彩紙撕貼畫",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "55分鐘",
-    "group_size": "6-8人",
-    "skills": ["精細動作與手部協調", "感覺處理與情緒調節"],
-    "materials": [
-      "地面九宮格（90x90cm兩組）",
-      "軟沙包12個",
-      "構圖底稿紙（每人一張）",
-      "色紙（多種顏色）、口紅膠/白膠",
-      "巧拼冷靜區6片"
-    ],
-    "substitute_materials": "沙包可用厚襪子包裹米粒或紅豆自製；底稿可用簡報投影手繪描圖。",
-    "rationale": "透過九宮格目標投擲訓練上肢力量調控與手眼協調，並以撕貼畫訓練指尖捏抓力量與觸覺專注，增進情緒安定。",
-    "goals": [
-      "提升上肢力氣控制與投擲沙包目標精準度",
-      "訓練雙手前三指相對用力撕紙與對稱塗膠動作",
-      "遵守冷靜區規則與團體秩序自我控制"
-    ],
-    "space_setup": "地面張貼兩組九宮格與50cm/70cm投擲線，教室角落設巧拼冷靜區。",
-    "process": [
-      {
-        "stage": "暖身破冰（約 15 分鐘）",
-        "description": "「姐姐說」聽指令遊戲、音樂帶動跳《巧虎唱唱跳跳》活化全身肌群、複習冷靜區規則。"
-      },
-      {
-        "stage": "主要操作（約 30 分鐘）",
-        "description": "活動一「丟沙包」：站在投擲線做開合跳十下後投擲九宮格計分賽；活動二「彩紙拼貼畫」：將色紙撕成拇指大小，運用手指肌力撕貼填滿圖案輪廓。"
-      },
-      {
-        "stage": "分享回饋（約 10 分鐘）",
-        "description": "展示拼貼畫作品、統計沙包得分並頒發獎品貼紙、帶領深呼吸收操。"
-      }
-    ],
-    "grading_down": "投擲距離縮短至30cm且只分近遠兩格；撕紙改為由老師撕成長條，孩童再撕小塊。",
-    "grading_up": "投擲線退至1公尺且指定特定數字組合；拼貼圖案要求顏色漸層過渡。",
-    "safety": "沙包嚴禁朝他人身體投擲；活動過程不得超越投擲線與推擠。",
-    "tags": ["兒童職能", "力氣控制", "手眼協調", "撕貼畫", "情緒調節"]
-  },
-  {
-    "id": "ped-wk3-soccer-clay",
-    "title": "呼啦圈穿梭、足球射門與輕黏土動物捏塑",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "55分鐘",
-    "group_size": "6-8人",
-    "skills": ["精細動作與手部協調", "社交互動與團體合作"],
-    "materials": [
-      "呼啦圈2個、皮球2顆",
-      "雪花片積木（組裝球門用）",
-      "彩色超輕黏土、工作墊板",
-      "撲克牌、計分表、獎勵貼紙"
-    ],
-    "substitute_materials": "球門可用小矮凳代替；呼啦圈可用粗繩圍成圓圈代替。",
-    "rationale": "手牽手傳遞呼啦圈能建立緊密同儕信任，足球射門促進下肢單腳站立平衡，黏土造型則鍛鍊雙手精細分工捏塑。",
-    "goals": [
-      "增進肢體平衡與下肢單腳站立踢球動態穩定",
-      "訓練指尖力量搓揉條狀毛毛蟲與圓球章魚造型",
-      "增進同儕不放手之互助合作精神"
-    ],
-    "space_setup": "空曠動線規劃雪花片球門射門區，後方配置黏土操作桌椅。",
-    "process": [
-      {
-        "stage": "暖身破冰（約 15 分鐘）",
-        "description": "「牽手套呼啦圈」：全員牽手圍圈，不放開手將呼啦圈由頭至腳傳給隔壁夥伴。"
-      },
-      {
-        "stage": "主要操作（約 30 分鐘）",
-        "description": "活動一「足球踢踢踢」：依序助跑將皮球踢進雪花片球門；活動二「輕黏土手作」：揉捏搓條製作立體毛毛蟲、蝸牛與小章魚吸盤。"
-      },
-      {
-        "stage": "分享回饋（約 10 分鐘）",
-        "description": "展示黏土動物園、投票選出最喜歡的小動物、點數統計與獎勵發放。"
-      }
-    ],
-    "grading_down": "踢球球門寬度加倍，距離縮短至1公尺；黏土由老師協助分等份搓圓，孩童負責壓扁貼上。",
-    "grading_up": "射門前需先踩過波浪板再起腳；黏土需自行混色並做出細微章魚觸手紋路。",
-    "safety": "踢球嚴禁推擠同伴與大力亂踢；黏土嚴禁放入口中，操作完畢徹底洗手。",
-    "tags": ["兒童職能", "雙手協調", "黏土造型", "動態平衡", "同儕合作"]
-  },
-  {
-    "id": "ped-wk4-obstacle-pinwheel",
-    "title": "角錐障礙足球賽與旋轉紙杯風車手作",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "55分鐘",
-    "group_size": "6-8人",
-    "skills": ["精細動作與手部協調", "執行功能與認知規劃"],
-    "materials": [
-      "障礙角錐4-6個、皮球2顆",
-      "彩色紙杯、彩色筆、剪刀",
-      "棉花棒、吸管、小毛球、保麗龍膠",
-      "雪花片闖關教具、全勤結業禮品"
-    ],
-    "substitute_materials": "角錐可用裝水寶特瓶替代；保麗龍膠可用雙面膠加白膠替代。",
-    "rationale": "將大動作S型繞錐運球與細緻口腔吹氣風車結合，全面整合兒童之動作計畫、手指工具操作與口腔肌群。",
-    "goals": [
-      "增進身體動作計畫（S型繞過障礙角錐運球）能力",
-      "提升剪裁扇葉手指靈巧度與吹動風車之口腔動作控制",
-      "完成四週系列團體之成就感建立與學習心得分享"
-    ],
-    "space_setup": "設置S型角錐障礙動線與球門，旁邊長桌配置風車手作工具材料。",
-    "process": [
-      {
-        "stage": "暖身破冰（約 15 分鐘）",
-        "description": "「牆壁鬼」遊戲（反應力、急停與空間定向）、複習四週約定規則。"
-      },
-      {
-        "stage": "主要操作（約 30 分鐘）",
-        "description": "活動一「障礙足球射門」：繞過角錐後起腳射門；活動二「紙杯風車」：沿線剪出6瓣扇葉斜折、穿過棉花棒軸心套入吸管，用力吹氣旋轉。"
-      },
-      {
-        "stage": "分享回饋（約 10 分鐘）",
-        "description": "比賽誰的風車轉得最快、分享這四個星期最喜歡的活動、頒發全勤小勇士禮物。"
-      }
-    ],
-    "grading_down": "風車軸心與小洞由老師預先鑽好；踢球障礙物間距加大。",
-    "grading_up": "風車雙層扇葉對稱彩繪；運球限制左右腳輪流觸球前進。",
-    "safety": "安全剪刀不拿來揮舞；吹風車時提醒調節呼吸，避免過度用力頭暈。",
-    "tags": ["兒童職能", "口腔動作", "工具操作", "障礙運球", "動作計畫"]
-  },
-  {
-    "id": "ped-rescue-food-adventure",
-    "title": "拯救食物大作戰 — 兒童感覺動作與蔬果認知冒險",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "60分鐘",
-    "group_size": "4-6人",
-    "skills": ["精細動作與手部協調", "執行功能與認知規劃"],
-    "materials": [
-      "彩色魔筆卡片2組",
-      "弧面長瓢蟲平衡墊、方桌與圓桌",
-      "蔬果2片式拼圖認知卡1盒"
-    ],
-    "substitute_materials": "瓢蟲墊可用長條觸覺平衡板或枕頭排列代替；蔬果拼圖可用自製彩色圖卡剪開代替。",
-    "rationale": "透過「奪回小動物被怪獸搶走的食物」故事包裝，讓孩童在平衡過橋動線中訓練姿勢控制、視覺搜尋與口語命名能力。",
-    "goals": [
-      "訓練走在弧面長條瓢蟲墊上之動態姿勢控制與平衡協調",
-      "提升視覺搜尋、顏色辨識與蔬果拼圖之形狀空間配對",
-      "促進口語表達命名與聽從指令任務完成能力"
-    ],
-    "space_setup": "圓桌（怪獸取卡區）→ 長瓢蟲墊（獨木橋）→ 方桌（小動物的家拼圖區），單向闖關循環動線。",
-    "process": [
-      {
-        "stage": "情境故事與引導（約 10 分鐘）",
-        "description": "講述怪獸偷食物背景故事，示範第一關看怪獸卡抽卡牌、走橋撿拼圖的流程。"
-      },
-      {
-        "stage": "主要操作階段（約 40 分鐘）",
-        "description": "小朋友輪流出發：第一關看怪獸要什麼色卡並大聲說出顏色；第二關走瓢蟲橋沿途拾取另一半蔬果拼圖；第三關到方桌完成2片拼圖並大聲說出蔬果名稱（進行2-3輪）。"
-      },
-      {
-        "stage": "回饋與總結（約 10 分鐘）",
-        "description": "清點大家奪回的蔬果總數、讚美孩童平衡過橋的勇敢表現、蓋印章獎勵。"
-      }
-    ],
-    "grading_down": "瓢蟲墊旁由老師牽手走；拼圖卡片提供2選1降低視覺搜尋難度。",
-    "grading_up": "拼圖卡片改為反面朝上需盲抽翻面配對；要求講出該蔬果的特徵（如口感、生長在哪裡）。",
-    "safety": "長瓢蟲墊兩側全程安排帶領者守護防止跌落；卡牌防撕防刮手。",
-    "tags": ["兒童職能", "早療介入", "動態平衡", "視覺認知", "拼圖配對"]
-  },
-  {
-    "id": "ped-saving-money-detective",
-    "title": "撿到一塊錢與存錢大作戰 — 注意力與動作協調團體",
-    "population": "pediatrics",
-    "population_name": "兒童職能",
-    "duration": "60分鐘",
-    "group_size": "4-6人",
-    "skills": ["執行功能與認知規劃", "精細動作與手部協調"],
-    "materials": [
-      "《撿到一塊錢》繪本故事書",
-      "尋找搗蛋龍卡牌、特徵牌",
-      "硬幣與分類小籃子、湯匙",
-      "萬象組平衡木、巧拼跳格、存錢筒、配對賓果卡"
-    ],
-    "substitute_materials": "平衡木可用彩色地膠貼直線代替；存錢筒可用打洞紙盒代替。",
-    "rationale": "藉由品德繪本引發動機，在運送硬幣走平衡木的過程中鍛鍊手眼協調、工具持握穩定與分類認知能力。",
-    "goals": [
-      "增進繪本聆聽注意力與問題解決思考表達能力",
-      "訓練持湯匙平穩運送硬幣走平衡木之動態協調",
-      "增進硬幣大小面額區辨與類別配對認知能力"
-    ],
-    "space_setup": "圓桌（線索小偷卡區）→ 平衡木（走道路線）→ 方桌警察局（分類存錢筒）→ 巧拼跳格（回程路線）。",
-    "process": [
-      {
-        "stage": "繪本暖身故事（約 15 分鐘）",
-        "description": "講述棒棒貓撿到一塊錢的歷險繪本，引導思考撿到錢該如何處置、建立拾金不昧觀念。"
-      },
-      {
-        "stage": "闖關主活動（約 35 分鐘）",
-        "description": "關卡一「抓小偷」：依特徵卡找出搗蛋龍，用湯匙舀起硬幣走平衡木不落地；關卡二「送到警察局」：將硬幣正確分類投入對應存錢筒；關卡三「巧拼單雙腳跳」：依格子數單腳或雙腳跳回座位。"
-      },
-      {
-        "stage": "回饋與分享（約 10 分鐘）",
-        "description": "討論現實中撿到錢該交給誰、練習大聲說謝謝、收拾分類硬幣教具。"
-      }
-    ],
-    "grading_down": "運硬幣換用大凹槽湯匙或徒手抓握硬幣；平衡木高度降至地面。",
-    "grading_up": "改用平底小塑膠湯匙運送50元硬幣；增加特徵卡為4重複合條件（顏色、角、斑點、尾巴）。",
-    "safety": "硬幣與小配件全程嚴密看管，嚴防口慾期幼童誤吞；平衡木旁舖設軟墊。",
-    "tags": ["兒童職能", "注意力", "平衡協調", "繪本情境", "分類概念"]
-  },
-  {
-    "id": "expressive-emotion-collage",
-    "title": "星空剪貼心世界 — 精神科病房非語言表達與現實感團體",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "50分鐘",
-    "group_size": "6-8人",
-    "skills": ["社交互動與團體合作", "精細動作與手部協調"],
-    "materials": [
-      "過期風景與星空雜誌圖庫",
-      "八開深藍 / 淺紫色書畫底紙",
-      "安全圓頭剪刀（每人一把，編號嚴格管制）",
-      "無毒口水膠",
-      "彩色色筆"
-    ],
-    "substitute_materials": "若評估個案衝動控制差，完全不發放剪刀，改由治療師預先手撕好邊緣柔軟的圖案，或提供手撕色紙。",
-    "rationale": "精神科病房個案常受幻覺妄想干擾或因陰性症狀而情感平淡。拼貼（Collage）是一種低焦慮、非評判性的媒介，毋需繪畫技巧，挑選圖像拼貼出內心星空，能安全投射情緒並重拾掌控感。",
-    "goals": [
-      "強化現實導向（活動啟始之時空定向感訓練）",
-      "提供安全的非語言情感疏導管道，減少內在張力",
-      "練習團體常模遵守（工具安全清點與保管）與尊重他人發表空間"
-    ],
-    "space_setup": "大會議長桌或圓形配置，治療師座位能綜觀全場動態並靠近出入口，成員間留有舒適的個人安全空間。",
-    "process": [
-      {
-        "stage": "暖身階段（約 10 分鐘）",
-        "description": "「現實導向啟動」：治療師於白板寫下今日日期、星期、室溫與團體名稱，請成員輪流朗讀；發放有編號之剪刀與膠水，宣導安全管制規則。"
-      },
-      {
-        "stage": "主要操作階段（約 25 分鐘）",
-        "description": "主題引導：「如果心裡有一片星空，現在是什麼樣子？」成員翻閱雜誌挑選 3-5 張圖片剪貼於底紙。治療師巡視給予非評價式陪伴，不催促。"
-      },
-      {
-        "stage": "分享與回饋階段（約 15 分鐘）",
-        "description": "作品平放桌面，自由選擇說一句話介紹；治療師總結成員心聲給予肯定；最後全體停下手邊動作，由治療師按編號逐一收回清點剪刀，全數核對無誤後解散。"
-      }
-    ],
-    "grading_down": "動機極低或負性症狀嚴重者，直接提供 3 張精選圖卡挑一張貼上並署名；躁症者限制貼 1-2 張，縮短操作時間至 10 分鐘。",
-    "grading_up": "功能較高者在拼貼旁寫上一段 30 字的「給自己的星空小語」或為作品命名，訓練概念化反思能力。",
-    "safety": "剪刀必須綁防盜線或嚴格清點編號收納，嚴禁任何工具帶出職能治療室；若出現自傷意象立即平和轉移並於會後向醫療團隊交班。",
-    "tags": ["精神科病房", "情感表達", "現實導向", "心理職能", "非語言治療"]
-  },
-  {
-    "id": "psych-ward-social-qa",
-    "title": "生活問答練功坊 — 語言表達與敏感社交問題應對",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "60分鐘",
-    "group_size": "8-12人",
-    "skills": ["社交互動與團體合作", "執行功能與認知規劃"],
-    "materials": [
-      "皮球或軟布球3顆（傳球用）",
-      "音響與音樂播放設備",
-      "投影機與情境簡報",
-      "白板與白板筆"
-    ],
-    "substitute_materials": "無投影機時改以手寫大字卡或列印題目紙傳閱。",
-    "rationale": "病房個案重返家庭時常面臨親友過度關切或敏感詢問。透過三段式音樂傳球遊戲，由淺入深練習口語組織、句子重組與得體的人際界線應對。",
-    "goals": [
-      "提升公眾場合口語朗讀與語言表達通順度",
-      "演練過年親友聚會敏感問題（如問工作、問病情）之應對話術",
-      "增進聆聽他人發言之耐心與團體信任感"
-    ],
-    "space_setup": "排列U型長桌，保留中央走道便於傳球，前方投影螢幕清晰無遮擋。",
-    "process": [
-      {
-        "stage": "簡介與暖身（約 8 分鐘）",
-        "description": "「老師說」破冰指令動作，聚焦學員注意力；說明今日主題為生活與過年人際對談技巧。"
-      },
-      {
-        "stage": "三關卡傳球（約 40 分鐘）",
-        "description": "活動一（朗讀）：音樂停持球者唸出投影正面句子；活動二（重組）：重組破碎詞語句子使之通順；活動三（實戰）：面對尖銳問題（如『你住院都在幹嘛？』）練習體面有界線的回答。"
-      },
-      {
-        "stage": "分享與總結（約 12 分鐘）",
-        "description": "討論「哪一個問題最難回答？如果不想回答可以怎麼說？」治療師統整尊重個人界線的溝通心法。"
-      }
-    ],
-    "grading_down": "提供固定兩句話術模板（如『謝謝關心，目前以調養身體為主』）讓個案照著唸。",
-    "grading_up": "由帶領者現場即興模擬尖銳長輩提問，學員需自主靈活組織兼具禮貌與防禦的成熟回答。",
-    "safety": "活動討論嚴格保護個案隱私，不強迫揭露個人真實病史；嚴禁同儕互相探人隱私或訕笑。",
-    "tags": ["精神科病房", "社交技巧", "語言表達", "人際界線", "心理復能"]
-  },
-  {
-    "id": "psych-ward-lantern-origami",
-    "title": "元宵紙燈籠製作 — 手部精細動作與節慶認知團體",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "60分鐘",
-    "group_size": "8-12人",
-    "skills": ["精細動作與手部協調", "執行功能與認知規劃"],
-    "materials": [
-      "小色紙約300張（7.5x7.5cm雙色多款）",
-      "底稿紙30份、大示範色紙",
-      "編號安全剪刀、口紅膠、彩色筆、膠帶、白板"
-    ],
-    "substitute_materials": "色紙可用乾淨廣告傳單裁切方塊替代；底稿紙可用牛皮紙替代。",
-    "rationale": "結合元宵民俗節日，透過步驟分級摺紙強化手指靈巧度、指尖捏力與順序記憶力，營造節慶希望感。",
-    "goals": [
-      "增進指尖捏折、對稱壓平和雙手工具操作精細能力",
-      "提升遵循多步驟視覺圖解之持續性注意力與記憶力",
-      "藉由作品展示美化病房，增進自我效能感與自信心"
-    ],
-    "space_setup": "四人一桌分組配置，每桌配發材料盒；前方白板張貼大圖解折紙步驟範本。",
-    "process": [
-      {
-        "stage": "簡介與發材料（約 5 分鐘）",
-        "description": "介紹元宵節燈籠文化，展示簡單版、中等版、困難版範例，發放色紙材料包。"
-      },
-      {
-        "stage": "示範與教學製作（約 45 分鐘）",
-        "description": "治療師示範中等版摺紙步驟，逐桌巡視協助對折壓平；學員製作多片燈籠單元黏貼於底稿，並以彩筆裝飾提把與穗子。"
-      },
-      {
-        "stage": "環境收拾與清點（約 10 分鐘）",
-        "description": "將燈籠作品張貼於病房公佈欄；全員停下手邊動作，按編號嚴格收回剪刀清點全數無誤後解散。"
-      }
-    ],
-    "grading_down": "提供已折出米字底痕的半成品色紙，或改做只需兩次對折的平面燈籠。",
-    "grading_up": "挑戰立體多面體折紙燈籠，並要求在燈籠四面手寫燈謎籤詩。",
-    "safety": "剪刀嚴格編號清點收繳；色紙紙緣防刮手；躁動學員給予即時關懷。",
-    "tags": ["精神科病房", "精細動作", "節慶手工藝", "摺紙", "認知促進"]
-  },
-  {
-    "id": "psych-ward-riddle-quiz",
-    "title": "日常生活猜燈謎 — 記憶活化與生活常識益智團體",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "60分鐘",
-    "group_size": "10-15人",
-    "skills": ["執行功能與認知規劃", "社交互動與團體合作"],
-    "materials": [
-      "活動簡報、電腦與投影機",
-      "平板用詞語卡、籤筒與編號籤",
-      "白板與白板筆、分組桌牌"
-    ],
-    "substitute_materials": "若無投影設備，改用手寫大字卡掛在白板上展示題目。",
-    "rationale": "藉由日常生活用品（牙刷、洗衣機、悠遊卡、提款機）與節慶猜謎，刺激語意長期記憶、特徵歸納能力與現實導向生活自理認知。",
-    "goals": [
-      "訓練聽覺專注力、語意提取與生活物品特徵關聯思考",
-      "強化小組討論與代表發言的團隊合作技巧",
-      "重溫健保卡、大眾運輸與超商等生活自理（IADL）常識"
-    ],
-    "space_setup": "分四組長桌配置，中央走道空出，投影螢幕正對全體座位，白板計分榜分明。",
-    "process": [
-      {
-        "stage": "破冰暖身（約 10 分鐘）",
-        "description": "給予5個形容詞猜出元宵相關答案（湯圓、天燈、燈會），示範特徵聯想遊戲規則。"
-      },
-      {
-        "stage": "分組益智競賽（約 40 分鐘）",
-        "description": "關卡一依平板形容詞猜生活用品；關卡二學員自主構思形容詞讓台下猜；關卡三生活延伸常識討論（如健保卡遺失處理、電梯超載因應）。"
-      },
-      {
-        "stage": "分享與結語（約 10 分鐘）",
-        "description": "分享哪一題生活問題印象最深刻、評選優勝小組頒發榮譽獎勵、治療師回顧生活自主技能。"
-      }
-    ],
-    "grading_down": "提供二選一或三選一提示卡片；允許同桌組員合力補充回答。",
-    "grading_up": "限制形容詞必須在3~5字內精簡完成，訓練語意概括與口語衝動抑制能力。",
-    "safety": "引導友善良性競爭，適時平衡各組得分，避免學員產生挫折或敵對情緒。",
-    "tags": ["精神科病房", "認知訓練", "語意記憶", "生活常識", "益智團體"]
-  },
-  {
-    "id": "psych-ward-cherry-blossom",
-    "title": "櫻花盛開 — 手部精細摺紙與春季感官藝術團體",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "80分鐘",
-    "group_size": "8-12人",
-    "skills": ["精細動作與手部協調", "感覺處理與情緒調節"],
-    "materials": [
-      "櫻花專用色紙（粉紅、桃紅、淺紫等）250張",
-      "剪刀20把、口紅膠2盒、彩色筆、底稿紙25份",
-      "台灣櫻花介紹簡報、投影機"
-    ],
-    "substitute_materials": "若無彩色底稿紙，可用厚卡紙或牛皮紙手繪深色樹枝背景。",
-    "rationale": "藉由春暖花開的自然美景喚醒生命感知，透過多步驟對稱折疊與剪紙櫻花，改善手眼協調與步驟記憶，舒緩住院焦慮。",
-    "goals": [
-      "訓練多步驟折疊技巧（先對折、翻面折箏型、壓出立體花瓣）",
-      "增進操作剪刀修剪弧度之雙手工具協調度",
-      "透過自然春櫻意象促進情緒宣洩與美感體驗"
-    ],
-    "space_setup": "A教室長桌配置，前方大螢幕播放各類櫻花美景與分解折紙短片。",
-    "process": [
-      {
-        "stage": "暖身與文化介紹（約 8 分鐘）",
-        "description": "介紹山櫻花、八重櫻、昭和櫻特色與阿里山、陽明山賞櫻景點，成員分享賞花經驗。"
-      },
-      {
-        "stage": "主活動手作操作（約 60 分鐘）",
-        "description": "階段一「立體折紙櫻花」：折出花瓣單元並組裝；階段二「剪紙櫻花」：色紙多層折疊剪出五瓣花朵；階段三「黏貼與背景彩繪」自由佈置。"
-      },
-      {
-        "stage": "分享與清點（約 12 分鐘）",
-        "description": "分享「比較喜歡哪種折法的櫻花？製作過程遇到什麼困難？」清點20把剪刀核對歸位解散。"
-      }
-    ],
-    "grading_down": "提供已劃出剪裁紅虛線的紙胚；允許只製作步驟較少的剪紙版櫻花。",
-    "grading_up": "挑戰五瓣立體心形花瓣互鎖組裝，並手繪精緻櫻花樹枝幹遠近光影。",
-    "safety": "剪刀清點收納列管；注意學員手部施力避免痙攣或過度疲乏。",
-    "tags": ["精神科病房", "手部功能", "摺紙藝術", "櫻花", "美感療育"]
-  },
-  {
-    "id": "psych-ward-baseball-origami",
-    "title": "澄清湖棒球回憶 — 球衣摺紙與在地生活連結團體",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "80分鐘",
-    "group_size": "8-12人",
-    "skills": ["精細動作與手部協調", "執行功能與認知規劃"],
-    "materials": [
-      "色紙多色（球衣用、球帽用）、圓形白紙片（棒球）",
-      "彩色筆、口紅膠、剪刀、底稿25份",
-      "澄清湖棒球場與棒球規則簡報"
-    ],
-    "substitute_materials": "球場底稿可直接在綠色卡紙上用白筆劃出內外野菱形線條。",
-    "rationale": "結合高雄在地澄清湖棒球場地緣記憶與經典運動回憶，透過球衣、球帽摺紙與手繪縫線，提升專注力、生活參與熱情與精細手功能。",
-    "goals": [
-      "鍛鍊手指細部翻折領口與球帽立體轉折之精細功能",
-      "增進對稱圖形建構與順序計畫之執行功能",
-      "連結在地健康休閒記憶，強化重返社會的希望感"
-    ],
-    "space_setup": "長桌配置，前方投影澄清湖球場照片與球員球衣特寫範本。",
-    "process": [
-      {
-        "stage": "棒球常識暖身（約 8 分鐘）",
-        "description": "問答破冰：棒球一隊幾人？好球壞球規則？澄清湖棒球場地緣聊談。"
-      },
-      {
-        "stage": "三合一手作主活動（約 60 分鐘）",
-        "description": "步驟一摺棒球衣（翻領、肩線收角）；步驟二摺棒球帽（米字褶、兩側梯形收口壓平）；步驟三摺棒球並用紅彩筆手繪V型縫線，組裝於底稿。"
-      },
-      {
-        "stage": "回饋與工具清點（約 12 分鐘）",
-        "description": "展示球衣背號設計（寫上代表自己的幸運數字）、分享運動對自己的意義、工具收回清點。"
-      }
-    ],
-    "grading_down": "球帽改為平面梯形折法；球衣由帶領者協助領口對齊翻折。",
-    "grading_up": "自行繪製特定職棒球隊隊徽，並手繪看台觀眾席與球場看板豐富畫面。",
-    "safety": "剪刀清點管制；維持討論氣氛專注於運動精神，避免激動球隊口角爭執。",
-    "tags": ["精神科病房", "棒球記憶", "在地文化", "手功能", "空間計畫"]
-  },
-  {
-    "id": "psych-ward-clover-handcraft",
-    "title": "手功能活動-幸運草 — 靈巧度訓練與祝福手作",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "75分鐘",
-    "group_size": "8-12人",
-    "skills": ["精細動作與手部協調", "感覺處理與情緒調節"],
-    "materials": [
-      "雙面不同色色紙（淺綠、深綠、紫、粉）準備25人份",
-      "西卡紙、彩色筆、口紅膠20個",
-      "細筷子（捲莖輔助用）、示範大色紙"
-    ],
-    "substitute_materials": "若無雙面色紙可用單面色紙反折展示白邊；捲莖筷子可用原子筆桿替代。",
-    "rationale": "藉由四葉幸運草寓意帶來希望與愛。結合四角向心翻摺愛心葉片、斜捲圓筒紙莖與立體蝴蝶，全面訓練手指兩側指力與視覺空間翻轉。",
-    "goals": [
-      "提升雙手協調、指尖靈巧度與工具（筷子捲紙）操作控制",
-      "增進視覺空間知覺能力（正反翻面三角形對稱判斷）",
-      "透過手作幸運物傳遞正向心理祝福"
-    ],
-    "space_setup": "10K交誼廳長桌配置，每桌配備材料杯與口紅膠，前方展示步驟放大模型。",
-    "process": [
-      {
-        "stage": "春日聯想暖身（約 10 分鐘）",
-        "description": "四月份春暖花開聯想、幸運草片數寓意介紹（信仰、希望、愛、幸運）、手部十指伸展操。"
-      },
-      {
-        "stage": "立體組裝主活動（約 55 分鐘）",
-        "description": "製作三朵幸運草：折疊4片愛心葉片互扣組裝；使用筷子斜捲長紙條為圓筒莖部；摺疊雙層立體蝴蝶，自由黏貼並彩繪背景。"
-      },
-      {
-        "stage": "分享回饋與收納（約 10 分鐘）",
-        "description": "分享最近一件讓自己感到幸運或開心的事、分享作品、收拾口紅膠與筷子歸位。"
-      }
-    ],
-    "grading_down": "葉片折疊由老師預先標出折線；莖部若難捲可直接手繪或提供現成紙條貼上。",
-    "grading_up": "將葉片擴增為五葉草（代表財富），並在蝴蝶翅膀剪出精緻鏤空圖案。",
-    "safety": "筷子等細長工具需完整登記回收；隨時關注學員有無挫折反應適時協助。",
-    "tags": ["精神科病房", "手部靈巧度", "幸運草", "空間知覺", "正向心理"]
-  },
-  {
-    "id": "psych-ward-firefly-origami",
-    "title": "手功能活動-螢火蟲 — 注意力與指尖肌力訓練團體",
-    "population": "psychiatric-inpatient",
-    "population_name": "精神科病房",
-    "duration": "75分鐘",
-    "group_size": "8-10人",
-    "skills": ["精細動作與手部協調", "執行功能與認知規劃"],
-    "materials": [
-      "單面臘光色紙（藍、黑、紫、橘）20人份",
-      "深綠/淺綠色紙（小草用）、圖畫紙半張/人",
-      "橘色發光點點貼紙4個/人、彩色筆、口紅膠"
-    ],
-    "substitute_materials": "發光貼紙可用黃色彩筆或螢光筆直接點畫替代；底紙可用黑色卡紙呈現夜空。",
-    "rationale": "螢火蟲在微弱環境中發光，象徵黑暗中的希望。透過16格精密棋盤折痕與水邊小草折疊，訓練持續性注意力與精細指尖捏壓功能。",
-    "goals": [
-      "訓練指尖力量壓出清晰的16等分對摺摺痕",
-      "提升交替性注意力（於螢火蟲主體與多層小草步驟間靈活轉換）",
-      "藉由夜間微光意象沉澱焦慮情緒，體驗寧靜心境"
-    ],
-    "space_setup": "10K交誼廳桌椅排列，每人提供軟墊板方便折紙施力，前置大張示範圖解。",
-    "process": [
-      {
-        "stage": "螢火蟲生態破冰（約 10 分鐘）",
-        "description": "介紹螢火蟲發光求偶生態、棲息環境，進行雙手手指點穴熱身操。"
-      },
-      {
-        "stage": "細緻折疊主活動（約 55 分鐘）",
-        "description": "步驟一折出16格壓出倒V形螢火蟲身軀並貼上發光點點貼紙；步驟二折出三株立體小草；步驟三組合於底紙，彩繪水邊樹叢與月色夜景。"
-      },
-      {
-        "stage": "分享回饋與清點（約 10 分鐘）",
-        "description": "分享童年看螢火蟲經驗、作品難易度討論、全體協助將材料包與彩筆收拾至推車。"
-      }
-    ],
-    "grading_down": "色紙預先用壓線筆劃出16格線條輔助折疊；螢火蟲隻數減少為1-2隻。",
-    "grading_up": "在夜景底紙上手繪透明玻璃罐，將螢火蟲巧妙安排在罐內與罐外飛舞光軌中。",
-    "safety": "工具材料確實收繳清點；陪伴因手抖或肌力不足折不準之個案，肯定其參與努力。",
-    "tags": ["精神科病房", "手功能", "螢火蟲", "注意力", "抒壓放鬆"]
-  },
-  {
-    "id": "community-baking-workshop",
-    "title": "星光烘焙工坊 — 社區精神復健 IADL 備餐與工作團隊訓練",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "75分鐘",
-    "group_size": "6-10人",
-    "skills": ["執行功能與認知規劃", "社交互動與團體合作"],
-    "materials": [
-      "低脂燕麥蔓越莓餅乾預拌粉 / 燕麥片",
-      "雞蛋、牛奶、無鹽奶油",
-      "電子計量秤、打蛋器、量杯、刮刀",
-      "家用烤箱、烘焙紙、耐熱手套",
-      "圍裙與廚師帽"
-    ],
-    "substitute_materials": "若場地無烤箱，改用免烘烤的「星光地瓜球」或「能量燕麥雪球」，僅需雙手塑型與冷藏，依然能達成揉捏與計量訓練。",
-    "rationale": "日間型精神復健學員常面臨重返社區與職場挑戰。烹飪與烘焙是典型的 IADL 活動，具備感官吸引力與即時回饋感，是培養順序規劃（Sequencing）與團隊分工的黃金媒介。",
-    "goals": [
-      "提升執行功能：理解並遵循食譜三至四步驟之時間流程與材料測量",
-      "促進職場角色認同：於團隊中履行分配之角色任務（如稱重員、攪拌員、清潔員）",
-      "強化衛生與高溫廚電安全認知"
-    ],
-    "space_setup": "區分「備料區」、「攪拌操作區」、「烘烤專區」與「清洗收納區」，明確走道動線避免碰撞。",
-    "process": [
-      {
-        "stage": "暖身階段（約 15 分鐘）",
-        "description": "「工作晨會」：著裝圍裙，朗讀今日目標；推選出組長（掌控時間）、磅秤大師（精準計量）、攪拌手與品管清潔員。"
-      },
-      {
-        "stage": "主要操作階段（約 40 分鐘）",
-        "description": "第一步依食譜精準量取材料；第二步全員輪流攪拌麵糰並舀至烤盤塑型；第三步送入烤箱，並於烘烤等待期間全員共同落實洗滌與桌面消毒。"
-      },
-      {
-        "stage": "分享與回饋階段（約 20 分鐘）",
-        "description": "熱騰騰出爐，每人分得一塊餅乾配溫茶品嚐；組長分享合作心得，治療師給予每位成員具體優點回饋（如讚賞細心、動作敏捷）。"
-      }
-    ],
-    "grading_down": "認知受損者使用預先等份分裝的小量杯（不用看數字秤重），只需倒粉與攪拌；對高溫恐懼者免除烘烤，專責包裝與貼標籤。",
-    "grading_up": "高階工作訓練學員需核算食材成本並設計商品定價與外包裝，訓練商業邏輯與金錢概念。",
-    "safety": "烤箱開關門必須配戴長袖防燙手套，非操作人員保持 1 公尺距離；全員落實洗手七步驟並事前確認食物過敏原。",
-    "tags": ["社區復健", "IADL備餐", "執行功能", "團隊合作", "工作前訓練"]
-  },
-  {
-    "id": "comm-psych-nutrition-plate",
-    "title": "「營」在起跑點 — 均衡飲食認知與健康餐盤手作",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "80分鐘",
-    "group_size": "10-15人",
-    "skills": ["執行功能與認知規劃", "社交互動與團體合作"],
-    "materials": [
-      "六大類食物衛教影片、簡報與音響",
-      "傳球用皮球1顆",
-      "學習單50份（食材著色剪貼+我的餐盤圖）",
-      "彩色筆、口紅膠2盒、剪刀20把"
-    ],
-    "substitute_materials": "食材剪貼若無學習單，可直接從超商宣傳DM中剪取實物照片拼貼。",
-    "rationale": "精神復健學員常因獨居或藥物影響有代謝症候群困擾。透過「食物紅綠燈」與自製均衡餐盤，強化健康飲食IADL自我管理能力。",
-    "goals": [
-      "辨識六大類食物分類與每餐適當攝取份量口訣",
-      "透過益智傳球遊戲促進注意力與認知反應彈性",
-      "動手規劃兼具美味、營養與色彩之個人健康餐盤"
-    ],
-    "space_setup": "日間病房A教室課桌椅排列，前方投影影片，中後方保留小組討論與剪貼空間。",
-    "process": [
-      {
-        "stage": "食物紅綠燈暖身（約 10 分鐘）",
-        "description": "看食物圖片直覺判斷：健康綠燈舉右手、加工高負擔紅燈舉左手（如炸薯條、珍奶、水煮雞胸）。"
-      },
-      {
-        "stage": "影音學習與餐盤設計（約 55 分鐘）",
-        "description": "觀看六大類食物短片；進行傳球益智問答（食物分類、份量換算）；發放學習單剪貼食物並彩繪專屬餐盤，書寫料理規劃。"
-      },
-      {
-        "stage": "分享餐盤與總結（約 15 分鐘）",
-        "description": "學員上台分享自己的餐盤菜單與學習收穫、同儕給予健康肯定、收拾環境歸位工具。"
-      }
-    ],
-    "grading_down": "餐盤學習單提供預先分類框格，學員只需將已剪好食物貼在正確格位。",
-    "grading_up": "計算該餐盤之大略預算金額與膳食纖維熱量分配，符合真實外食採買規劃。",
-    "safety": "剪刀清點防範；鼓勵健康飲食但避免評判學員身材引發自卑焦慮。",
-    "tags": ["社區復健", "健康促進", "IADL備餐", "營養餐盤", "生活管理"]
-  },
-  {
-    "id": "comm-psych-situational-bingo",
-    "title": "應變達人九是你 — 地板九宮格與生活情境危機應變",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "60分鐘",
-    "group_size": "8-12人",
-    "skills": ["執行功能與認知規劃", "社交互動與團體合作"],
-    "materials": [
-      "紙球/軟沙包3顆",
-      "有色膠帶（地板貼九宮格）",
-      "雙面題目紙18張（基礎/進階情境）",
-      "計分表與白板"
-    ],
-    "substitute_materials": "九宮格可用巧拼地墊拼成；情境題目可依學員平時遭遇動態擴增手寫題卡。",
-    "rationale": "社區學員獨立外出時常面臨突發問題（搭錯車、ATM卡住、看診預約）。藉由趣味丟球闖關，模擬生活危機並演練解決步驟。",
-    "goals": [
-      "提升日常生活IADL情境模擬與隨機應變推理能力",
-      "訓練短期工作記憶力與目標投擲粗大動作控制",
-      "促進團體同儕互助協商與生活經驗交流"
-    ],
-    "space_setup": "呈泰日間機構活動大廳，地板黏貼大九宮格，設置投擲線與圍坐觀眾席。",
-    "process": [
-      {
-        "stage": "名字轉盤暖身（約 15 分鐘）",
-        "description": "圍圈自我介紹並說出喜愛食物；音樂傳兩顆球，停時說出對方喜愛食物加分破冰。"
-      },
-      {
-        "stage": "九宮格應變闖關（約 35 分鐘）",
-        "description": "學員投擲紙球命中號碼，翻開背後情境題：第一輪基礎情境（坐公車到機構、全聯買日用品、洗澡、ATM領錢）；第二輪進階情境（超商繳費、100元吃自助餐、銀行臨櫃、加油站）。"
-      },
-      {
-        "stage": "分享與類化（約 10 分鐘）",
-        "description": "分享「哪種情境最容易卡住？現實遇到可以找誰幫忙？」總結冷靜應對三步驟。"
-      }
-    ],
-    "grading_down": "投中後若一時想不出來，由小組夥伴提供2個提示選項二選一。",
-    "grading_up": "增加複合多重突發條件（例如身上只有悠遊卡且餘額不足，迷路時如何向路人求助）。",
-    "safety": "地板紙球防踩踏滑倒；回答過程秉持正向支持，絕不嘲笑任何回答方式。",
-    "tags": ["社區復健", "IADL情境", "問題解決", "應變能力", "生活自立"]
-  },
-  {
-    "id": "comm-psych-christmas-star",
-    "title": "聖誕「星」願滿天飛 — 立體剪紙與空間美化合作團體",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "75分鐘",
-    "group_size": "10-15人",
-    "skills": ["社交互動與團體合作", "精細動作與手部協調"],
-    "materials": [
-      "各色色紙、海報紙、雲彩紙",
-      "剪刀、口紅膠、雙面膠、繩子、盤子",
-      "雪花剪紙範本、立體星星折法圖解、聖誕襪底模"
-    ],
-    "substitute_materials": "裝飾紙材可用舊樂譜或彩色雜誌廣告頁替代，營造現代復古拼貼感。",
-    "rationale": "藉由合力完成機構四樓教室、樓梯牆壁與公佈欄之聖誕節慶佈置，培養學員團隊分工、工具共享協商與環境歸屬感。",
-    "goals": [
-      "依能力分組完成立體星星折紙與平面節慶剪紙",
-      "增進學員間主動溝通、分工合作與工具材料互讓",
-      "藉由親手美化生活環境提升自我價值感與成就感"
-    ],
-    "space_setup": "呈泰日間機構大教室，區分高功能組（立體星星與雪花）與低功能組（平面薑餅人與拐杖糖），設立牆面張貼動線。",
-    "process": [
-      {
-        "stage": "聖誕回憶破冰（約 10 分鐘）",
-        "description": "交流過聖誕節的回憶與心願，展示教室環境佈置設計圖藍圖。"
-      },
-      {
-        "stage": "分工製作與佈置（約 50 分鐘）",
-        "description": "高功能組教學立體星星折紙與多角雪花剪紙；低功能組製作聖誕襪、拐杖糖與薑餅人；全員合力使用膠帶與繩子將作品佈置於牆壁與門窗。"
-      },
-      {
-        "stage": "成果欣賞與回饋（約 15 分鐘）",
-        "description": "全員環視美麗溫馨的教室成果、合影留念、分享合作中印象最深刻的點滴。"
-      }
-    ],
-    "grading_down": "低功能學員提供厚紙剪裁安全版型，著重於塗膠、黏貼棉花球與裝飾彩繪。",
-    "grading_up": "高功能學員擔任組長，自主度量對角線折疊大尺寸立體星芒並規劃整體空間動線。",
-    "safety": "張貼高處作品嚴禁站在活動椅子上，必須由工作人員使用安全梯或長柄工具協助。",
-    "tags": ["社區復健", "環境美化", "團隊合作", "節慶活動", "立體手作"]
-  },
-  {
-    "id": "comm-psych-tear-art-therapy",
-    "title": "撕在有藝思 — 壓力宣洩與撕紙藝術創作團體",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "75分鐘",
-    "group_size": "8-12人",
-    "skills": ["感覺處理與情緒調節", "精細動作與手部協調"],
-    "materials": [
-      "各色素面色紙、廣告彩紙",
-      "動物與生活底稿25份（兔子、雞、向日葵、海豚）",
-      "膠水/口紅膠、彩色筆、作品收納托盤"
-    ],
-    "substitute_materials": "底稿可由學員自由手繪輪廓；撕紙材料可用舊雜誌大色塊替代。",
-    "rationale": "撕紙的聲音與阻抗是天然的負向情緒宣洩途徑。將煩惱寫於紙背後撕碎，再重新拼貼成美麗畫作，象徵情緒轉化與自我療癒。",
-    "goals": [
-      "提供安全宣洩日常生活壓力與情緒負擔之具體管道",
-      "訓練雙手指尖抓握撕裂細小紙片之手部靈巧度",
-      "藉由重組碎紙創作重塑自我掌控感與新年新希望"
-    ],
-    "space_setup": "方桌圍坐，每人發放一個乾淨托盤放置撕下的小紙片，背景播放放鬆輕音樂。",
-    "process": [
-      {
-        "stage": "壓力釋放暖身（約 10 分鐘）",
-        "description": "在色紙白面上寫下近期煩惱或壓力，倒數計時全員共同用力將紙張盡情撕成碎片！"
-      },
-      {
-        "stage": "撕貼創作主活動（約 50 分鐘）",
-        "description": "挑選底稿，將剛剛撕碎的彩色紙片作為填色材料，使用膠水細緻拼貼至圖案輪廓內，空白處寫下新年新願望。"
-      },
-      {
-        "stage": "分享回饋與類化（約 15 分鐘）",
-        "description": "分享撕紙當下的身心感受、展示美麗畫作、彼此祝福新年新希望順利實現。"
-      }
-    ],
-    "grading_down": "提供粗線條簡單圖形（如大茶壺、兔子）；允許撕大片紙塊直接拼貼。",
-    "grading_up": "挑戰複雜羽毛或波浪漸層圖案（海豚、向日葵），要求微型馬賽克細緻填色。",
-    "safety": "引導情緒撕紙為安全象徵動作，避免學員產生過激崩潰反應，適時給予同理陪伴。",
-    "tags": ["社區復健", "情緒調節", "藝術治療", "撕貼畫", "抒壓放鬆"]
-  },
-  {
-    "id": "comm-psych-social-skills-master",
-    "title": "社牛養成計畫 — 日間病房五週全方位社交技巧訓練",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "75分鐘",
-    "group_size": "10-15人",
-    "skills": ["社交互動與團體合作", "執行功能與認知規劃"],
-    "materials": [
-      "五大性格特質（OCEAN）測驗學習單 / Slido",
-      "抽籤箱、A3紙張、膠水、彩色筆",
-      "無聲微表情情境短片、眼罩/口罩、祝福小卡"
-    ],
-    "substitute_materials": "情境影片可用帶領者真人即興短劇示範；眼罩可用絲巾或帽子遮光替代。",
-    "rationale": "結合職能治療介入策略（OTIPM）、人際互動溝通技能評估（ACIS）與團體動力學，全方位培養精神復健學員之社交實戰技能。",
-    "goals": [
-      "學習運用五大特質進行精準自我介紹與認識同儕",
-      "掌握合作拼貼中之物資協商、意見整合與分工技巧",
-      "學習辨識微表情情緒與在不同溝通限制下化解人際衝突"
-    ],
-    "space_setup": "分組圓桌配置，中央設有角色扮演即興舞台，各組配備文具盒與計時器。",
-    "process": [
-      {
-        "stage": "五週循序漸進（約 10 分鐘）",
-        "description": "第1週自我介紹關鍵詞；第2週支援前線破冰；第3週臉部情緒圖片辨識；第4週角色扮演衝突情境劇；第5週海報成果總結。"
-      },
-      {
-        "stage": "深度互動主活動（約 50 分鐘）",
-        "description": "實作四大核心單元：合作拼貼畫「你認識的醫院/機構」、無聲影片情緒偵探、三條件受限溝通演練（一般/戴眼罩口語/戴口罩紙筆）。"
-      },
-      {
-        "stage": "類化應用與小卡回饋（約 15 分鐘）",
-        "description": "類化至職場求職面試與生活溝通；傳遞祝福小卡寫下對同儕的肯定與期許。"
-      }
-    ],
-    "grading_down": "自我介紹提供填空範本；衝突情境劇由治療師擔任主角帶領對話。",
-    "grading_up": "隨機給予高難度衝突情境，要求學員即興運用換位思考化解僵局。",
-    "safety": "角色扮演嚴禁人身攻擊或舊傷揭露；維持安全包容、互相信任之團體心理防線。",
-    "tags": ["社區復健", "社交技巧", "SST", "衝突解決", "團體動力學"]
-  },
-  {
-    "id": "comm-psych-recycled-art",
-    "title": "化垃圾為藝術品 — 環保回收物立體再生創作",
-    "population": "community-psychiatry",
-    "population_name": "社區精神復健",
-    "duration": "70分鐘",
-    "group_size": "8-12人",
-    "skills": ["精細動作與手部協調", "執行功能與認知規劃"],
-    "materials": [
-      "乾淨回收物（寶特瓶、吸管、免洗餐具、舊報紙）",
-      "保麗龍膠、剪刀、壓克力麥克筆、噴漆/彩繪工具"
-    ],
-    "substitute_materials": "可用回收紙箱瓦楞紙或鋁罐替代，裝飾可用落葉或毛線球。",
-    "rationale": "精神復健強調自我賦權與環境永續。將回收物轉化為具生活實用性或情感象徵的立體藝術，培養6R環保認知與創意思維。",
-    "goals": [
-      "建立環保6R觀念與資源回收再利用之實務知識",
-      "訓練多種回收複合材質剪裁黏貼之精細操作力",
-      "發揮創意思考製作實用性生活器物（如筆筒、存錢筒）"
-    ],
-    "space_setup": "工作桌分區陳列各類洗淨回收材料，備有安全剪裁專區與彩繪通風處。",
-    "process": [
-      {
-        "stage": "環保6R破冰問答（約 10 分鐘）",
-        "description": "討論日常最常產生的垃圾、介紹6R原則與廢棄物循環經濟案例。"
-      },
-      {
-        "stage": "立體再生創作（約 45 分鐘）",
-        "description": "學員挑選回收素材，製作對自己有意義的立體物品（如童年玩具、筆筒、存錢筒），以麥克筆進行細緻彩繪裝飾。"
-      },
-      {
-        "stage": "故事分享與收拾（約 15 分鐘）",
-        "description": "輪流上台分享作品背後的故事與生活用途、全員共同落實場地清潔與垃圾分類責任。"
-      }
-    ],
-    "grading_down": "提供已修剪平整之寶特瓶半成品，學員專注於包裝紙黏貼與彩繪外觀。",
-    "grading_up": "挑戰使用多種異材質（塑膠、吸管、紙質）組裝出具活動關節的立體雕塑。",
-    "safety": "所有回收物必須事先徹底清洗消毒；邊緣修剪平整防割傷。",
-    "tags": ["社區復健", "環保再生", "精細動作", "立體創作", "創意思維"]
-  },
-  {
-    "id": "reminiscence-starlight-ball",
-    "title": "暖心星光懷舊氣球球賽 — 高齡長照動態平衡與回憶喚醒團體",
-    "population": "geriatric-care",
-    "population_name": "高齡長照",
-    "duration": "45分鐘",
-    "group_size": "8-12人",
-    "skills": ["感覺處理與情緒調節", "社交互動與團體合作"],
-    "materials": [
-      "45cm 特大號耐磨氣球（內置發光星光LED燈珠）",
-      "超輕泡棉軟球拍（或徒手拍擊）",
-      "長照懷舊歌謠音樂放音機",
-      "高對比度反光貼紙"
-    ],
-    "substitute_materials": "若無發光氣球，可用鮮豔絲巾打結製成軟球，降落速度同樣緩慢安全。",
-    "rationale": "長輩常有下肢無力、步態不穩及恐懼跌倒的情形，加上午後容易嗜睡。氣球飄落速度慢，能給予大腦充裕的視覺預判與動作反應時間。結合內置星光閃爍燈與經典老歌，能大幅誘發自發性肢體伸展、促進社交歡笑與情感共鳴。",
-    "goals": [
-      "強化坐姿動態平衡（Seated Dynamic Balance）與軀幹左右旋轉能力",
-      "促進雙側上肢肩關節前屈（Flexion）與手部快速推擊反應",
-      "透過經典歌謠喚醒長期記憶（Reminiscence），提升自尊與團體活力"
-    ],
-    "space_setup": "全員坐在有扶手的穩固靠背椅上，圍成一個大圓圈（圓心直徑約 3 公尺），椅子下方均鋪設防滑墊，中央無任何障礙物。",
-    "process": [
-      {
-        "stage": "暖身階段（約 10 分鐘）",
-        "description": "「音樂敲敲肩」：播放輕快老歌《四季紅》，帶領拍拍雙肩、搓手與深呼吸伸展；大聲親切點名問候每位長輩。"
-      },
-      {
-        "stage": "主要操作階段（約 25 分鐘）",
-        "description": "第一回傳遞星光氣球熟悉光影；第二回「星空不落地大作戰」，在安全坐姿下雙手向上推擊，治療師在場中央助攻；第三回「音樂定格」，接到球的長輩由全體合唱其指定的老歌片段。"
-      },
-      {
-        "stage": "分享與回饋階段（約 10 分鐘）",
-        "description": "播放舒緩歌謠撫胸吐氣放鬆；邀請長輩分享以前乘涼看星星或聽歌的故事；互相握手肯定彼此的精彩表現。"
-      }
-    ],
-    "grading_down": "偏癱或單側無力者，將球引導至健側或鼓勵雙手抱拳推擊；白內障弱視長者使用鮮黃高對比球並輔以口語聲響提示。",
-    "grading_up": "認知體力佳者同時加入兩顆不同顏色氣球，或規定「男生推紅球、女生推紫球」，訓練雙重任務（Dual-task）與選擇性注意力。",
-    "safety": "活動前嚴格提醒「屁股黏在椅子上」，嚴禁突然起身撲球；隨時監測呼吸與面色，防止心血管負荷過重。",
-    "tags": ["高齡長照", "懷舊治療", "坐姿動態平衡", "延緩失能失智", "多感官刺激"]
-  },
-  {
-    "id": "geriatric-cognitive-bingo",
-    "title": "腦力激盪賓果賽 — 細節闡述與語意記憶活化團體",
-    "population": "geriatric-care",
-    "population_name": "高齡長照",
-    "duration": "40分鐘",
-    "group_size": "8-12人",
-    "skills": ["執行功能與認知規劃", "社交互動與團體合作"],
-    "materials": [
-      "A4賓果紙（5*5大格子）、粗奇異筆",
-      "投影簡報（25個日常生活物品詞彙）、桌子、椅子"
-    ],
-    "substitute_materials": "長輩若不便寫字，可提供預先印製好的大字體圖卡讓長輩挑選黏貼。",
-    "rationale": "針對長照長輩，運用「細節闡述（Elaboration）」記憶策略，從功能、外觀與生活情境多維度描述物品，深化大腦語意編碼，活化長期記憶。",
-    "goals": [
-      "訓練長輩觀察物品特質並以3個以上具體特徵進行描述",
-      "提升工作記憶檢索能力與口語對談社交參與度",
-      "維持心智活躍度，延緩輕度認知障礙退化"
-    ],
-    "space_setup": "兩組面對面圍坐，桌上備有大字版對照單，長輩配戴老花眼鏡確保視覺清晰。",
-    "process": [
-      {
-        "stage": "細節闡述暖身（約 5 分鐘）",
-        "description": "示範用3種不同特徵描述冰箱（有冷凍、延長保存、溫度低），長輩輪流練習描述鞋子、太陽、咖啡。"
-      },
-      {
-        "stage": "賓果猜謎競賽（約 25 分鐘）",
-        "description": "長輩在5*5格子填入詞語（水壺、電風扇、雨傘等）；兩組輪流擔任出題者，描述特徵讓對方猜並圈選，率先連成3條線獲勝。"
-      },
-      {
-        "stage": "總結與心得（約 10 分鐘）",
-        "description": "分享如何將細節記憶技巧應用於生活（記藥品、記人名）、熱烈鼓掌肯定彼此的機智表現。"
-      }
-    ],
-    "grading_down": "縮小為3*3九宮格；由帶領者提供特徵選擇題輔助出題。",
-    "grading_up": "不可講出直接用途，限制只能由「材質、觸感、氣味」等感官特徵描述。",
-    "safety": "字體至少36pt以上；避免節奏過急引發挫折焦慮，重視參與同樂感。",
-    "tags": ["高齡長照", "認知促進", "語意記憶", "賓果競賽", "生活回憶"]
-  },
-  {
-    "id": "geriatric-body-mechanics-back",
-    "title": "日常身體力學與下背痛防護 — 生活型態再造健康模組",
-    "population": "geriatric-care",
-    "population_name": "高齡長照",
-    "duration": "60分鐘",
-    "group_size": "8-10人",
-    "skills": ["感覺處理與情緒調節", "執行功能與認知規劃"],
-    "materials": [
-      "衛教投影簡報、穩固靠背扶手椅",
-      "軟伸展墊、靠枕、水壺、毛巾"
-    ],
-    "substitute_materials": "地面伸展可完全轉換為坐姿伸展操，毋需長輩躺臥地面。",
-    "rationale": "許多長者受下背痛困擾。透過生活型態再造（Lifestyle Redesign）導入正確身體力學原則與溫和伸展，降低關節退化負擔，促進自主生活品質。",
-    "goals": [
-      "理解下背痛日常成因與學會正確坐姿（90度、背貼椅背）與站姿",
-      "掌握蹲下拾物、側身起床、雙手均勻搬重物等保護性力學原則",
-      "學會平躺骨盆搖擺、抱胸捲腹與坐姿伸懶腰等居家放鬆伸展"
-    ],
-    "space_setup": "椅子圍成半圓形，中央空出示範區，後方鋪設伸展軟墊，確保走道無障礙物。",
-    "process": [
-      {
-        "stage": "背痛經驗交流（約 15 分鐘）",
-        "description": "分享平日腰痠背痛困擾、介紹急性與慢性下背痛成因與脊椎保健知識。"
-      },
-      {
-        "stage": "身體力學與伸展實作（約 35 分鐘）",
-        "description": "實作正確坐姿、蹲下拾物而非彎腰、側身起床手撐；帶領溫和放鬆伸展（骨盆呼吸搖擺、捲腹伸展、坐姿左右彎腰）。"
-      },
-      {
-        "stage": "生活類化與溫水收操（約 10 分鐘）",
-        "description": "討論在家看電視或做家事時如何調整姿勢、互相檢視良好體態、補充水分放鬆。"
-      }
-    ],
-    "grading_down": "長輩全程採坐姿進行伸展，避免臥姿上下墊子產生頭暈或關節疼痛。",
-    "grading_up": "指導結合腹式深呼吸的骨盆核心微收縮，並發放居家生活姿勢自評表追蹤。",
-    "safety": "嚴禁急速扭腰或劇烈後仰；嚴重骨鬆長者避免大幅度彎折脊椎；穿著防滑平底鞋。",
-    "tags": ["高齡長照", "身體力學", "下背痛防護", "居家復能", "生活型態再造"]
-  },
-  {
-    "id": "geriatric-horticultural-therapy",
-    "title": "葉來葉好玩 — 綠意園藝觸覺感官與休閒藝術團體",
-    "population": "geriatric-care",
-    "population_name": "高齡長照",
-    "duration": "60分鐘",
-    "group_size": "8-12人",
-    "skills": ["感覺處理與情緒調節", "精細動作與手部協調"],
-    "materials": [
-      "天然植物葉片（深淺葉脈）、花朵、果實",
-      "色鉛筆、壓克力顏料、水彩筆、調色盤、藤編條",
-      "8K/A4白紙、白膠、大自然輕音樂BGM"
-    ],
-    "substitute_materials": "若無新鮮植物可用乾燥落葉或壓花替代；藤編條可用粗毛線替代。",
-    "rationale": "依據園藝治療CARE動能模式（串連、活動、反思、經驗），親手觸摸泥土與植物芬芳，能喚醒長輩自然生命力，舒緩身心焦慮。",
-    "goals": [
-      "透過觸摸不同深淺粗細之葉脈，提供豐富觸知覺感官刺激",
-      "運用葉面拓印與拼貼創作鍛鍊手部精細操作功能",
-      "藉由大自然創作達到情緒放鬆與心靈沈澱"
-    ],
-    "space_setup": "播放森林蟲鳴BGM，長桌鋪設防污桌巾，整齊擺放洗淨植物與畫具。",
-    "process": [
-      {
-        "stage": "植物感官盲摸破冰（約 8 分鐘）",
-        "description": "閉眼觸摸3種質感不同的葉片，依葉脈深淺排序並猜出植物名稱與花語。"
-      },
-      {
-        "stage": "園藝拓印主活動（約 40 分鐘）",
-        "description": "三階技法教學：色鉛筆葉脈拓印、水彩葉背印壓、立體藤編自然拼貼，學員合作完成自然卡片作品。"
-      },
-      {
-        "stage": "作品命名與心得分享（約 12 分鐘）",
-        "description": "為作品命名並分享背後理念、交流哪種拓印技法最順手、共同收拾落葉擦拭桌面。"
-      }
-    ],
-    "grading_down": "提供葉脈深厚的大葉欖仁直接刷水彩拓印；由志工協助固定葉片。",
-    "grading_up": "結合細緻藤編穿編與小果實鑲嵌，製作立體浮雕式園藝風景壁畫。",
-    "safety": "確認植物絕對無毒、無刺毛與過敏汁液；使用藤編時注意防範木屑細刺。",
-    "tags": ["高齡長照", "園藝治療", "感官活化", "自然拓印", "休閒活動"]
-  }
-]
-; }
-
-    // 啟動應用
     window.addEventListener('DOMContentLoaded', initApp);
   </script>
 </body>

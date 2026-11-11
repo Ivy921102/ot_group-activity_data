@@ -1,80 +1,88 @@
 ﻿# 職能治療團體活動資料庫 — 總索引目錄 (Index Matrix)
 
-> 最後更新時間：2026-11-11  
-> 說明：本檔案由 AI 代理人維護，每次執行 Ingest 或修改活動時自動同步更新。目前共收錄 26 個臨床團體活動。
+> 最後更新時間：2026-11-12  
+> 說明：本檔案由 AI 代理人依據 Andrej Karpathy LLM Wiki 精神與治療師臨床指導維護。全站收錄之 32 個獨立活動教案均源自使用者上傳之 22 份真實臨床計畫書（已落實臨床合併與跨族群標記校正）。
 
 ---
 
 ## 1. 核心族群導航
-- [[pediatrics]] — **兒童職能**（早療、感覺統合、精細動作發展、行為常規）
-- [[psychiatric-inpatient]] — **精神科病房**（現實導向、情緒非語言表達、器械安全管制、手工藝）
-- [[community-psychiatry]] — **社區精神復健**（IADL生活自理、工作前訓練、人際溝通、環境美化）
-- [[geriatric-care]] — **高齡長照**（延緩失能失智、坐姿動態平衡、懷舊治療、日常身體力學）
+- [[pediatrics]] — **兒童職能**（感覺統合、精細動作協調、同儕合作遊戲、動態平衡）
+- [[psychiatric-inpatient]] — **精神科病房**（現實導向、情緒宣洩、利器安全管制、手功能精細摺紙工藝）
+- [[community-psychiatry]] — **社區精神復健**（獨立生活功能 IADL、SST 社交技巧、危機應變、環保再造）
+- [[geriatric-care]] — **高齡長照**（延緩失能失智、身體力學防跌、座椅下背痛伸展、五感園藝懷舊）
 
 ---
 
-## 2. 治療能力導航
-- [[fine-motor]] — **精細動作與手部協調**
-- [[sensory-regulation]] — **感覺處理與情緒調節**
-- [[executive-function]] — **執行功能與認知規劃**
-- [[social-interaction]] — **社交互動與團體合作**
+## 2. 團體類型分類
+- **🎨 藝術與手工藝**：紙藝、撕貼畫、不織布手縫、黏土捏塑、拓印工藝
+- **🧩 認知與益智**：生活常識問答、猜燈謎、九宮格應變連線、飲食分類
+- **🏠 日常生活功能（ADL/IADL）**：均衡餐盤採買、身體力學搬物、零錢計算與儲蓄
+- **💬 社交與溝通**：SST 社交技巧系列（破冰、默契拼貼、心智同理心、我訊息衝突化解、感恩小卡）
+- **🏃 動作與體適能**：動態平衡木、足球射門、丟沙包、座椅防跌伸展
 
 ---
 
-## 3. 全站收錄團體活動矩陣（Activities Matrix - 共 26 篇）
+## 3. 全站收錄團體活動矩陣（Activities Matrix - 共 32 篇）
 
-| 活動 ID / 連結 | 活動名稱 | 適用族群 | 主要介入能力 | 預估時間 | 建議人數 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| [[sensory-clay-planet]] | 星際黏土探險 — 觸覺調適與手指尋寶團體 | 兒童職能 (pediatrics) | 精細動作與手部協調、感覺處理與情緒調節 | 40分鐘 | 4-6人 |
-| [[ped-wk1-color-ball-flower]] | 彩球挑戰大冒險與紙杯花藝創作 | 兒童職能 (pediatrics) | 精細動作與手部協調、社交互動與團體合作 | 55分鐘 | 6-8人 |
-| [[ped-wk2-sandbag-collage]] | 九宮格丟沙包與彩紙撕貼畫 | 兒童職能 (pediatrics) | 精細動作與手部協調、感覺處理與情緒調節 | 55分鐘 | 6-8人 |
-| [[ped-wk3-soccer-clay]] | 呼啦圈穿梭、足球射門與輕黏土動物捏塑 | 兒童職能 (pediatrics) | 精細動作與手部協調、社交互動與團體合作 | 55分鐘 | 6-8人 |
-| [[ped-wk4-obstacle-pinwheel]] | 角錐障礙足球賽與旋轉紙杯風車手作 | 兒童職能 (pediatrics) | 精細動作與手部協調、執行功能與認知規劃 | 55分鐘 | 6-8人 |
-| [[ped-rescue-food-adventure]] | 拯救食物大作戰 — 兒童感覺動作與蔬果認知冒險 | 兒童職能 (pediatrics) | 精細動作與手部協調、執行功能與認知規劃 | 60分鐘 | 4-6人 |
-| [[ped-saving-money-detective]] | 撿到一塊錢與存錢大作戰 — 注意力與動作協調團體 | 兒童職能 (pediatrics) | 執行功能與認知規劃、精細動作與手部協調 | 60分鐘 | 4-6人 |
-| [[expressive-emotion-collage]] | 星空剪貼心世界 — 精神科病房非語言表達與現實感團體 | 精神科病房 (psychiatric-inpatient) | 社交互動與團體合作、精細動作與手部協調 | 50分鐘 | 6-8人 |
-| [[psych-ward-social-qa]] | 生活問答練功坊 — 語言表達與敏感社交問題應對 | 精神科病房 (psychiatric-inpatient) | 社交互動與團體合作、執行功能與認知規劃 | 60分鐘 | 8-12人 |
-| [[psych-ward-lantern-origami]] | 元宵紙燈籠製作 — 手部精細動作與節慶認知團體 | 精神科病房 (psychiatric-inpatient) | 精細動作與手部協調、執行功能與認知規劃 | 60分鐘 | 8-12人 |
-| [[psych-ward-riddle-quiz]] | 日常生活猜燈謎 — 記憶活化與生活常識益智團體 | 精神科病房 (psychiatric-inpatient) | 執行功能與認知規劃、社交互動與團體合作 | 60分鐘 | 10-15人 |
-| [[psych-ward-cherry-blossom]] | 櫻花盛開 — 手部精細摺紙與春季感官藝術團體 | 精神科病房 (psychiatric-inpatient) | 精細動作與手部協調、感覺處理與情緒調節 | 80分鐘 | 8-12人 |
-| [[psych-ward-baseball-origami]] | 澄清湖棒球回憶 — 球衣摺紙與在地生活連結團體 | 精神科病房 (psychiatric-inpatient) | 精細動作與手部協調、執行功能與認知規劃 | 80分鐘 | 8-12人 |
-| [[psych-ward-clover-handcraft]] | 手功能活動-幸運草 — 靈巧度訓練與祝福手作 | 精神科病房 (psychiatric-inpatient) | 精細動作與手部協調、感覺處理與情緒調節 | 75分鐘 | 8-12人 |
-| [[psych-ward-firefly-origami]] | 手功能活動-螢火蟲 — 注意力與指尖肌力訓練團體 | 精神科病房 (psychiatric-inpatient) | 精細動作與手部協調、執行功能與認知規劃 | 75分鐘 | 8-10人 |
-| [[community-baking-workshop]] | 星光烘焙工坊 — 社區精神復健 IADL 備餐與工作團隊訓練 | 社區精神復健 (community-psychiatry) | 執行功能與認知規劃、社交互動與團體合作 | 75分鐘 | 6-10人 |
-| [[comm-psych-nutrition-plate]] | 「營」在起跑點 — 均衡飲食認知與健康餐盤手作 | 社區精神復健 (community-psychiatry) | 執行功能與認知規劃、社交互動與團體合作 | 80分鐘 | 10-15人 |
-| [[comm-psych-situational-bingo]] | 應變達人九是你 — 地板九宮格與生活情境危機應變 | 社區精神復健 (community-psychiatry) | 執行功能與認知規劃、社交互動與團體合作 | 60分鐘 | 8-12人 |
-| [[comm-psych-christmas-star]] | 聖誕「星」願滿天飛 — 立體剪紙與空間美化合作團體 | 社區精神復健 (community-psychiatry) | 社交互動與團體合作、精細動作與手部協調 | 75分鐘 | 10-15人 |
-| [[comm-psych-tear-art-therapy]] | 撕在有藝思 — 壓力宣洩與撕紙藝術創作團體 | 社區精神復健 (community-psychiatry) | 感覺處理與情緒調節、精細動作與手部協調 | 75分鐘 | 8-12人 |
-| [[comm-psych-social-skills-master]] | 社牛養成計畫 — 日間病房五週全方位社交技巧訓練 | 社區精神復健 (community-psychiatry) | 社交互動與團體合作、執行功能與認知規劃 | 75分鐘 | 10-15人 |
-| [[comm-psych-recycled-art]] | 化垃圾為藝術品 — 環保回收物立體再生創作 | 社區精神復健 (community-psychiatry) | 精細動作與手部協調、執行功能與認知規劃 | 70分鐘 | 8-12人 |
-| [[reminiscence-starlight-ball]] | 暖心星光懷舊氣球球賽 — 高齡長照動態平衡與回憶喚醒團體 | 高齡長照 (geriatric-care) | 感覺處理與情緒調節、社交互動與團體合作 | 45分鐘 | 8-12人 |
-| [[geriatric-cognitive-bingo]] | 腦力激盪賓果賽 — 細節闡述與語意記憶活化團體 | 高齡長照 (geriatric-care) | 執行功能與認知規劃、社交互動與團體合作 | 40分鐘 | 8-12人 |
-| [[geriatric-body-mechanics-back]] | 日常身體力學與下背痛防護 — 生活型態再造健康模組 | 高齡長照 (geriatric-care) | 感覺處理與情緒調節、執行功能與認知規劃 | 60分鐘 | 8-10人 |
-| [[geriatric-horticultural-therapy]] | 葉來葉好玩 — 綠意園藝觸覺感官與休閒藝術團體 | 高齡長照 (geriatric-care) | 感覺處理與情緒調節、精細動作與手部協調 | 60分鐘 | 8-12人 |
+| 活動 ID / 連結 | 活動名稱 | 適用族群 | 團體類型 | 預估時間 | 建議人數 | 原始教案檔案 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [[ped-wk1-color-ball]] | 彩球挑戰大冒險 — 動態平衡與顏色分類 | 兒童職能 | 動作與體適能、社交與溝通 | 25分鐘 | 6-8人 | $(@{id=ped-wk1-color-ball; title=彩球挑戰大冒險 — 動態平衡與顏色分類; population=pediatrics; populations=System.Object[]; group_type=motor; group_types=System.Object[]; duration=25分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第一週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk1-cup-flower]] | 紙杯花藝創作 — 精細剪裁與反摺手作 | 兒童職能 | 藝術與手工藝 | 30分鐘 | 6-8人 | $(@{id=ped-wk1-cup-flower; title=紙杯花藝創作 — 精細剪裁與反摺手作; population=pediatrics; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=30分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第一週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk2-sandbag]] | 九宮格丟沙包 — 上肢力氣控制與目標投擲賽 | 兒童職能、高齡長照、社區精神復健 | 動作與體適能、認知與益智 | 25分鐘 | 6-10人 | $(@{id=ped-wk2-sandbag; title=九宮格丟沙包 — 上肢力氣控制與目標投擲賽; population=pediatrics; populations=System.Object[]; group_type=motor; group_types=System.Object[]; duration=25分鐘; group_size=6-10人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第二週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk2-torn-collage]] | 彩紙手撕拼貼畫 — 指尖力量與色彩填色 | 兒童職能 | 藝術與手工藝 | 30分鐘 | 6-8人 | $(@{id=ped-wk2-torn-collage; title=彩紙手撕拼貼畫 — 指尖力量與色彩填色; population=pediatrics; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=30分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第二週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk3-soccer]] | 足球踢踢踢射門賽 — 下肢動態平衡與協調 | 兒童職能 | 動作與體適能 | 25分鐘 | 6-8人 | $(@{id=ped-wk3-soccer; title=足球踢踢踢射門賽 — 下肢動態平衡與協調; population=pediatrics; populations=System.Object[]; group_type=motor; group_types=System.Object[]; duration=25分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第三週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk3-card-match]] | 撲克牌配對快手 — 工作記憶與視覺搜尋 | 兒童職能、高齡長照、精神科病房 | 認知與益智 | 20分鐘 | 4-8人 | $(@{id=ped-wk3-card-match; title=撲克牌配對快手 — 工作記憶與視覺搜尋; population=pediatrics; populations=System.Object[]; group_type=cognitive; group_types=System.Object[]; duration=20分鐘; group_size=4-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第三週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk3-clay-animals]] | 輕黏土動物捏塑 — 手部肌力與立體造型 | 兒童職能 | 藝術與手工藝 | 30分鐘 | 6-8人 | $(@{id=ped-wk3-clay-animals; title=輕黏土動物捏塑 — 手部肌力與立體造型; population=pediatrics; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=30分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第三週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk4-obstacle-soccer]] | 角錐障礙足球射門 — 動作計畫與繞錐協調 | 兒童職能 | 動作與體適能 | 25分鐘 | 6-8人 | $(@{id=ped-wk4-obstacle-soccer; title=角錐障礙足球射門 — 動作計畫與繞錐協調; population=pediatrics; populations=System.Object[]; group_type=motor; group_types=System.Object[]; duration=25分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第四週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-wk4-cup-pinwheel]] | 旋轉紙杯風車手作 — 精細組裝與口腔吹氣動作 | 兒童職能 | 藝術與手工藝、動作與體適能 | 30分鐘 | 6-8人 | $(@{id=ped-wk4-cup-pinwheel; title=旋轉紙杯風車手作 — 精細組裝與口腔吹氣動作; population=pediatrics; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=30分鐘; group_size=6-8人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第四週計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-rescue-food]] | 拯救食物大作戰 — 兒童平衡動作與蔬果認知冒險 | 兒童職能 | 動作與體適能、認知與益智 | 60分鐘 | 4-6人 | $(@{id=ped-rescue-food; title=拯救食物大作戰 — 兒童平衡動作與蔬果認知冒險; population=pediatrics; populations=System.Object[]; group_type=motor; group_types=System.Object[]; duration=60分鐘; group_size=4-6人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0417活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-catch-thief-balance]] | 抓小偷與平衡木運幣 — 專注持握與動態平衡 | 兒童職能 | 動作與體適能、認知與益智 | 30分鐘 | 4-6人 | $(@{id=ped-catch-thief-balance; title=抓小偷與平衡木運幣 — 專注持握與動態平衡; population=pediatrics; populations=System.Object[]; group_type=motor; group_types=System.Object[]; duration=30分鐘; group_size=4-6人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0424活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[ped-save-money-match]] | 存錢筒分類大作戰與陰影配對 — 面額認知與視覺完形 | 兒童職能 | 日常生活功能、認知與益智 | 30分鐘 | 4-6人 | $(@{id=ped-save-money-match; title=存錢筒分類大作戰與陰影配對 — 面額認知與視覺完形; population=pediatrics; populations=System.Object[]; group_type=adl; group_types=System.Object[]; duration=30分鐘; group_size=4-6人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0424活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-social-qa]] | 生活問答練功坊（社交常識與健康知識大比拼） | 精神科病房、社區精神復健、高齡長照 | 認知與益智、社交與溝通 | 50分鐘 | 8-12人 | $(@{id=psych-social-qa; title=生活問答練功坊（社交常識與健康知識大比拼）; population=psychiatric-inpatient; populations=System.Object[]; group_type=cognitive; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0209益智團體活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-lantern-origami]] | 喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾） | 精神科病房、社區精神復健、高齡長照、兒童職能 | 藝術與手工藝、動作與體適能 | 50分鐘 | 6-10人 | $(@{id=psych-lantern-origami; title=喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）; population=psychiatric-inpatient; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=50分鐘; group_size=6-10人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0223手工藝團體活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-riddle-quiz]] | 迎春智慧王（生活常識與節慶猜燈謎） | 精神科病房、社區精神復健、高齡長照 | 認知與益智、社交與溝通 | 45分鐘 | 8-15人 | $(@{id=psych-riddle-quiz; title=迎春智慧王（生活常識與節慶猜燈謎）; population=psychiatric-inpatient; populations=System.Object[]; group_type=cognitive; group_types=System.Object[]; duration=45分鐘; group_size=8-15人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0302益智團體計劃書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-firefly-origami]] | 暗夜微光螢火蟲與立體草叢創作（雙色螢火蟲摺紙與剪齒草叢情境組裝） | 精神科病房、社區精神復健、兒童職能、高齡長照 | 藝術與手工藝、動作與體適能 | 50分鐘 | 6-10人 | $(@{id=psych-firefly-origami; title=暗夜微光螢火蟲與立體草叢創作（雙色螢火蟲摺紙與剪齒草叢情境組裝）; population=psychiatric-inpatient; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=50分鐘; group_size=6-10人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0421手功能團體活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-cherry-blossom]] | 櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術） | 精神科病房、社區精神復健、高齡長照 | 藝術與手工藝、動作與體適能 | 80分鐘 | 8-12人 | $(@{id=psych-cherry-blossom; title=櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）; population=psychiatric-inpatient; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=80分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0312手工藝團體計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-baseball-origami]] | 澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作） | 精神科病房、社區精神復健、高齡長照 | 藝術與手工藝、動作與體適能 | 80分鐘 | 8-12人 | $(@{id=psych-baseball-origami; title=澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）; population=psychiatric-inpatient; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=80分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0319手工藝團體計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[psych-clover-handcraft]] | 手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作） | 精神科病房、社區精神復健、高齡長照、兒童職能 | 藝術與手工藝、動作與體適能 | 75分鐘 | 8-12人 | $(@{id=psych-clover-handcraft; title=手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）; population=psychiatric-inpatient; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=75分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0407活動企劃書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-nutrition-plate]] | 「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師） | 社區精神復健、高齡長照、精神科病房 | 日常生活功能、認知與益智 | 80分鐘 | 10-15人 | $(@{id=comm-nutrition-plate; title=「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）; population=community-psychiatry; populations=System.Object[]; group_type=adl; group_types=System.Object[]; duration=80分鐘; group_size=10-15人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0326益智團體活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-situational-bingo]] | 應變達人九是你（日常突發情境與解決方案九宮格連線） | 社區精神復健、高齡長照 | 認知與益智、社交與溝通 | 50分鐘 | 8-12人 | $(@{id=comm-situational-bingo; title=應變達人九是你（日常突發情境與解決方案九宮格連線）; population=community-psychiatry; populations=System.Object[]; group_type=cognitive; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=呈泰第一次活動.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-tear-art]] | 撕在有藝思（手撕彩紙肌理拼貼與心境抒發） | 社區精神復健、精神科病房、高齡長照 | 藝術與手工藝、動作與體適能 | 50分鐘 | 6-10人 | $(@{id=comm-tear-art; title=撕在有藝思（手撕彩紙肌理拼貼與心境抒發）; population=community-psychiatry; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=50分鐘; group_size=6-10人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=呈泰第三次活動.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-social-wk1-ocean]] | 社牛第一步：深海尋友探險（破冰自我介紹、第一印象與破冰契約建立） | 社區精神復健、精神科病房 | 社交與溝通 | 50分鐘 | 8-12人 | $(@{id=comm-social-wk1-ocean; title=社牛第一步：深海尋友探險（破冰自我介紹、第一印象與破冰契約建立）; population=community-psychiatry; populations=System.Object[]; group_type=social; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第 04 組 計畫書(2.0).pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-social-wk2-collage]] | 社牛第二步：拼社交愛拼才會贏（團隊撕貼接力、非口語合作與分工協調） | 社區精神復健、精神科病房 | 社交與溝通、藝術與手工藝 | 50分鐘 | 8-12人 | $(@{id=comm-social-wk2-collage; title=社牛第二步：拼社交愛拼才會贏（團隊撕貼接力、非口語合作與分工協調）; population=community-psychiatry; populations=System.Object[]; group_type=social; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第 04 組 計畫書(2.0).pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-social-wk3-empathy]] | 社牛第三步：心靈解碼員：他在想什麼（面部表情微解讀、情境同理心與情緒辨識） | 社區精神復健、精神科病房 | 社交與溝通、認知與益智 | 50分鐘 | 8-12人 | $(@{id=comm-social-wk3-empathy; title=社牛第三步：心靈解碼員：他在想什麼（面部表情微解讀、情境同理心與情緒辨識）; population=community-psychiatry; populations=System.Object[]; group_type=social; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第 04 組 計畫書(2.0).pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-social-wk4-conflict]] | 社牛第四步：人際拆彈客：一起當個和事佬（人際衝突情境演練、我訊息表達與協商策略） | 社區精神復健、精神科病房 | 社交與溝通、認知與益智 | 50分鐘 | 8-12人 | $(@{id=comm-social-wk4-conflict; title=社牛第四步：人際拆彈客：一起當個和事佬（人際衝突情境演練、我訊息表達與協商策略）; population=community-psychiatry; populations=System.Object[]; group_type=social; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第 04 組 計畫書(2.0).pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-social-wk5-gratitude]] | 社牛第五步：暖心結業式：真心感謝小卡（人際回饋互贈、感恩心意傳遞與成長總結） | 社區精神復健、精神科病房 | 社交與溝通、藝術與手工藝 | 50分鐘 | 8-12人 | $(@{id=comm-social-wk5-gratitude; title=社牛第五步：暖心結業式：真心感謝小卡（人際回饋互贈、感恩心意傳遞與成長總結）; population=community-psychiatry; populations=System.Object[]; group_type=social; group_types=System.Object[]; duration=50分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第 04 組 計畫書(2.0).pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-recycled-art]] | 化垃圾為藝術品（寶特瓶與環保廢材再造多肉盆栽筆筒） | 社區精神復健、高齡長照、兒童職能 | 藝術與手工藝、日常生活功能 | 50分鐘 | 6-10人 | $(@{id=comm-recycled-art; title=化垃圾為藝術品（寶特瓶與環保廢材再造多肉盆栽筆筒）; population=community-psychiatry; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=50分鐘; group_size=6-10人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第九組帶活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[comm-xmas-celebration]] | 聖誕「星」願滿天飛（立體星芒雪花與聖誕心願襪拼貼） | 社區精神復健、高齡長照 | 藝術與手工藝、社交與溝通 | 75分鐘 | 10-15人 | $(@{id=comm-xmas-celebration; title=聖誕「星」願滿天飛（立體星芒雪花與聖誕心願襪拼貼）; population=community-psychiatry; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=75分鐘; group_size=10-15人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=呈泰第二次活動.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[geriatric-bingo]] | 腦力激盪九宮格賓果賽（長者益智記憶與身體動作連線競賽） | 高齡長照、社區精神復健、精神科病房 | 認知與益智、動作與體適能 | 50分鐘 | 8-16人 | $(@{id=geriatric-bingo; title=腦力激盪九宮格賓果賽（長者益智記憶與身體動作連線競賽）; population=geriatric-care; populations=System.Object[]; group_type=cognitive; group_types=System.Object[]; duration=50分鐘; group_size=8-16人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=老人預防及延緩失能活動.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[geriatric-body-mechanics]] | 日常身體力學與下背痛防護（日常生活搬物防跌與座椅核心伸展） | 高齡長照、社區精神復健 | 日常生活功能、動作與體適能 | 60分鐘 | 8-12人 | $(@{id=geriatric-body-mechanics; title=日常身體力學與下背痛防護（日常生活搬物防跌與座椅核心伸展）; population=geriatric-care; populations=System.Object[]; group_type=adl; group_types=System.Object[]; duration=60分鐘; group_size=8-12人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=衰弱老人生活型態再造介入方案模組.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
+| [[geriatric-horticulture]] | 葉來葉好玩園藝治療（芳香五感草木拓印與生命故事懷舊） | 高齡長照、社區精神復健、兒童職能 | 藝術與手工藝、認知與益智 | 50分鐘 | 6-10人 | $(@{id=geriatric-horticulture; title=葉來葉好玩園藝治療（芳香五感草木拓印與生命故事懷舊）; population=geriatric-care; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=50分鐘; group_size=6-10人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=第八組 團體計畫書作業（格式）_111-2.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file) |
 
 ---
 
-## 4. 原始資料來源追蹤（Sources Traceability - 共 23 筆來源）
-- sources/clinical-notes-2026.md — 臨床治療師日常觀察與四大族群發想隨筆
-- sources/0209益智團體活動計畫書.pdf — 高雄長庚12K病房 生活問答練功坊
-- sources/0223手工藝團體活動計畫書.pdf — 高雄長庚12K病房 元宵紙燈籠製作
-- sources/0302益智團體計劃書.pdf — 高雄長庚12K病房 日常生活猜燈謎
-- sources/0312手工藝團體計畫書.pdf — 高雄長庚11K病房 櫻花盛開手工藝
-- sources/0319手工藝團體計畫書.pdf — 高雄長庚11K病房 澄清湖棒球回憶摺紙
-- sources/0326益智團體活動計畫書.pdf — 高雄長庚11K日間病房 「營」在起跑點健康餐盤
-- sources/0407活動企劃書.pdf — 高雄長庚10K交誼廳 幸運草手功能活動
-- sources/0417活動計畫書.pdf — 兒童心智科 拯救食物大作戰
-- sources/0421手功能團體活動計畫書.pdf — 高雄長庚10K交誼廳 螢火蟲手功能活動
-- sources/0424活動計畫書.pdf — 兒童心智科 幼大DD撿到一塊錢存錢大作戰
-- sources/呈泰第一次活動.pdf — 呈泰日間型精神復健 應變達人九是你
-- sources/呈泰第二次活動.pdf — 呈泰日間型精神復健 聖誕「星」願滿天飛
-- sources/呈泰第三次活動.pdf — 呈泰日間型精神復健 撕在有藝思撕貼畫
-- sources/第 04 組 計畫書(2.0)(修改一些小內容).pdf — 高醫/小港日間病房 社牛養成計畫（五週社交技巧方案）
-- sources/第一週計畫書.pdf — 兒童職能第一週 彩球挑戰大冒險與紙杯花藝
-- sources/第二週計畫書.pdf — 兒童職能第二週 九宮格丟沙包與彩紙撕貼畫
-- sources/第三週計畫書.pdf — 兒童職能第三週 呼啦圈套圈圈與輕黏土動物
-- sources/第四週計畫書.pdf — 兒童職能第四週 障礙足球射門與紙杯風車
-- sources/第九組帶活動計畫書.pdf — 社區精神復健 化垃圾為藝術品
-- sources/第八組 團體計畫書作業（格式）_111-2.pdf — 休閒園藝團體 葉來葉好玩
-- sources/老人預防及延緩失能活動.pdf — 高齡長照 腦力激盪賓果
-- sources/衰弱老人生活型態再造介入方案模組.pdf — 高齡長照 下背痛與日常身體力學原則
+## 4. 原始資料來源追蹤（Sources Traceability - 共 22 份真實教案）
+1. sources/第一週計畫書.pdf — 彩球挑戰大冒險、紙杯花藝創作（兒童專屬）
+2. sources/第二週計畫書.pdf — 九宮格丟沙包、彩紙手撕拼貼畫（兒童專屬）
+3. sources/第三週計畫書.pdf — 足球射門運動員、配對快手認知大挑戰、輕黏土動物捏塑（兒童專屬）
+4. sources/第四週計畫書.pdf — 障礙足球射門挑戰、紙杯風車手作工坊（兒童專屬）
+5. sources/0417活動計畫書.pdf — 拯救食物大作戰（兒童感覺動作與蔬果認知）
+6. sources/0424活動計畫書.pdf — 抓小偷平衡木運幣挑戰、存錢筒分類與陰影配對
+7. sources/0209益智團體活動計畫書.pdf — 生活問答練功坊（社交常識與健康知識大比拼）
+8. sources/0223手工藝團體活動計畫書.pdf — 喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）
+9. sources/0302益智團體計劃書.pdf — 迎春智慧王（生活常識與節慶猜燈謎）
+10. sources/0312手工藝團體計畫書.pdf — 櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）
+11. sources/0319手工藝團體計畫書.pdf — 澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）
+12. sources/0407活動企劃書.pdf — 手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）
+13. sources/0421手功能團體活動計畫書.pdf — 暗夜微光螢火蟲與立體草叢創作（加入高齡長照）
+14. sources/0326益智團體活動計畫書.pdf — 「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）
+15. sources/呈泰第一次活動.pdf — 應變達人九是你（日常突發情境與解決方案九宮格連線）
+16. sources/呈泰第二次活動.pdf — 聖誕「星」願滿天飛（立體星芒雪花與聖誕心願襪拼貼）
+17. sources/呈泰第三次活動.pdf — 撕在有藝思（手撕彩紙肌理拼貼與心境抒發）
+18. sources/第 04 組 計畫書(2.0).pdf — 社牛養成計畫五週方案（①深海尋友探險、②拼社交愛拼才會贏、③心靈解碼員、④人際拆彈客、⑤真心感謝小卡）
+19. sources/第九組帶活動計畫書.pdf — 化垃圾為藝術品（寶特瓶與環保廢材再造多肉盆栽筆筒）
+20. sources/老人預防及延緩失能活動.pdf — 腦力激盪九宮格賓果賽
+21. sources/衰弱老人生活型態再造介入方案模組.pdf — 日常身體力學與下背痛防護（搬物防跌與座椅核心伸展）
+22. sources/第八組 團體計畫書作業（格式）_111-2.pdf — 葉來葉好玩園藝治療
+
+*本目錄由 AI 代理人依據 AGENTS.md Ingest SOP 雙向同步維護。*
