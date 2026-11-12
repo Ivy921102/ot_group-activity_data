@@ -1,17 +1,17 @@
 ﻿---
 id: "psych-cherry-blossom"
 title: "櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）"
-population: "psychiatric-inpatient"
+population: "psychiatric-day"
 populations:
-  - "psychiatric-inpatient"
-  - "community-psychiatry"
+  - "psychiatric-day"
   - "geriatric-care"
+  - "psychiatric-chronic"
 group_type: "art"
 group_types:
   - "art"
   - "motor"
 duration: "80分鐘"
-group_size: "8-12人"
+group_size: "20-25人"
 skills:
   - "指尖精細動作協調"
   - "空間幾何對折與剪裁"
@@ -23,21 +23,24 @@ materials:
   - "口紅膠與白膠"
   - "棕色水彩或色筆"
 tags:
+  - "精神科慢性/復健病房"
+  - "精神科日間病房"
+  - "高齡長照"
   - "櫻花手作"
   - "立體摺紙"
   - "剪紙藝術"
   - "精細動作"
-  - "精神科病房"
 source_file: "0312手工藝團體計畫書.pdf"
 created_at: "2026-11-11"
 ---
 
 # 櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）
 
-> **原始教案來源**：`0312手工藝團體計畫書.pdf`  
-> **主要族群**：精神科病房  
-> **適用族群**：精神科病房、社區精神復健、高齡長照  
-> **團體類型**：藝術與手工藝、動作與體適能
+> **原始教案來源**：\$(@{id=psych-cherry-blossom; title=櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）; population=psychiatric-day; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=80分鐘; group_size=20-25人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0312手工藝團體計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file)\  
+> **主要族群**：精神科日間病房  
+> **適用族群**：精神科日間病房、高齡長照、精神科慢性/復健病房  
+> **團體類型**：藝術與手工藝、動作與體適能  
+> **建議人數**：20-25人
 
 ## 1. 團體設計理念與目標
 - **理念說明**：藉由春暖花開的自然美景喚醒生命感知。結合單片立體花瓣摺紙組裝五瓣立體櫻花，以及紙張對摺剪裁對稱鏤空櫻花，在多步驟操作中活化雙手精細動作與步驟記憶，舒緩住院焦慮與封閉感。
@@ -52,13 +55,16 @@ created_at: "2026-11-11"
 - **場地與座位配置**：病房多功能職能治療室長桌配置，桌面光線充足，備有剪刀管制架
 
 ## 3. 團體流程與步驟
+- **暖身階段**：
 【手指暖身與春日引言（10分鐘）】：帶領手指伸展操，治療師展示盛開立體櫻花範本，引導成員分享對春天的美好期盼。
 
+- **主要操作階段**：
 【立體摺疊與剪紙拓印（60分鐘）】：
 1. 示範立體五瓣花瓣折疊，指導成員依序折出5瓣並抹膠組合成盛開立體花。
 2. 將色紙連續對折剪出對稱平面櫻花。
 3. 繪製或拓印棕色樹枝幹，將立體花與剪紙落花錯落黏貼，完成滿樹繁花美景。
 
+- **分享與回饋階段**：
 【花開相賞與工具清點（10分鐘）】：陳列全員作品相互讚賞，落實剪刀雙人清點歸位鎖存。
 
 ## 4. 分級與調適（Grading & Adaptation） ⭐
@@ -66,7 +72,4 @@ created_at: "2026-11-11"
 - **Grading Up（挑戰加難）**：挑戰雙色多層次立體櫻花，並手繪精細枝幹光影與微型花蕊細節。
 
 ## 5. 安全注意事項與禁忌症
-- 嚴格執行精神科病房利器管制規範：剪刀活動前後專人清點核對；使用黏膠時注意勿誤食沾染。
-
----
-*本活動教案由職能治療臨床教案整理收錄，符合 AGENTS.md 知識庫標準。*
+嚴格執行精神科病房利器管制規範：剪刀活動前後專人清點核對；使用黏膠時注意勿誤食沾染。

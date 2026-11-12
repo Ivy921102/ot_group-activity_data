@@ -1,17 +1,18 @@
 ﻿---
 id: "comm-nutrition-plate"
 title: "「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）"
-population: "community-psychiatry"
+population: "psychiatric-day"
 populations:
+  - "psychiatric-day"
   - "community-psychiatry"
   - "geriatric-care"
-  - "psychiatric-inpatient"
+  - "psychiatric-chronic"
 group_type: "adl"
 group_types:
   - "adl"
   - "cognitive"
 duration: "80分鐘"
-group_size: "10-15人"
+group_size: "20-25人"
 skills:
   - "獨立生活健康飲食管理"
   - "六大類食物比例幾何分配"
@@ -22,6 +23,9 @@ materials:
   - "剪刀與膠水"
   - "我的餐盤口訣衛教大字報"
 tags:
+  - "精神科慢性/復健病房"
+  - "精神科日間病房"
+  - "高齡長照"
   - "我的餐盤"
   - "食物紅綠燈"
   - "IADL獨立生活"
@@ -33,10 +37,11 @@ created_at: "2026-11-11"
 
 # 「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）
 
-> **原始教案來源**：`0326益智團體活動計畫書.pdf`  
-> **主要族群**：社區精神復健  
-> **適用族群**：社區精神復健、高齡長照、精神科病房  
-> **團體類型**：日常生活功能、認知與益智
+> **原始教案來源**：\$(@{id=comm-nutrition-plate; title=「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）; population=psychiatric-day; populations=System.Object[]; group_type=adl; group_types=System.Object[]; duration=80分鐘; group_size=20-25人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0326益智團體活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file)\  
+> **主要族群**：精神科日間病房  
+> **適用族群**：精神科日間病房、社區精神復健、高齡長照、精神科慢性/復健病房  
+> **團體類型**：日常生活功能、認知與益智  
+> **建議人數**：20-25人
 
 ## 1. 團體設計理念與目標
 - **理念說明**：精神復健學員常受抗精神病藥物代謝影響有肥胖與三高風險。結合紅黃綠食物燈號趣味分類與衛福部『我的餐盤』六大口訣，將營養知識轉化為具體可操作的餐盤拼貼與外食預算採買規劃，提升IADL自理技能。
@@ -51,13 +56,16 @@ created_at: "2026-11-11"
 - **場地與座位配置**：日間病房多功能教室，設置小組討論桌與大投影白板
 
 ## 3. 團體流程與步驟
+- **暖身階段**：
 【外食大調查與口訣操（10分鐘）】：分享昨天吃了什麼外食，比劃『拳頭大、掌心厚』口訣操喚醒記憶。
 
+- **主要操作階段**：
 【紅綠燈搶答與餐盤主廚（60分鐘）】：
 1. 【食物燈號分類】：小組輪流將高油糖（紅）、適量（黃）、天然原型（綠）食物放置於正確燈區。
 2. 【我的餐盤手作】：在紙盤畫出比例分區，剪貼健康食材填滿餐盤，並估算採買預算。
 3. 扮演大主廚互相評分彼此的營養均衡度。
 
+- **分享與回饋階段**：
 【每週減糖小約定（10分鐘）】：每位學員口頭承諾本週減少一次含糖飲料，收繳剪刀並互道加油。
 
 ## 4. 分級與調適（Grading & Adaptation） ⭐
@@ -65,7 +73,4 @@ created_at: "2026-11-11"
 - **Grading Up（挑戰加難）**：加入糖尿病低升糖或高血壓低鈉菜單限制，挑戰有限預算採買全套綠燈套餐。
 
 ## 5. 安全注意事項與禁忌症
-- 剪刀清點管制；避免評判學員體重或經濟狀況引發自卑，著重正向鼓勵。
-
----
-*本活動教案由職能治療臨床教案整理收錄，符合 AGENTS.md 知識庫標準。*
+剪刀清點管制；避免評判學員體重或經濟狀況引發自卑，著重正向鼓勵。

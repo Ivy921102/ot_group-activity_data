@@ -1,9 +1,11 @@
 ﻿---
 id: "psych-riddle-quiz"
 title: "迎春智慧王（生活常識與節慶猜燈謎）"
-population: "psychiatric-inpatient"
+population: "psychiatric-chronic"
 populations:
-  - "psychiatric-inpatient"
+  - "psychiatric-chronic"
+  - "psychiatric-acute"
+  - "psychiatric-day"
   - "community-psychiatry"
   - "geriatric-care"
 group_type: "cognitive"
@@ -11,7 +13,7 @@ group_types:
   - "cognitive"
   - "social"
 duration: "45分鐘"
-group_size: "8-15人"
+group_size: "20-25人"
 skills:
   - "語意聯想與推理理解"
   - "聽覺專注力"
@@ -22,21 +24,26 @@ materials:
   - "搶答籤筒或搶答鈴"
   - "象徵性獎勵品"
 tags:
+  - "精神科日間病房"
+  - "精神科急性病房"
+  - "精神科慢性/復健病房"
+  - "高齡長照"
+  - "社區精神復健"
   - "猜燈謎"
   - "語意理解"
   - "思考靈活度"
   - "節慶認知"
-  - "精神科病房"
 source_file: "0302益智團體計劃書.pdf"
 created_at: "2026-11-11"
 ---
 
 # 迎春智慧王（生活常識與節慶猜燈謎）
 
-> **原始教案來源**：`0302益智團體計劃書.pdf`  
-> **主要族群**：精神科病房  
-> **適用族群**：精神科病房、社區精神復健、高齡長照  
-> **團體類型**：認知與益智、社交與溝通
+> **原始教案來源**：\$(@{id=psych-riddle-quiz; title=迎春智慧王（生活常識與節慶猜燈謎）; population=psychiatric-chronic; populations=System.Object[]; group_type=cognitive; group_types=System.Object[]; duration=45分鐘; group_size=20-25人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0302益智團體計劃書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file)\  
+> **主要族群**：精神科慢性/復健病房  
+> **適用族群**：精神科慢性/復健病房、精神科急性病房、精神科日間病房、社區精神復健、高齡長照  
+> **團體類型**：認知與益智、社交與溝通  
+> **建議人數**：20-25人
 
 ## 1. 團體設計理念與目標
 - **理念說明**：透過民俗猜燈謎的形式，結合日常生活字謎、物品猜測與諧音趣味，刺激精神科病友的大腦聯想力與抽象思考能力，打破思維僵化與社交冷漠。
@@ -51,14 +58,17 @@ created_at: "2026-11-11"
 - **場地與座位配置**：安靜不受干擾的病房團體室，椅子排成半圓形面向謎題板，確保每位病友都能看清字跡並聽到題目朗讀。
 
 ## 3. 團體流程與步驟
+- **暖身階段**：
 【暖身說明（10分鐘）】：治療師朗讀示範一題簡單幽默的生活燈謎，讓學員掌握謎面與謎底的思考脈絡，並宣導答題輪流規則。
 
+- **主要操作階段**：
 【智慧解謎（25分鐘）】：
 1. 第一階段：日用品與水果謎語（具象圖像提示，人人皆可答）。
 2. 第二階段：文字拆解趣味謎（訓練字形分析與抽象空間概念）。
 3. 第三階段：生活常識情境搶答（鼓勵同桌夥伴小聲商討後共同回答）。
 4. 治療師對未能答對者給予提示引導，確保每位成員在團體中皆有發言與被肯定的機會。
 
+- **分享與回饋階段**：
 【總結與頒獎（10分鐘）】：統計搶答榮譽分，頒發智慧王錦旗或榮譽小卡；邀請病友分享哪一題最有趣，並以生活祝福作結。
 
 ## 4. 分級與調適（Grading & Adaptation） ⭐
@@ -66,7 +76,4 @@ created_at: "2026-11-11"
 - **Grading Up（挑戰加難）**：鼓勵學員自創題目讓其他成員猜測；限制不得提供選項，需自行推論文字結構。
 
 ## 5. 安全注意事項與禁忌症
-- 注意成員情緒波動，防止少數較強勢病友壟斷答題機會而引發其他人退縮或不滿；隨時調解爭端並維繫平和歡樂的團體氣氛。
-
----
-*本活動教案由職能治療臨床教案整理收錄，符合 AGENTS.md 知識庫標準。*
+注意成員情緒波動，防止少數較強勢病友壟斷答題機會而引發其他人退縮或不滿；隨時調解爭端並維繫平和歡樂的團體氣氛。

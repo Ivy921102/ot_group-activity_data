@@ -1,18 +1,18 @@
 ﻿---
 id: "psych-lantern-origami"
 title: "喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）"
-population: "psychiatric-inpatient"
+population: "psychiatric-chronic"
 populations:
-  - "psychiatric-inpatient"
-  - "community-psychiatry"
+  - "psychiatric-chronic"
+  - "psychiatric-acute"
+  - "psychiatric-day"
   - "geriatric-care"
-  - "pediatrics"
 group_type: "art"
 group_types:
   - "art"
   - "motor"
 duration: "50分鐘"
-group_size: "6-10人"
+group_size: "20-30人"
 skills:
   - "雙手對稱協調與精細動作"
   - "步驟記憶與結構組裝"
@@ -24,6 +24,10 @@ materials:
   - "流蘇與手提提繩"
   - "安全圓頭彩色筆"
 tags:
+  - "精神科日間病房"
+  - "精神科急性病房"
+  - "精神科慢性/復健病房"
+  - "高齡長照"
   - "元宵節慶"
   - "紙工藝"
   - "精細操作"
@@ -35,10 +39,11 @@ created_at: "2026-11-11"
 
 # 喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）
 
-> **原始教案來源**：`0223手工藝團體活動計畫書.pdf`  
-> **主要族群**：精神科病房  
-> **適用族群**：精神科病房、社區精神復健、高齡長照、兒童職能  
-> **團體類型**：藝術與手工藝、動作與體適能
+> **原始教案來源**：\$(@{id=psych-lantern-origami; title=喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）; population=psychiatric-chronic; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=50分鐘; group_size=20-30人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0223手工藝團體活動計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file)\  
+> **主要族群**：精神科慢性/復健病房  
+> **適用族群**：精神科慢性/復健病房、精神科急性病房、精神科日間病房、高齡長照  
+> **團體類型**：藝術與手工藝、動作與體適能  
+> **建議人數**：20-30人
 
 ## 1. 團體設計理念與目標
 - **理念說明**：結合元宵傳統節慶元素，喚起病友的美好生活經驗與節慶愉悅感；透過紙張對摺、等距剪切與環狀立體接合，活化手指小肌肉耐力及順序執行功能。
@@ -53,14 +58,17 @@ created_at: "2026-11-11"
 - **場地與座位配置**：病房日光室長桌，學員一字排開或U字型圍坐，以利治療師巡迴協助與監督剪刀安全使用。
 
 ## 3. 團體流程與步驟
+- **暖身階段**：
 【暖身引言（10分鐘）】：治療師展示傳統元宵燈籠範例，引導成員回憶童年逛燈會或吃湯圓的經驗，建立團體暖意氛圍。
 
+- **主要操作階段**：
 【動手實作（30分鐘）】：
 1. 挑選喜愛的紙張顏色，對摺後沿邊緣等距畫線並依序剪開流蘇條紋（不剪斷邊緣）。
 2. 將紙張捲成圓筒狀，將上下邊緣重疊黏合，使中間條紋自然向外蓬起形成立體燈籠柱。
 3. 在燈籠底部黏貼流蘇，上方穿入提把。
 4. 在燈籠表面畫上祝賀字樣或可愛吉祥圖案。
 
+- **分享與回饋階段**：
 【欣賞與反思（10分鐘）】：學員將作品懸掛或手持點亮（若有電子小茶蠟），互相讚賞彼此作品的巧思，由治療師總結並收回保管剪刀器具。
 
 ## 4. 分級與調適（Grading & Adaptation） ⭐
@@ -68,7 +76,4 @@ created_at: "2026-11-11"
 - **Grading Up（挑戰加難）**：引導成員挑戰更複雜的雙層雙色鏤空雕花剪裁，或自行設計對稱花邊與立體裝飾配件。
 
 ## 5. 安全注意事項與禁忌症
-- 【精神科病房最高安全準則】：所有剪刀、尺規等工具必須編號並於活動開始與結束前「雙人清點」確認無誤後入鎖箱；預防個案情緒低落時自傷或藏匿刀具。
-
----
-*本活動教案由職能治療臨床教案整理收錄，符合 AGENTS.md 知識庫標準。*
+【精神科病房最高安全準則】：所有剪刀、尺規等工具必須編號並於活動開始與結束前「雙人清點」確認無誤後入鎖箱；預防個案情緒低落時自傷或藏匿刀具。

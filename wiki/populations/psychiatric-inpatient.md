@@ -1,44 +1,36 @@
-﻿# 精神科病房職能治療團體 (Psychiatric Inpatient OT Group)
+﻿# 精神科病房（Psychiatric Inpatient Wards）總導引與次族群導覽
 
-## 1. 族群特色與臨床需求
-- **核心目標**：增進現實導向感（Reality Orientation）、情緒宣洩與安定、生活作息規律化、維持基本社交距離與安全互動。
-- **常見診斷**：思覺失調症（Schizophrenia）、雙極性情感疾患（Bipolar Disorder）、重度憂鬱症、重度焦慮症。
-- **團體動力特點**：個案症狀可能波動（幻聽、妄想、負性症狀或退縮），團體刺激不宜過度複雜，應提供安全、無威脅感、非競爭性的結構化活動。
+> **臨床分類重要對照**：  
+> 本資料庫依臨床病房性質與活動計畫書來源，完整細分為三大次族群：
+> 1. [**⚡ 精神科急性病房（10K 急性病房）**](psychiatric-acute.md)
+> 2. [**☀️ 精神科日間病房（11K 日間病房）**](psychiatric-day.md)
+> 3. [**🌿 精神科慢性/復健病房（12K 慢性病房）**](psychiatric-chronic.md)
 
-## 2. 團體帶領核心原則
-- **低壓力媒介**：多採用非語言媒介（如拼貼、塗色、簡單工藝），避免對抗性強的言語討論。
-- **現實導向提示**：活動開始必定報讀日期、星期、天氣、地點與團體名稱。
-- **溫和肯定**：著重「過程參與」而非「作品優劣」，建立基本自我效能感。
+---
 
-## 3. 安全守則與禁忌（高標準管制）
-- **工具清點制度**：剪刀、膠水、鐵尺等工具必須編號，團體前發放清點、團體後收回核對無誤後方可解散。
-- **自傷與攻擊防範**：尖銳物品須使用安全圓頭剪刀或預先剪裁好紙片；觀察個案情緒起伏與幻聽干擾反應。
+## 1. 三大病房之臨床光譜與介入定位
 
-## 4. 關聯收錄活動（共 8 篇）
-- [[expressive-emotion-collage]] - 星空剪貼心世界 — 精神科病房非語言表達與現實感團體
-- [[psych-ward-social-qa]] - 生活問答練功坊 — 語言表達與敏感社交問題應對
-- [[psych-ward-lantern-origami]] - 元宵紙燈籠製作 — 手部精細動作與節慶認知團體
-- [[psych-ward-riddle-quiz]] - 日常生活猜燈謎 — 記憶活化與生活常識益智團體
-- [[psych-ward-cherry-blossom]] - 櫻花盛開 — 手部精細摺紙與春季感官藝術團體
-- [[psych-ward-baseball-origami]] - 澄清湖棒球回憶 — 球衣摺紙與在地生活連結團體
-- [[psych-ward-clover-handcraft]] - 手功能活動-幸運草 — 靈巧度訓練與祝福手作
-- [[psych-ward-firefly-origami]] - 手功能活動-螢火蟲 — 注意力與指尖肌力訓練團體
+```
+[急性發作期]                         [慢性穩定與復健期]                   [社區銜接期]
+10K 急性病房 ──────────────────> 12K 慢性病房 ──────────────────> 11K 日間病房
+- 現實導向                        - 手功能維持與作息建立                - 社交技巧訓練 (SST)
+- 情緒宣洩與安定                  - 延緩退化、美學創作                  - 衝突調解與自我表達
+- 最高規格利器清點                - 結構化步驟引導                      - 獨立生活 (IADL) 準備
+```
 
-## 4. 推薦收錄活動清單（本資料庫收錄 - 共 16 篇）
+## 2. 快速導覽與活動總覽
 
-- [[ped-wk3-card-match]] — **撲克牌配對快手 — 工作記憶與視覺搜尋** (🔄 跨族群適用 | 20分鐘 | 類型：認知與益智)
-- [[psych-social-qa]] — **生活問答練功坊（社交常識與健康知識大比拼）** (⭐ 主要族群 | 50分鐘 | 類型：認知與益智、社交與溝通)
-- [[psych-lantern-origami]] — **喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）** (⭐ 主要族群 | 50分鐘 | 類型：藝術與手工藝、動作與體適能)
-- [[psych-riddle-quiz]] — **迎春智慧王（生活常識與節慶猜燈謎）** (⭐ 主要族群 | 45分鐘 | 類型：認知與益智、社交與溝通)
-- [[psych-firefly-origami]] — **暗夜微光螢火蟲與立體草叢創作（雙色螢火蟲摺紙與剪齒草叢情境組裝）** (⭐ 主要族群 | 50分鐘 | 類型：藝術與手工藝、動作與體適能)
-- [[psych-cherry-blossom]] — **櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）** (⭐ 主要族群 | 80分鐘 | 類型：藝術與手工藝、動作與體適能)
-- [[psych-baseball-origami]] — **澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）** (⭐ 主要族群 | 80分鐘 | 類型：藝術與手工藝、動作與體適能)
-- [[psych-clover-handcraft]] — **手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）** (⭐ 主要族群 | 75分鐘 | 類型：藝術與手工藝、動作與體適能)
-- [[comm-nutrition-plate]] — **「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）** (🔄 跨族群適用 | 80分鐘 | 類型：日常生活功能、認知與益智)
-- [[comm-tear-art]] — **撕在有藝思（手撕彩紙肌理拼貼與心境抒發）** (🔄 跨族群適用 | 50分鐘 | 類型：藝術與手工藝、動作與體適能)
-- [[comm-social-wk1-ocean]] — **社牛第一步：深海尋友探險（破冰自我介紹、第一印象與破冰契約建立）** (🔄 跨族群適用 | 50分鐘 | 類型：社交與溝通)
-- [[comm-social-wk2-collage]] — **社牛第二步：拼社交愛拼才會贏（團隊撕貼接力、非口語合作與分工協調）** (🔄 跨族群適用 | 50分鐘 | 類型：社交與溝通、藝術與手工藝)
-- [[comm-social-wk3-empathy]] — **社牛第三步：心靈解碼員：他在想什麼（面部表情微解讀、情境同理心與情緒辨識）** (🔄 跨族群適用 | 50分鐘 | 類型：社交與溝通、認知與益智)
-- [[comm-social-wk4-conflict]] — **社牛第四步：人際拆彈客：一起當個和事佬（人際衝突情境演練、我訊息表達與協商策略）** (🔄 跨族群適用 | 50分鐘 | 類型：社交與溝通、認知與益智)
-- [[comm-social-wk5-gratitude]] — **社牛第五步：暖心結業式：真心感謝小卡（人際回饋互贈、感恩心意傳遞與成長總結）** (🔄 跨族群適用 | 50分鐘 | 類型：社交與溝通、藝術與手工藝)
-- [[geriatric-bingo]] — **腦力激盪九宮格賓果賽（長者益智記憶與身體動作連線競賽）** (🔄 跨族群適用 | 50分鐘 | 類型：認知與益智、動作與體適能)
+- **⚡ [精神科急性病房活動清單（10K 急性病房）](psychiatric-acute.md)**：
+  - [`psych-clover-handcraft`](../activities/psych-clover-handcraft.md) 手功能活動-幸運草 (15-20人)
+  - [`psych-firefly-origami`](../activities/psych-firefly-origami.md) 暗夜微光螢火蟲 (15-20人)
+
+- **☀️ [精神科日間病房活動清單（11K 日間病房）](psychiatric-day.md)**：
+  - [`psych-cherry-blossom`](../activities/psych-cherry-blossom.md) 櫻花盛開摺剪紙 (20-25人)
+  - [`psych-baseball-origami`](../activities/psych-baseball-origami.md) 澄清湖棒球回憶 (20-25人)
+  - [`comm-nutrition-plate`](../activities/comm-nutrition-plate.md) 「營」在起跑點健康餐盤 (20-25人)
+  - [`comm-social-wk1-ocean`](../activities/comm-social-wk1-ocean.md) ~ [`comm-social-wk5-gratitude`](../activities/comm-social-wk5-gratitude.md) 社牛養成計畫 5 週系列 (12-20人)
+
+- **🌿 [精神科慢性/復健病房活動清單（12K 慢性病房）](psychiatric-chronic.md)**：
+  - [`psych-social-qa`](../activities/psych-social-qa.md) 生活問答練功坊 (20-25人)
+  - [`psych-lantern-origami`](../activities/psych-lantern-origami.md) 喜慶元宵花燈趣 (20-30人)
+  - [`psych-riddle-quiz`](../activities/psych-riddle-quiz.md) 迎春智慧王猜燈謎 (20-25人)

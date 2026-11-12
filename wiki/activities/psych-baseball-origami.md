@@ -1,17 +1,16 @@
 ﻿---
 id: "psych-baseball-origami"
 title: "澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）"
-population: "psychiatric-inpatient"
+population: "psychiatric-day"
 populations:
-  - "psychiatric-inpatient"
-  - "community-psychiatry"
+  - "psychiatric-day"
   - "geriatric-care"
 group_type: "art"
 group_types:
   - "art"
   - "motor"
 duration: "80分鐘"
-group_size: "8-12人"
+group_size: "20-25人"
 skills:
   - "折紙平整度控制與指力"
   - "手腕握筆穩定與雙側整合"
@@ -23,21 +22,23 @@ materials:
   - "綠色球場底紙"
   - "號碼貼紙與口紅膠"
 tags:
+  - "精神科日間病房"
+  - "高齡長照"
   - "棒球回憶"
   - "制服摺紙"
   - "手部肌力"
   - "懷舊體育"
-  - "精神科病房"
 source_file: "0319手工藝團體計畫書.pdf"
 created_at: "2026-11-11"
 ---
 
 # 澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）
 
-> **原始教案來源**：`0319手工藝團體計畫書.pdf`  
-> **主要族群**：精神科病房  
-> **適用族群**：精神科病房、社區精神復健、高齡長照  
-> **團體類型**：藝術與手工藝、動作與體適能
+> **原始教案來源**：\$(@{id=psych-baseball-origami; title=澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）; population=psychiatric-day; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=80分鐘; group_size=20-25人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0319手工藝團體計畫書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file)\  
+> **主要族群**：精神科日間病房  
+> **適用族群**：精神科日間病房、高齡長照  
+> **團體類型**：藝術與手工藝、動作與體適能  
+> **建議人數**：20-25人
 
 ## 1. 團體設計理念與目標
 - **理念說明**：結合高雄在地澄清湖棒球場生活地緣記憶，以國球運動為主題，透過精細折出棒球衣、球帽，以及在圓形球面上手繪對稱紅色V型縫線，全面鍛鍊手部精細操作與耐力，有效誘發病友之正向話題與運動熱情。
@@ -52,13 +53,16 @@ created_at: "2026-11-11"
 - **場地與座位配置**：病房交誼廳長桌，前方配有步驟分解圖示大卡板與棒球老照片
 
 ## 3. 團體流程與步驟
+- **暖身階段**：
 【熱血球迷相見歡（10分鐘）】：治療師展示澄清湖棒球場照片與經典球星球衣，喚起運動回憶與活力。
 
+- **主要操作階段**：
 【球衣折疊與棒球彩繪（60分鐘）】：
 1. 【球衣球帽】：四角對折翻面折出立領、袖口與下擺，折成立體棒球帽並貼上專屬背號。
 2. 【縫製棒球】：在圓形卡片上描繪弧形雙線，細緻畫上密集V字紅色縫針。
 3. 【球場組裝】：在綠色鑽石球場上黏貼壘包與球員配備，完成個人化棒球海報。
 
+- **分享與回饋階段**：
 【明星球員進場分享（10分鐘）】：成員扮演代表隊伍發表演說，分享背號的幸運意義，互相擊掌鼓勵。
 
 ## 4. 分級與調適（Grading & Adaptation） ⭐
@@ -66,7 +70,4 @@ created_at: "2026-11-11"
 - **Grading Up（挑戰加難）**：自行設計隊伍Logo與主客場條紋；精確繪製投手丘與全壘打牆。
 
 ## 5. 安全注意事項與禁忌症
-- 注意筆具保管防破壞或吞食；維持友善賽事討論，避免因支持球隊不同引發激烈爭吵。
-
----
-*本活動教案由職能治療臨床教案整理收錄，符合 AGENTS.md 知識庫標準。*
+注意筆具保管防破壞或吞食；維持友善賽事討論，避免因支持球隊不同引發激烈爭吵。

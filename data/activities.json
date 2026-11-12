@@ -145,7 +145,7 @@
                             "cognitive"
                         ],
         "duration":  "25分鐘",
-        "group_size":  "6-10人",
+        "group_size":  "6-8人",
         "skills":  [
                        "動作協調與平衡控制",
                        "執行功能與認知規劃"
@@ -157,6 +157,7 @@
                           "有色地膠（投擲線）"
                       ],
         "tags":  [
+                     "社區精神復健",
                      "兒童職能",
                      "高齡長照",
                      "社區復健",
@@ -226,7 +227,6 @@
                       ],
         "tags":  [
                      "兒童職能",
-                     "精神科病房",
                      "撕貼畫",
                      "指尖肌力",
                      "精細動作"
@@ -335,14 +335,15 @@
         "populations":  [
                             "pediatrics",
                             "geriatric-care",
-                            "psychiatric-inpatient"
+                            "psychiatric-acute",
+                            "psychiatric-chronic"
                         ],
         "group_type":  "cognitive",
         "group_types":  [
                             "cognitive"
                         ],
         "duration":  "20分鐘",
-        "group_size":  "4-8人",
+        "group_size":  "6-8人",
         "skills":  [
                        "執行功能與認知規劃",
                        "社交互動與團體合作"
@@ -353,9 +354,10 @@
                           "桌面保護墊"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科急性病房",
                      "兒童職能",
                      "高齡長照",
-                     "精神科病房",
                      "工作記憶",
                      "視覺配對",
                      "益智遊戲"
@@ -390,7 +392,8 @@
         "population_names":  [
                                  "兒童職能",
                                  "高齡長照",
-                                 "精神科病房"
+                                 "精神科急性病房",
+                                 "精神科慢性/復健病房"
                              ],
         "group_type_names":  [
                                  "認知與益智"
@@ -605,7 +608,7 @@
                             "cognitive"
                         ],
         "duration":  "60分鐘",
-        "group_size":  "4-6人",
+        "group_size":  "6-8人",
         "skills":  [
                        "動作協調與平衡控制",
                        "執行功能與認知規劃"
@@ -671,7 +674,7 @@
                             "cognitive"
                         ],
         "duration":  "30分鐘",
-        "group_size":  "4-6人",
+        "group_size":  "6-8人",
         "skills":  [
                        "精細動作與手部協調",
                        "動作協調與平衡控制"
@@ -739,7 +742,7 @@
                             "cognitive"
                         ],
         "duration":  "30分鐘",
-        "group_size":  "4-6人",
+        "group_size":  "6-8人",
         "skills":  [
                        "執行功能與認知規劃",
                        "精細動作與手部協調"
@@ -795,9 +798,11 @@
     {
         "id":  "psych-social-qa",
         "title":  "生活問答練功坊（社交常識與健康知識大比拼）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-chronic",
         "populations":  [
-                            "psychiatric-inpatient",
+                            "psychiatric-chronic",
+                            "psychiatric-acute",
+                            "psychiatric-day",
                             "community-psychiatry",
                             "geriatric-care"
                         ],
@@ -807,7 +812,7 @@
                             "social"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "20-25人",
         "skills":  [
                        "現實導向與認知檢索",
                        "同儕合作與社交表達",
@@ -820,11 +825,15 @@
                           "獎勵貼紙或小點心"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "精神科急性病房",
+                     "精神科慢性/復健病房",
+                     "高齡長照",
+                     "社區精神復健",
                      "現實導向",
                      "生活常識",
                      "小組合作",
-                     "認知激盪",
-                     "精神科病房"
+                     "認知激盪"
                  ],
         "source_file":  "0209益智團體活動計畫書.pdf",
         "created_at":  "2026-11-11",
@@ -854,7 +863,9 @@
                          "safety_and_contraindications":  "注意防範成員因競賽好勝心引發口角衝突或躁動；白板筆需專人保管並於活動結束時落實清點；對表現落後的隊伍持續給予正向肯定，避免挫折誘發退縮。"
                      },
         "population_names":  [
-                                 "精神科病房",
+                                 "精神科慢性/復健病房",
+                                 "精神科急性病房",
+                                 "精神科日間病房",
                                  "社區精神復健",
                                  "高齡長照"
                              ],
@@ -866,12 +877,12 @@
     {
         "id":  "psych-lantern-origami",
         "title":  "喜慶元宵花燈趣（手作紙燈籠與彩繪裝飾）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-chronic",
         "populations":  [
-                            "psychiatric-inpatient",
-                            "community-psychiatry",
-                            "geriatric-care",
-                            "pediatrics"
+                            "psychiatric-chronic",
+                            "psychiatric-acute",
+                            "psychiatric-day",
+                            "geriatric-care"
                         ],
         "group_type":  "art",
         "group_types":  [
@@ -879,7 +890,7 @@
                             "motor"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "6-10人",
+        "group_size":  "20-30人",
         "skills":  [
                        "雙手對稱協調與精細動作",
                        "步驟記憶與結構組裝",
@@ -893,6 +904,10 @@
                           "安全圓頭彩色筆"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "精神科急性病房",
+                     "精神科慢性/復健病房",
+                     "高齡長照",
                      "元宵節慶",
                      "紙工藝",
                      "精細操作",
@@ -927,10 +942,10 @@
                          "safety_and_contraindications":  "【精神科病房最高安全準則】：所有剪刀、尺規等工具必須編號並於活動開始與結束前「雙人清點」確認無誤後入鎖箱；預防個案情緒低落時自傷或藏匿刀具。"
                      },
         "population_names":  [
-                                 "精神科病房",
-                                 "社區精神復健",
-                                 "高齡長照",
-                                 "兒童職能"
+                                 "精神科慢性/復健病房",
+                                 "精神科急性病房",
+                                 "精神科日間病房",
+                                 "高齡長照"
                              ],
         "group_type_names":  [
                                  "藝術與手工藝",
@@ -940,9 +955,11 @@
     {
         "id":  "psych-riddle-quiz",
         "title":  "迎春智慧王（生活常識與節慶猜燈謎）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-chronic",
         "populations":  [
-                            "psychiatric-inpatient",
+                            "psychiatric-chronic",
+                            "psychiatric-acute",
+                            "psychiatric-day",
                             "community-psychiatry",
                             "geriatric-care"
                         ],
@@ -952,7 +969,7 @@
                             "social"
                         ],
         "duration":  "45分鐘",
-        "group_size":  "8-15人",
+        "group_size":  "20-25人",
         "skills":  [
                        "語意聯想與推理理解",
                        "聽覺專注力",
@@ -965,11 +982,15 @@
                           "象徵性獎勵品"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "精神科急性病房",
+                     "精神科慢性/復健病房",
+                     "高齡長照",
+                     "社區精神復健",
                      "猜燈謎",
                      "語意理解",
                      "思考靈活度",
-                     "節慶認知",
-                     "精神科病房"
+                     "節慶認知"
                  ],
         "source_file":  "0302益智團體計劃書.pdf",
         "created_at":  "2026-11-11",
@@ -999,7 +1020,9 @@
                          "safety_and_contraindications":  "注意成員情緒波動，防止少數較強勢病友壟斷答題機會而引發其他人退縮或不滿；隨時調解爭端並維繫平和歡樂的團體氣氛。"
                      },
         "population_names":  [
-                                 "精神科病房",
+                                 "精神科慢性/復健病房",
+                                 "精神科急性病房",
+                                 "精神科日間病房",
                                  "社區精神復健",
                                  "高齡長照"
                              ],
@@ -1011,12 +1034,12 @@
     {
         "id":  "psych-firefly-origami",
         "title":  "暗夜微光螢火蟲與立體草叢創作（雙色螢火蟲摺紙與剪齒草叢情境組裝）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-acute",
         "populations":  [
-                            "psychiatric-inpatient",
-                            "community-psychiatry",
-                            "pediatrics",
-                            "geriatric-care"
+                            "psychiatric-acute",
+                            "geriatric-care",
+                            "psychiatric-day",
+                            "psychiatric-chronic"
                         ],
         "group_type":  "art",
         "group_types":  [
@@ -1024,7 +1047,7 @@
                             "motor"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "6-10人",
+        "group_size":  "15-20人",
         "skills":  [
                        "精準對齊與按壓摺線能力",
                        "剪刀連續排剪技巧",
@@ -1038,11 +1061,14 @@
                           "口紅膠"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科日間病房",
+                     "精神科急性病房",
+                     "高齡長照",
                      "螢火蟲",
                      "希望微光",
                      "剪齒草叢",
-                     "精細動作",
-                     "精神科病房"
+                     "精細動作"
                  ],
         "source_file":  "0421手功能團體活動計畫書.pdf",
         "created_at":  "2026-11-11",
@@ -1072,10 +1098,10 @@
                          "safety_and_contraindications":  "嚴格實施刀具清點原則（剪刀進出皆清點）；活動結束務必確認所有刀具歸位；引導成員正向聚焦，若有病友因情緒觸動流淚，由協同治療師在旁給予陪伴同理。"
                      },
         "population_names":  [
-                                 "精神科病房",
-                                 "社區精神復健",
-                                 "兒童職能",
-                                 "高齡長照"
+                                 "精神科急性病房",
+                                 "高齡長照",
+                                 "精神科日間病房",
+                                 "精神科慢性/復健病房"
                              ],
         "group_type_names":  [
                                  "藝術與手工藝",
@@ -1085,11 +1111,11 @@
     {
         "id":  "psych-cherry-blossom",
         "title":  "櫻花盛開（手部精細摺紙與春季立體剪紙櫻花藝術）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "psychiatric-inpatient",
-                            "community-psychiatry",
-                            "geriatric-care"
+                            "psychiatric-day",
+                            "geriatric-care",
+                            "psychiatric-chronic"
                         ],
         "group_type":  "art",
         "group_types":  [
@@ -1097,7 +1123,7 @@
                             "motor"
                         ],
         "duration":  "80分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "20-25人",
         "skills":  [
                        "指尖精細動作協調",
                        "空間幾何對折與剪裁",
@@ -1111,11 +1137,13 @@
                           "棕色水彩或色筆"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科日間病房",
+                     "高齡長照",
                      "櫻花手作",
                      "立體摺紙",
                      "剪紙藝術",
-                     "精細動作",
-                     "精神科病房"
+                     "精細動作"
                  ],
         "source_file":  "0312手工藝團體計畫書.pdf",
         "created_at":  "2026-11-11",
@@ -1145,9 +1173,9 @@
                          "safety_and_contraindications":  "嚴格執行精神科病房利器管制規範：剪刀活動前後專人清點核對；使用黏膠時注意勿誤食沾染。"
                      },
         "population_names":  [
-                                 "精神科病房",
-                                 "社區精神復健",
-                                 "高齡長照"
+                                 "精神科日間病房",
+                                 "高齡長照",
+                                 "精神科慢性/復健病房"
                              ],
         "group_type_names":  [
                                  "藝術與手工藝",
@@ -1157,10 +1185,9 @@
     {
         "id":  "psych-baseball-origami",
         "title":  "澄清湖棒球回憶（球衣球帽摺紙與棒球縫線情境創作）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "psychiatric-inpatient",
-                            "community-psychiatry",
+                            "psychiatric-day",
                             "geriatric-care"
                         ],
         "group_type":  "art",
@@ -1169,7 +1196,7 @@
                             "motor"
                         ],
         "duration":  "80分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "20-25人",
         "skills":  [
                        "折紙平整度控制與指力",
                        "手腕握筆穩定與雙側整合",
@@ -1183,11 +1210,12 @@
                           "號碼貼紙與口紅膠"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "高齡長照",
                      "棒球回憶",
                      "制服摺紙",
                      "手部肌力",
-                     "懷舊體育",
-                     "精神科病房"
+                     "懷舊體育"
                  ],
         "source_file":  "0319手工藝團體計畫書.pdf",
         "created_at":  "2026-11-11",
@@ -1217,8 +1245,7 @@
                          "safety_and_contraindications":  "注意筆具保管防破壞或吞食；維持友善賽事討論，避免因支持球隊不同引發激烈爭吵。"
                      },
         "population_names":  [
-                                 "精神科病房",
-                                 "社區精神復健",
+                                 "精神科日間病房",
                                  "高齡長照"
                              ],
         "group_type_names":  [
@@ -1229,12 +1256,12 @@
     {
         "id":  "psych-clover-handcraft",
         "title":  "手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）",
-        "population":  "psychiatric-inpatient",
+        "population":  "psychiatric-acute",
         "populations":  [
-                            "psychiatric-inpatient",
-                            "community-psychiatry",
+                            "psychiatric-acute",
                             "geriatric-care",
-                            "pediatrics"
+                            "psychiatric-day",
+                            "psychiatric-chronic"
                         ],
         "group_type":  "art",
         "group_types":  [
@@ -1242,7 +1269,7 @@
                             "motor"
                         ],
         "duration":  "75分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "15-20人",
         "skills":  [
                        "雙手對稱協調與指尖捏壓",
                        "細長紙條旋轉捲曲操作",
@@ -1256,11 +1283,14 @@
                           "口紅膠與白膠"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科日間病房",
+                     "精神科急性病房",
+                     "高齡長照",
                      "幸運草",
                      "立體蝴蝶",
                      "捲紙工藝",
-                     "正向賦能",
-                     "精神科病房"
+                     "正向賦能"
                  ],
         "source_file":  "0407活動企劃書.pdf",
         "created_at":  "2026-11-11",
@@ -1290,10 +1320,10 @@
                          "safety_and_contraindications":  "落實病房利器管制，剪刀全程專人列管防自傷；隨時關照成員挫折感與低落情緒。"
                      },
         "population_names":  [
-                                 "精神科病房",
-                                 "社區精神復健",
+                                 "精神科急性病房",
                                  "高齡長照",
-                                 "兒童職能"
+                                 "精神科日間病房",
+                                 "精神科慢性/復健病房"
                              ],
         "group_type_names":  [
                                  "藝術與手工藝",
@@ -1303,11 +1333,12 @@
     {
         "id":  "comm-nutrition-plate",
         "title":  "「營」在起跑點（食物紅綠燈考驗與均衡餐盤大廚師）",
-        "population":  "community-psychiatry",
+        "population":  "psychiatric-day",
         "populations":  [
+                            "psychiatric-day",
                             "community-psychiatry",
                             "geriatric-care",
-                            "psychiatric-inpatient"
+                            "psychiatric-chronic"
                         ],
         "group_type":  "adl",
         "group_types":  [
@@ -1315,7 +1346,7 @@
                             "cognitive"
                         ],
         "duration":  "80分鐘",
-        "group_size":  "10-15人",
+        "group_size":  "20-25人",
         "skills":  [
                        "獨立生活健康飲食管理",
                        "六大類食物比例幾何分配",
@@ -1328,6 +1359,9 @@
                           "我的餐盤口訣衛教大字報"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科日間病房",
+                     "高齡長照",
                      "我的餐盤",
                      "食物紅綠燈",
                      "IADL獨立生活",
@@ -1362,9 +1396,10 @@
                          "safety_and_contraindications":  "剪刀清點管制；避免評判學員體重或經濟狀況引發自卑，著重正向鼓勵。"
                      },
         "population_names":  [
+                                 "精神科日間病房",
                                  "社區精神復健",
                                  "高齡長照",
-                                 "精神科病房"
+                                 "精神科慢性/復健病房"
                              ],
         "group_type_names":  [
                                  "日常生活功能",
@@ -1377,6 +1412,7 @@
         "population":  "community-psychiatry",
         "populations":  [
                             "community-psychiatry",
+                            "psychiatric-day",
                             "geriatric-care"
                         ],
         "group_type":  "cognitive",
@@ -1385,7 +1421,7 @@
                             "social"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "10-20人",
         "skills":  [
                        "生活問題解決與應變決策",
                        "認知靈活度與同儕討論",
@@ -1398,6 +1434,9 @@
                           "榮譽獎狀"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "高齡長照",
+                     "社區精神復健",
                      "問題解決",
                      "危機應變",
                      "獨立生活",
@@ -1433,6 +1472,7 @@
                      },
         "population_names":  [
                                  "社區精神復健",
+                                 "精神科日間病房",
                                  "高齡長照"
                              ],
         "group_type_names":  [
@@ -1446,7 +1486,8 @@
         "population":  "community-psychiatry",
         "populations":  [
                             "community-psychiatry",
-                            "psychiatric-inpatient",
+                            "psychiatric-day",
+                            "psychiatric-chronic",
                             "geriatric-care"
                         ],
         "group_type":  "art",
@@ -1455,7 +1496,7 @@
                             "motor"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "6-10人",
+        "group_size":  "10-20人",
         "skills":  [
                        "手部近端肌力與雙手間反向撕裂協調",
                        "非結構化藝術減壓與情緒宣洩",
@@ -1468,6 +1509,9 @@
                           "濕紙巾"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科日間病房",
+                     "高齡長照",
                      "手撕畫",
                      "情緒宣洩",
                      "肌理質感",
@@ -1503,7 +1547,8 @@
                      },
         "population_names":  [
                                  "社區精神復健",
-                                 "精神科病房",
+                                 "精神科日間病房",
+                                 "精神科慢性/復健病房",
                                  "高齡長照"
                              ],
         "group_type_names":  [
@@ -1514,17 +1559,17 @@
     {
         "id":  "comm-social-wk1-ocean",
         "title":  "社牛第一步：深海尋友探險（破冰自我介紹、第一印象與破冰契約建立）",
-        "population":  "community-psychiatry",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "community-psychiatry",
-                            "psychiatric-inpatient"
+                            "psychiatric-day",
+                            "community-psychiatry"
                         ],
         "group_type":  "social",
         "group_types":  [
                             "social"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "12-20人",
         "skills":  [
                        "自我揭露與口語表達",
                        "眼神接觸與肢體語言察覺",
@@ -1537,6 +1582,7 @@
                           "彩色白板筆"
                       ],
         "tags":  [
+                     "精神科日間病房",
                      "社交技巧SST",
                      "第一週破冰",
                      "自我介紹",
@@ -1571,8 +1617,8 @@
                          "safety_and_contraindications":  "注意拋接毛線時避免纏繞頸部；若有社交焦慮過高而發抖拒答的成員，切勿當眾施壓，治療師可代為轉述並給予溫和微笑支持。"
                      },
         "population_names":  [
-                                 "社區精神復健",
-                                 "精神科病房"
+                                 "精神科日間病房",
+                                 "社區精神復健"
                              ],
         "group_type_names":  [
                                  "社交與溝通"
@@ -1581,10 +1627,10 @@
     {
         "id":  "comm-social-wk2-collage",
         "title":  "社牛第二步：拼社交愛拼才會贏（團隊撕貼接力、非口語合作與分工協調）",
-        "population":  "community-psychiatry",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "community-psychiatry",
-                            "psychiatric-inpatient"
+                            "psychiatric-day",
+                            "community-psychiatry"
                         ],
         "group_type":  "social",
         "group_types":  [
@@ -1592,7 +1638,7 @@
                             "art"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "12-20人",
         "skills":  [
                        "非口語溝通與默契協作",
                        "任務分工與妥協接納",
@@ -1605,6 +1651,7 @@
                           "碼表計時器"
                       ],
         "tags":  [
+                     "精神科日間病房",
                      "社交技巧SST",
                      "第二週合作",
                      "無聲拼貼",
@@ -1639,8 +1686,8 @@
                          "safety_and_contraindications":  "競賽中若有學員過於強勢主導甚至責怪隊友，治療師應及時介入暫停，引導聚焦於「享受合作過程而非完美作品」。"
                      },
         "population_names":  [
-                                 "社區精神復健",
-                                 "精神科病房"
+                                 "精神科日間病房",
+                                 "社區精神復健"
                              ],
         "group_type_names":  [
                                  "社交與溝通",
@@ -1650,10 +1697,10 @@
     {
         "id":  "comm-social-wk3-empathy",
         "title":  "社牛第三步：心靈解碼員：他在想什麼（面部表情微解讀、情境同理心與情緒辨識）",
-        "population":  "community-psychiatry",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "community-psychiatry",
-                            "psychiatric-inpatient"
+                            "psychiatric-day",
+                            "community-psychiatry"
                         ],
         "group_type":  "social",
         "group_types":  [
@@ -1661,7 +1708,7 @@
                             "cognitive"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "12-20人",
         "skills":  [
                        "臉部情緒辨識與心智理論（Theory of Mind）",
                        "主動傾聽與同理心回應",
@@ -1673,6 +1720,7 @@
                           "情緒溫度計大轉盤"
                       ],
         "tags":  [
+                     "精神科日間病房",
                      "社交技巧SST",
                      "第三週同理心",
                      "心智理論",
@@ -1707,8 +1755,8 @@
                          "safety_and_contraindications":  "避免指責特定成員「平時表情僵硬或不懂看人臉色」；對於有被害妄想之成員，在分析憤怒表情時多強調「這通常是對方自己遇到困難，不代表討厭我們」。"
                      },
         "population_names":  [
-                                 "社區精神復健",
-                                 "精神科病房"
+                                 "精神科日間病房",
+                                 "社區精神復健"
                              ],
         "group_type_names":  [
                                  "社交與溝通",
@@ -1718,10 +1766,10 @@
     {
         "id":  "comm-social-wk4-conflict",
         "title":  "社牛第四步：人際拆彈客：一起當個和事佬（人際衝突情境演練、我訊息表達與協商策略）",
-        "population":  "community-psychiatry",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "community-psychiatry",
-                            "psychiatric-inpatient"
+                            "psychiatric-day",
+                            "community-psychiatry"
                         ],
         "group_type":  "social",
         "group_types":  [
@@ -1729,7 +1777,7 @@
                             "cognitive"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "12-20人",
         "skills":  [
                        "衝突管理與冷靜冷卻技巧",
                        "「我訊息（I-Message）」溝通技巧",
@@ -1741,6 +1789,7 @@
                           "我訊息公式輔助大字報"
                       ],
         "tags":  [
+                     "精神科日間病房",
                      "社交技巧SST",
                      "第四週溝通",
                      "我訊息",
@@ -1775,8 +1824,8 @@
                          "safety_and_contraindications":  "嚴防角色扮演過程中學員假戲真做激發真實過往創傷或衝突；若演練出現火藥味，治療師立即舉暫停牌，帶領全員做深呼吸冷卻並換題。"
                      },
         "population_names":  [
-                                 "社區精神復健",
-                                 "精神科病房"
+                                 "精神科日間病房",
+                                 "社區精神復健"
                              ],
         "group_type_names":  [
                                  "社交與溝通",
@@ -1786,10 +1835,10 @@
     {
         "id":  "comm-social-wk5-gratitude",
         "title":  "社牛第五步：暖心結業式：真心感謝小卡（人際回饋互贈、感恩心意傳遞與成長總結）",
-        "population":  "community-psychiatry",
+        "population":  "psychiatric-day",
         "populations":  [
-                            "community-psychiatry",
-                            "psychiatric-inpatient"
+                            "psychiatric-day",
+                            "community-psychiatry"
                         ],
         "group_type":  "social",
         "group_types":  [
@@ -1797,7 +1846,7 @@
                             "art"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "12-20人",
         "skills":  [
                        "正向人際回饋給予與接納",
                        "回顧整合與自我效能確立",
@@ -1810,6 +1859,7 @@
                           "結業慶祝小餅乾"
                       ],
         "tags":  [
+                     "精神科日間病房",
                      "社交技巧SST",
                      "第五週結業",
                      "感恩反思",
@@ -1844,8 +1894,8 @@
                          "safety_and_contraindications":  "注意確保每位學員都能收到數量大致相當的卡片與讚美，治療師預先準備好每位成員的專屬優點卡，避免有成員落單或感受到受冷落。"
                      },
         "population_names":  [
-                                 "社區精神復健",
-                                 "精神科病房"
+                                 "精神科日間病房",
+                                 "社區精神復健"
                              ],
         "group_type_names":  [
                                  "社交與溝通",
@@ -1858,8 +1908,8 @@
         "population":  "community-psychiatry",
         "populations":  [
                             "community-psychiatry",
-                            "geriatric-care",
-                            "pediatrics"
+                            "psychiatric-day",
+                            "geriatric-care"
                         ],
         "group_type":  "art",
         "group_types":  [
@@ -1867,7 +1917,7 @@
                             "adl"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "6-10人",
+        "group_size":  "5-10人",
         "skills":  [
                        "環保資源再利用意識",
                        "雙手工具操作與邊緣防護處理",
@@ -1881,6 +1931,8 @@
                           "安全剪刀"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "高齡長照",
                      "環保再造",
                      "園藝盆栽",
                      "廢物利用",
@@ -1916,8 +1968,8 @@
                      },
         "population_names":  [
                                  "社區精神復健",
-                                 "高齡長照",
-                                 "兒童職能"
+                                 "精神科日間病房",
+                                 "高齡長照"
                              ],
         "group_type_names":  [
                                  "藝術與手工藝",
@@ -1930,6 +1982,7 @@
         "population":  "community-psychiatry",
         "populations":  [
                             "community-psychiatry",
+                            "psychiatric-day",
                             "geriatric-care"
                         ],
         "group_type":  "art",
@@ -1938,7 +1991,7 @@
                             "social"
                         ],
         "duration":  "75分鐘",
-        "group_size":  "10-15人",
+        "group_size":  "10-20人",
         "skills":  [
                        "空間折疊與立體組裝能力",
                        "手眼協調剪裁與不織布黏貼",
@@ -1952,6 +2005,8 @@
                           "節慶輕音樂播放機"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "高齡長照",
                      "立體星芒",
                      "聖誕襪手作",
                      "空間美化",
@@ -1987,6 +2042,7 @@
                      },
         "population_names":  [
                                  "社區精神復健",
+                                 "精神科日間病房",
                                  "高齡長照"
                              ],
         "group_type_names":  [
@@ -2001,7 +2057,8 @@
         "populations":  [
                             "geriatric-care",
                             "community-psychiatry",
-                            "psychiatric-inpatient"
+                            "psychiatric-day",
+                            "psychiatric-chronic"
                         ],
         "group_type":  "cognitive",
         "group_types":  [
@@ -2009,7 +2066,7 @@
                             "motor"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "8-16人",
+        "group_size":  "8-12人",
         "skills":  [
                        "短期工作記憶與語意提取",
                        "上肢伸展與關節活動度",
@@ -2022,6 +2079,9 @@
                           "健康榮譽獎品"
                       ],
         "tags":  [
+                     "精神科慢性/復健病房",
+                     "精神科日間病房",
+                     "社區精神復健",
                      "延緩失能失智",
                      "賓果連線",
                      "益智記憶",
@@ -2058,7 +2118,8 @@
         "population_names":  [
                                  "高齡長照",
                                  "社區精神復健",
-                                 "精神科病房"
+                                 "精神科日間病房",
+                                 "精神科慢性/復健病房"
                              ],
         "group_type_names":  [
                                  "認知與益智",
@@ -2079,7 +2140,7 @@
                             "motor"
                         ],
         "duration":  "60分鐘",
-        "group_size":  "8-12人",
+        "group_size":  "10-15人",
         "skills":  [
                        "人體工學身體力學認知",
                        "核心穩定與重心轉移",
@@ -2093,6 +2154,7 @@
                           "放鬆音樂"
                       ],
         "tags":  [
+                     "社區精神復健",
                      "生活型態再造",
                      "身體力學",
                      "下背痛舒緩",
@@ -2142,7 +2204,7 @@
         "populations":  [
                             "geriatric-care",
                             "community-psychiatry",
-                            "pediatrics"
+                            "psychiatric-day"
                         ],
         "group_type":  "art",
         "group_types":  [
@@ -2150,7 +2212,7 @@
                             "cognitive"
                         ],
         "duration":  "50分鐘",
-        "group_size":  "6-10人",
+        "group_size":  "20-40人",
         "skills":  [
                        "多重感官刺激（嗅覺、觸覺、視覺）",
                        "生命故事回溯與懷舊表達",
@@ -2164,6 +2226,8 @@
                           "保護墊板"
                       ],
         "tags":  [
+                     "精神科日間病房",
+                     "社區精神復健",
                      "園藝治療",
                      "五感刺激",
                      "植物敲拓染",
@@ -2200,7 +2264,7 @@
         "population_names":  [
                                  "高齡長照",
                                  "社區精神復健",
-                                 "兒童職能"
+                                 "精神科日間病房"
                              ],
         "group_type_names":  [
                                  "藝術與手工藝",

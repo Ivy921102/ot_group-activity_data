@@ -1,18 +1,18 @@
 ﻿---
 id: "psych-clover-handcraft"
 title: "手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）"
-population: "psychiatric-inpatient"
+population: "psychiatric-acute"
 populations:
-  - "psychiatric-inpatient"
-  - "community-psychiatry"
+  - "psychiatric-acute"
   - "geriatric-care"
-  - "pediatrics"
+  - "psychiatric-day"
+  - "psychiatric-chronic"
 group_type: "art"
 group_types:
   - "art"
   - "motor"
 duration: "75分鐘"
-group_size: "8-12人"
+group_size: "15-20人"
 skills:
   - "雙手對稱協調與指尖捏壓"
   - "細長紙條旋轉捲曲操作"
@@ -24,21 +24,25 @@ materials:
   - "多彩花紋蝴蝶色紙"
   - "口紅膠與白膠"
 tags:
+  - "精神科慢性/復健病房"
+  - "精神科日間病房"
+  - "精神科急性病房"
+  - "高齡長照"
   - "幸運草"
   - "立體蝴蝶"
   - "捲紙工藝"
   - "正向賦能"
-  - "精神科病房"
 source_file: "0407活動企劃書.pdf"
 created_at: "2026-11-11"
 ---
 
 # 手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）
 
-> **原始教案來源**：`0407活動企劃書.pdf`  
-> **主要族群**：精神科病房  
-> **適用族群**：精神科病房、社區精神復健、高齡長照、兒童職能  
-> **團體類型**：藝術與手工藝、動作與體適能
+> **原始教案來源**：\$(@{id=psych-clover-handcraft; title=手功能活動-幸運草（立體心形葉、捲紙莖與翩翩彩蝶創作）; population=psychiatric-acute; populations=System.Object[]; group_type=art; group_types=System.Object[]; duration=75分鐘; group_size=15-20人; skills=System.Object[]; materials=System.Object[]; tags=System.Object[]; source_file=0407活動企劃書.pdf; created_at=2026-11-11; sections=; population_names=System.Object[]; group_type_names=System.Object[]}.source_file)\  
+> **主要族群**：精神科急性病房  
+> **適用族群**：精神科急性病房、高齡長照、精神科日間病房、精神科慢性/復健病房  
+> **團體類型**：藝術與手工藝、動作與體適能  
+> **建議人數**：15-20人
 
 ## 1. 團體設計理念與目標
 - **理念說明**：四葉幸運草寓意愛、希望與信念，彩蝶象徵破繭成蝶的復元奇蹟。結合對稱剪折四枚愛心葉片、旋轉捲曲立體紙莖，以及立體摺翅彩蝶，提供多重手部精細操作刺激，傳遞深層正向心理賦能。
@@ -53,13 +57,16 @@ created_at: "2026-11-11"
 - **場地與座位配置**：病房職能治療活動室，桌面配備剪刀收納架，環境明朗溫馨
 
 ## 3. 團體流程與步驟
+- **暖身階段**：
 【幸運傳說與放鬆（10分鐘）】：分享幸運草四片葉子與蝴蝶蛻變的故事，請成員許下一個送給自己的溫暖祝福。
 
+- **主要操作階段**：
 【幸運草與彩蝶工藝（55分鐘）】：
 1. 【心型葉片】：對折剪裁四枚愛心葉片，中折立體拼合成四葉草冠。
 2. 【捲曲立體莖】：將長綠紙條斜捲於筆管上抽出，形成彈性立體花莖。
 3. 【翩翩彩蝶】：色紙對折剪出上下對稱翅膀並折出立體飛翔姿態，棲息於幸運草葉面上。
 
+- **分享與回饋階段**：
 【祝福傳情與工具清點（10分鐘）】：手捧作品向同儕說一句祝福，雙人清點回收剪刀並鎖存。
 
 ## 4. 分級與調適（Grading & Adaptation） ⭐
@@ -67,7 +74,4 @@ created_at: "2026-11-11"
 - **Grading Up（挑戰加難）**：製作雙層漸層色葉片；在蝴蝶翅膀上剪出精美鏤空蕾絲窗花。
 
 ## 5. 安全注意事項與禁忌症
-- 落實病房利器管制，剪刀全程專人列管防自傷；隨時關照成員挫折感與低落情緒。
-
----
-*本活動教案由職能治療臨床教案整理收錄，符合 AGENTS.md 知識庫標準。*
+落實病房利器管制，剪刀全程專人列管防自傷；隨時關照成員挫折感與低落情緒。
